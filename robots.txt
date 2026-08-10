@@ -1,0 +1,8 @@
+# robots.txt for zxbuilder.club
+# Allow all well-behaved crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.zxbuilder.club/sitemap.xml

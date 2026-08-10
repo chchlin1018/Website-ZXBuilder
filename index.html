@@ -1,27 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<meta name="msvalidate.01" content="6325F170C8E28644F93D4A10820E6ED9">
-<title>ZXBuilder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="msvalidate.01" content="6325F170C8E28644F93D4A10820E6ED9" />
+<title>ZXBuilder — Bidirectional USD↔Revit Builder for Industrial Digital Twins</title>
+<meta name="description" content="ZXBuilder — bidirectional USD ↔ Revit plugin for semiconductor fabs and industrial digital twins. OpenUSD-native, single-USDC SSOT. Pre-Beta on Revit 2027.">
+<link rel="canonical" href="https://www.zxbuilder.club/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b7dff'/%3E%3Cstop offset='100%25' stop-color='%237aa8ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='18' fill='%230a0b0f'/%3E%3Ctext x='50' y='72' font-family='Arial,sans-serif' font-weight='900' font-size='72' fill='url(%23g)' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ZXBuilder — Bidirectional USD ↔ Revit Builder">
+<meta property="og:description" content="Bidirectional USD ↔ Revit plugin for semiconductor fabs. OpenUSD-native, full round-trip fidelity.">
+<meta property="og:url" content="https://www.zxbuilder.club/">
+<meta property="og:site_name" content="ZXBuilder">
+<meta property="og:image" content="https://www.zxbuilder.club/img/step2-about.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ZXBuilder — USD ↔ Revit Builder">
+<meta name="twitter:description" content="OpenUSD-native USD ↔ Revit plugin for industrial digital twins. Pre-Beta on Revit 2027.">
+<meta name="twitter:image" content="https://www.zxbuilder.club/img/step2-about.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ZXBuilder","operatingSystem":"Windows 10/11","applicationCategory":"DesignApplication","description":"Bidirectional USD \u2194 Revit plugin for OpenUSD-native industrial digital twin workflows.","softwareVersion":"5.7.8.3","releaseNotes":"https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.8.3-pre-beta","downloadUrl":"https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.3-pre-beta/ZigmaSetup_v5.7.8.3_Pre-Beta.msi","requirements":"Autodesk Revit 2027 (64-bit Windows 10/11). .NET 10 and Visual C++ runtime are included or provided by Revit - no separate install needed.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/PreOrder","description":"Pre-Beta trial \u2014 request via website form"},"publisher":{"@type":"Organization","name":"Reality Matrix AI Inc.","url":"https://www.realitymatrixai.com"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  body{margin:0;min-height:100vh;display:flex;align-items:center;
-       justify-content:center;background:#0E1424;color:#fff;
-       font-family:system-ui,-apple-system,"Helvetica Neue",sans-serif;
-       text-align:center}
-  h1{font-size:3rem;margin:0 0 .5rem;letter-spacing:-.02em}
-  h1 span{color:#2456E6}
-  p{color:#9aa4b8;margin:.25rem 0}
-  a{color:#2456E6;text-decoration:none}
+:root{--bg:#0a0b0f;--s1:#13151c;--s2:#1a1d27;--bd:#2a2d3a;--tx:#e4e6ef;--dm:#b0b8cc;--ac:#4f8cff;--gw:rgba(79,140,255,.15);--ac2:#7aa8ff;--ag:rgba(79,140,255,.12);--or:#fb923c;--og:rgba(251,147,60,.15);--f:'DM Sans',sans-serif;--m:'JetBrains Mono',monospace}
+*{margin:0;padding:0;box-sizing:border-box}body{background:var(--bg);color:var(--tx);font-family:var(--f);line-height:1.6}a{color:var(--ac);text-decoration:none}
+nav{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 2rem;border-bottom:1px solid var(--bd);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100;background:rgba(10,11,15,.85)}
+.logo{display:inline-flex;align-items:center;gap:2px;line-height:1}
+.logo svg{display:block}
+.lang-sw{display:flex;gap:2px}
+.lbtn{font-size:11px;font-weight:600;padding:4px 8px;border-radius:5px;border:1px solid var(--bd);background:transparent;color:var(--dm);cursor:pointer;transition:all .2s;font-family:var(--m)}
+.lbtn:hover,.lbtn.active{color:var(--tx);border-color:var(--ac);background:var(--ag)}
+nav .links{display:flex;gap:1.2rem;font-size:.9rem;color:var(--dm);align-items:center}nav .links a:hover{color:var(--tx)}
+.dl-btn{background:var(--ac)!important;color:#fff!important;padding:.45rem 1.2rem;border-radius:8px;font-weight:600;font-size:.85rem;transition:all .2s}.dl-btn:hover{background:#3a7bf0!important;transform:translateY(-1px)}
+.dl-btn.dl-disabled{opacity:0.55!important;cursor:not-allowed!important;background:var(--s2)!important;color:var(--dm)!important;border:1px solid var(--bd)}
+.dl-btn.dl-disabled:hover{background:var(--s2)!important;transform:none!important}
+.hero{text-align:center;padding:5rem 2rem 3rem}.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:700;letter-spacing:-1px;margin-bottom:1rem}.hero h1 em{font-style:normal;color:var(--ac)}
+.hero p{font-size:1.1rem;color:var(--dm);max-width:620px;margin:0 auto 2rem}.badge{display:inline-block;padding:.35rem 1rem;border-radius:20px;font-size:.8rem;font-weight:500;background:var(--gw);color:var(--ac2);border:1px solid rgba(79,140,255,.3);margin-bottom:1.5rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem;max-width:900px;margin:0 auto 4rem;padding:0 2rem}
+.step{background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:1.5rem;text-align:center;transition:border-color .3s}.step:hover{border-color:var(--ac)}
+.step-n{width:32px;height:32px;border-radius:50%;background:var(--gw);color:var(--ac);font-weight:700;display:inline-flex;align-items:center;justify-content:center;margin-bottom:.8rem;font-size:.85rem}
+.step h3{font-size:.95rem;margin-bottom:.4rem;color:#fff}.step p{font-size:.82rem;color:var(--dm)}
+.section{max-width:720px;margin:0 auto;padding:0 2rem 4rem}
+.howto-wrap{max-width:1000px;margin:0 auto 4rem;padding:0 2rem}
+.howto-h{text-align:center;margin-bottom:2rem}
+.howto-h h2{font-size:1.5rem;color:#fff;margin-bottom:.5rem}
+.howto-h p{color:var(--dm);font-size:.9rem}
+.ht-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.ht-step{background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:1.5rem;position:relative;transition:border-color .3s}
+.ht-step:hover{border-color:var(--ac)}
+.ht-num{position:absolute;top:-12px;left:1.5rem;width:32px;height:32px;border-radius:50%;background:var(--ac);color:#fff;font-weight:700;display:inline-flex;align-items:center;justify-content:center;font-size:.9rem;box-shadow:0 2px 8px rgba(79,140,255,.4)}
+.ht-step h3{font-size:1rem;color:#fff;margin:.5rem 0 .5rem;padding-left:0}
+.ht-step p{font-size:.85rem;color:var(--dm);margin-bottom:1rem}
+.ht-step img{width:100%;height:auto;border-radius:8px;border:1px solid var(--bd);display:block;background:var(--s2)}
+.banner-pb{background:rgba(251,147,60,.10);border:1px solid rgba(251,147,60,.35);color:var(--or);padding:0.6rem 1.2rem;border-radius:8px;font-size:.78rem;line-height:1.55;text-align:center;max-width:920px;margin:1.2rem auto 0}
+@media(max-width:700px){.ht-grid{grid-template-columns:1fr}}
+.card{background:var(--s1);border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+.card-h{padding:1.5rem 2rem;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:.8rem}.card-h h2{font-size:1.15rem}
+.card-b{padding:2rem}
+.fl{margin-bottom:1.1rem}.fl label{display:block;font-size:.82rem;color:rgba(255,255,255,.75);margin-bottom:.35rem;font-weight:500;text-transform:uppercase;letter-spacing:.5px}
+.fl input,.fl select,.fl textarea{width:100%;padding:.75rem 1rem;background:var(--s2);border:1px solid var(--bd);border-radius:8px;color:var(--tx);font-family:var(--f);font-size:.95rem;outline:none;transition:border-color .2s}
+.fl input:focus,.fl select:focus,.fl textarea:focus{border-color:var(--ac)}.fl .mn{font-family:var(--m);font-size:.9rem;letter-spacing:1px}
+.rw{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.rw3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+hr.dv{border:none;border-top:1px solid var(--bd);margin:1.5rem 0}
+.sl{font-size:.72rem;color:var(--ac);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.8rem;display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 2rem;border-radius:10px;font-size:.9rem;font-weight:600;cursor:pointer;border:none;transition:all .2s;font-family:var(--f);width:100%}
+.btn-ac{background:var(--ac);color:#fff}.btn-ac:hover{background:#3a7bf0;transform:translateY(-1px);box-shadow:0 4px 20px rgba(79,140,255,.3)}
+.rp{display:none;margin-top:1.5rem;padding:1.5rem;border-radius:12px;text-align:center}.rp.show{display:block;animation:fi .5s ease}
+.rp-gn{background:var(--ag);border:1px solid rgba(79,140,255,.3)}
+.rp .ck{font-size:2.2rem;margin-bottom:.4rem}
+.rp p{font-size:.82rem;color:var(--dm)}
+.pr-big{font-size:1.7rem;font-weight:700;color:var(--ac);letter-spacing:-0.5px;padding:0.5rem 0}
+footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--bd);font-size:.8rem;color:var(--dm)}footer strong{color:var(--tx);font-weight:500}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1024px){.section{max-width:90vw;padding:0 1.5rem 4rem}.howto-wrap{max-width:95vw}}
+@media(max-width:600px){.rw,.rw3{grid-template-columns:1fr}nav{padding:.8rem 1rem;flex-wrap:wrap;gap:.5rem}nav .links{gap:.8rem;font-size:.8rem}.hero{padding:3rem 1.5rem 2rem}}
+/* What's New v5.7.8.3 · 標題綠色放大 / 內文白色 (per Michael 2026-07-02) */
+#wntitle{color:#4ade80;font-weight:700;font-size:1.12rem}
+#wnbody{color:#fff}
+#wnbody strong{color:#4ade80;font-size:1.05rem;line-height:2.6}
 </style>
 </head>
 <body>
-  <div>
-    <h1><span>ZX</span>Builder</h1>
-    <p>Coming soon.</p>
-    <p><a href="https://www.realitymatrixai.com">Reality Matrix AI INC.</a></p>
+<nav>
+  <div class="logo">
+    <svg width="150" height="30" viewBox="0 0 150 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZXBuilder"><title>ZXBuilder</title>
+      <defs><linearGradient id="znav" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3b7dff"/><stop offset="100%" stop-color="#7aa8ff"/></linearGradient></defs>
+      <text x="0" y="25" font-family="DM Sans, Arial, sans-serif" font-weight="800" font-size="28" fill="url(#znav)">ZX</text>
+      <text x="38" y="24" font-family="DM Sans, Arial, sans-serif" font-weight="600" font-size="22" fill="white">Builder</text>
+    </svg>
   </div>
-</body>
-</html>
+  <div class="links">
+    <div class="lang-sw">
+      <button class="lbtn" id="lbtn-en" onclick="setLang('en')">EN</button>
+      <button class="lbtn" id="lbtn-zh" onclick="setLang('zh')">中文</button>
+      <button class="lbtn" id="lbtn-ja" onclick="setLang('ja')">日本語</button>
+      <button class="lbtn" id="lbtn-ko" onclick="setLang('ko')">한국어</button>
+    </div>
+    <a href="https://www.realitymatrixai.com" target="_blank" data-i18n="nav_about">About Us</a>
+    <a href="#howto" data-i18n="nav_howto">How To</a>
+    <a href="#trial" data-i18n="nav_trial">Free Trial</a>
+    <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+    <a class="dl-btn" href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.3-pre-beta/ZigmaSetup_v5.7.8.3_Pre-Beta.msi" data-i18n="nav_dl" title="Pre-Beta v5.7.8.3 (98.8 MB) — single multilingual MSI · shows a pre-install README in your Windows language + checks prerequisites before installing">Download Trial</a>
+  </div>
+</nav>
+
+<!-- Version + Troubleshooting downloads (centered · red text · matches About Dialog version) -->
+<div style="text-align:center;padding:0.5rem 1.5rem 0.3rem;font-size:.82rem;background:rgba(0,0,0,.15)">
+  <span style="color:#ff4d4d;font-weight:700;font-size:.85rem">Latest Version: 5.7.8.3 (Pre-Beta)</span>
+  <br>
+  <span style="color:rgba(255,255,255,.5);font-size:.76rem" data-i18n="ts_label">Install guide:</span>&nbsp;
+  <a href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.3-pre-beta/README.txt" style="color:#FFD700;text-decoration:underline;font-weight:600" title="Pre-Beta installation guide + troubleshooting (3-language)" data-i18n="rm_label">README.txt</a>
+  <br>
+  <span style="color:rgba(255,255,255,.5);font-size:.76rem" data-i18n="zip_label">.msi download blocked by Microsoft? ZIP version:</span>&nbsp;
+  <a href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.3-pre-beta/ZigmaSetup_v5.7.8.3_Pre-Beta.zip" style="color:#FFD700;text-decoration:underline;font-weight:600" title="If your browser or SmartScreen blocks the .msi download, get this .zip instead, extract it, then run the MSI inside. If a SmartScreen prompt appears, click 'More info → Run anyway' (expected for unsigned pre-beta)." data-i18n="zip_link">MSI in ZIP (.zip)</a>
+  <br>
+  <span style="color:rgba(255,255,255,.5);font-size:.76rem" data-i18n="diag_label">Can't install or start? Diagnostic tool:</span>&nbsp;
+  <a href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.3-pre-beta/Zigma-Diagnostic-Toolkit.zip" style="color:#FFD700;text-decoration:underline;font-weight:600" title="If install/startup fails: download + extract, right-click customer-diagnostic.cmd -> Run as administrator, then email the Desktop .txt to michael.lin@realitymatrixai.com" data-i18n="diag_link">Diagnostic Toolkit (.zip)</a>
+</div>
+<!-- What's New v5.7.8.3 (centered column · segmented · readable) -->
+<div style="text-align:center;max-width:900px;margin:0.3rem auto 1.1rem;padding:0.6rem 1.5rem 0.9rem;background:rgba(0,0,0,.15);line-height:1.85">
+  <div id="wntitle" style="margin-bottom:.45rem" data-i18n="wn_label">What's New v5.7.8.3:</div>
+  <div id="wnbody" style="font-size:.82rem" data-i18n="wn_text">New standalone USD Viewer (NVIDIA SimReady + real-time physics), faster import/export, large-model import protection, NVIDIA SimReady export, more complete model restoration, and the new ZXBuilder Geometry Engine 2.8.</div>
+  <div style="color:#fff;opacity:.8;font-size:.78rem;margin-top:.6rem"><strong data-i18n="un_label">Upgrade note:</strong> <span data-i18n="un_text">Just double-click v5.7.8.3 MSI to upgrade. If About Dialog shows License inactive after upgrade, please re-paste your original license.txt.</span></div>
+</div>
+
+<div class="banner-pb" data-i18n="pb_notice">⚠ Pre-Beta · MSI is not yet code-signed. Windows may show a SmartScreen "Unknown Publisher" warning — click "More info" → "Run anyway" to proceed. Trial access is NDA-bound · do not redistribute.</div>
+
+<section class="hero">
+  <div class="badge">OpenUSD Native &middot; USD&#8596;Revit &middot; Autodesk Revit 2027</div>
+  <h1>Bidirectional <em>USD&#8596;Revit</em><br>for Industrial Digital Twins</h1>
+  <p>OpenUSD holds the industrial digital twin. Your MEP team works in Autodesk Revit. ZXBuilder bridges them — bringing USD precision into Revit, and syncing Revit MEP back to USD.</p>
+</section>
+
+<section class="steps">
+  <div class="step"><div class="step-n">1</div><h3 data-i18n="s1h">Download &amp; Install</h3><p data-i18n="s1p">Run MSI installer. Zigma tab appears in Revit.</p></div>
+  <div class="step"><div class="step-n">2</div><h3 data-i18n="s2h">Get Machine Code</h3><p data-i18n="s2p">Click About in Zigma tab. Copy your Machine Code.</p></div>
+  <div class="step"><div class="step-n">3</div><h3 data-i18n="s3h">Get Free Trial</h3><p data-i18n="s3p">Paste Machine Code below. Get 7-day trial key instantly.</p></div>
+  <div class="step"><div class="step-n">4</div><h3 data-i18n="s4h">Activate &amp; Go</h3><p data-i18n="s4p">Enter key in Zigma About dialog. Start converting.</p></div>
+</section>
+
+<section class="howto-wrap" id="howto">
+  <div class="howto-h">
+    <h2 data-i18n="ht_title">How to Find Your Machine Code</h2>
+    <p data-i18n="ht_desc">Two simple steps inside the Revit Zigma tab:</p>
+  </div>
+  <div class="ht-grid">
+    <div class="ht-step">
+      <div class="ht-num">1</div>
+      <h3 data-i18n="ht_s1">Open About in Zigma Ribbon</h3>
+      <p data-i18n="ht_s1p">In Revit, click the Zigma tab on the ribbon, then click the About button.</p>
+      <img src="img/step1-ribbon.jpg" alt="Step 1: Zigma Ribbon About button" loading="lazy">
+    </div>
+    <div class="ht-step">
+      <div class="ht-num">2</div>
+      <h3 data-i18n="ht_s2">Copy Machine Code from About dialog</h3>
+      <p data-i18n="ht_s2p">In the About dialog, choose your language, copy the Machine Code, then fill in the form below and submit.</p>
+      <img src="img/step2-about.jpg" alt="Step 2: About dialog with Machine Code" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trial">
+<div class="card">
+<div class="card-h" style="background:var(--ag)"><h2 style="color:var(--ac)" data-i18n="tr_title">&#127873; Free Trial License &mdash; 7 Days</h2></div>
+<div class="card-b">
+  <div style="background:var(--s2);border-radius:10px;padding:1.2rem;margin-bottom:1.5rem;text-align:center">
+    <div style="font-size:.88rem;color:rgba(255,255,255,.7);margin-bottom:.4rem" data-i18n="tr_instant">Fill in the form below to request your free trial — no credit card:</div>
+    <div style="display:flex;justify-content:center;gap:2.5rem;margin-top:.6rem;flex-wrap:wrap">
+      <div><span style="font-size:2rem;font-weight:800;color:var(--ac)">7</span><br><span style="font-size:.78rem;color:var(--dm)" data-i18n="tr_days">Days</span></div>
+      <div><span style="font-size:2rem;font-weight:800;color:var(--ac)">20</span><br><span style="font-size:.78rem;color:var(--dm)" data-i18n="tr_eops">Export+Import Ops</span></div>
+      <div><span style="font-size:2rem;font-weight:800;color:var(--ac)">10K</span><br><span style="font-size:.78rem;color:var(--dm)" data-i18n="tr_emodels">Elements per Operation</span></div>
+    </div>
+    <div style="font-size:.75rem;color:var(--dm);margin-top:.8rem" data-i18n="tr_note">Submit your Machine Code with contact info. Your trial license key will be emailed within 1 business day.</div>
+  </div>
+  <form id="trialForm" onsubmit="return submitTrial(event)">
+  <span class="sl" data-i18n="mc_label">Your Machine Code</span>
+  <div class="fl"><label for="mc_input" data-i18n="mc_field">Machine Code (from Zigma &rarr; About dialog) *</label><textarea id="mc_input" name="machine_code" class="mn" data-i18n-placeholder="mc_ph" placeholder="Paste your Machine Code here &mdash; it&apos;s a long hex string from Revit &rarr; Zigma Tab &rarr; About &rarr; Copy Machine Code" rows="4" maxlength="800" required style="resize:vertical;line-height:1.5"></textarea>
+  <div id="mcErr" data-i18n="mc_err" style="display:none;margin-top:.4rem;font-size:.8rem;color:var(--or)">This doesn&apos;t look like a valid Machine Code. Please re-copy it from Revit &rarr; Zigma Tab &rarr; About &rarr; Copy Machine Code.</div></div>
+  <hr class="dv">
+  <span class="sl" data-i18n="ci_label">Contact Information</span>
+  <div class="rw">
+    <div class="fl"><label for="co_input" data-i18n="co_label">Company Name *</label><input id="co_input" type="text" name="company" data-i18n-placeholder="co_ph" placeholder="e.g. CTCI Corporation" required></div>
+    <div class="fl"><label for="nm_input" data-i18n="nm_label">Contact Name *</label><input id="nm_input" type="text" name="name" data-i18n-placeholder="nm_ph" placeholder="Full name" required></div>
+  </div>
+  <div class="rw">
+    <div class="fl"><label for="em_input" data-i18n="em_label">Email *</label><input id="em_input" type="email" name="email" data-i18n-placeholder="em_ph" placeholder="you@company.com" required></div>
+    <div class="fl"><label for="ph_input" data-i18n="ph_label">Phone</label><input id="ph_input" type="tel" name="phone" data-i18n-placeholder="ph_ph" placeholder="+886-xxx-xxx-xxx"></div>
+  </div>
+  <div style="margin-top:1.2rem;padding:.85rem 1rem;border:1px solid var(--ac);border-left:4px solid var(--ac);border-radius:8px;background:rgba(74,222,128,.08)">
+    <div style="font-size:.82rem;color:#fff;line-height:1.6"><strong style="color:var(--ac)">&#9888;&#65039; </strong><span data-i18n="pdpa_note">By clicking <strong>Submit Trial Request</strong>, you agree that Reality Matrix AI Inc. may collect and process the personal information provided above (company, name, email, phone, machine code) for the purpose of issuing and supporting your trial license.</span></div>
+  </div>
+  <div style="margin-top:1.2rem"><button type="submit" class="btn btn-ac" data-i18n="gen_btn">Submit Trial Request</button></div>
+  <p style="margin-top:.8rem;font-size:.78rem;color:var(--dm)" data-i18n="sub_note">Click Submit to send your request directly to our team &mdash; no email client needed. We will review and email your trial license key within 1 business day.</p>
+  </form>
+  <div class="rp rp-gn" id="trialSent" style="display:none">
+    <div class="ck">&#9989;</div><h3 style="color:var(--ac)" data-i18n="ok_title">Trial Request Submitted!</h3>
+    <p data-i18n="ok_sub">Thank you! Your trial request has been sent to our team. We will email your trial license key within 1 business day.<br>Questions? Contact <a href="mailto:michael.lin@realitymatrixai.com">michael.lin@realitymatrixai.com</a></p>
+  </div>
+</div></div></section>
+
+<section class="section" id="pricing">
+<div style="text-align:center;margin-bottom:2rem"><h2 style="font-size:1.5rem;color:#fff" data-i18n="pr_title">Pricing</h2><p style="color:var(--dm);font-size:.9rem;margin-top:.5rem" data-i18n="pr_sub">All licenses are issued by our team. Contact us to get started.</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem">
+  <div class="card" style="text-align:center">
+    <div class="card-h" style="justify-content:center"><h2 style="color:#fff" data-i18n="ent_name">Enterprise</h2></div>
+    <div class="card-b">
+      <div class="pr-big" data-i18n="pr_contact_big">Contact Sales</div>
+      <div style="color:var(--dm);font-size:.88rem;margin-top:1rem;line-height:2" data-i18n="ent_feat">1,000 import/export operations<br>Up to 20,000 elements per operation<br>Priority support &amp; training<br>Works offline — no network required</div>
+      <div style="margin-top:1.5rem"><a href="mailto:dev@realitymatrixai.com" class="btn btn-ac" style="text-decoration:none" data-i18n="contact_btn">Contact Sales</a></div>
+    </div>
+  </div>
+  <div class="card" style="text-align:center">
+    <div class="card-h" style="justify-content:center"><h2 style="color:#fff" data-i18n="ind_name">Individual</h2></div>
+    <div class="card-b">
+      <div class="pr-big" data-i18n="pr_contact_big">Contact Sales</div>
+      <div style="color:var(--dm);font-size:.88rem;margin-top:1rem;line-height:2" data-i18n="ind_feat">300 import/export operations<br>Up to 10,000 elements per operation<br>Standard support<br>Works offline — no network required</div>
+      <div style="margin-top:1.5rem"><a href="mailto:dev@realitymatrixai.com" class="btn btn-ac" style="text-decoration:none" data-i18n="contact_btn">Contact Sales</a></div>
+    </div>
+  </div>
+</div>
+<div style="text-align:center;margin-top:1.5rem;font-size:.85rem;color:var(--dm)"><span data-i18n="pr_questions">Questions?</span> <a href="mailto:dev@realitymatrixai.com">dev@realitymatrixai.com</a></div>
+</section>
+
+<footer>
+  <strong>ZXBuilder</strong> <span data-i18n="ftr_by">by</span> <a href="https://www.realitymatrixai.com">Reality Matrix AI Inc.</a><br>
+  <span data-i18n="ftr_copyright">&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.</span><br>
+  <span style="margin-top:.5rem;display:inline-block"><span data-i18n="ftr_contact">Contact:</span> <a href="mailto:dev@realitymatrixai.com">dev@realitymatrixai.com</a> &middot; <span data-i18n="ftr_location">Taipei, Taiwan</span></span>
+</footer>
+
+<script>
+function validateMachineCode(raw){
+  // Lightweight client-side format check only (no secrets here).
+  var s=(raw||'').replace(/\s+/g,'');             // strip whitespace
+  if(!s)return false;
+  if(!/^[A-Za-z0-9_=-]+$/.test(s))return false;    // allowed character set
+  var t=s.replace(/-/g,'+').replace(/_/g,'/').replace(/=+$/,'');
+  while(t.length%4!==0)t+='=';
+  var bin;
+  try{bin=atob(t);}catch(_){return false;}
+  if(bin.length<81)return false;                   // minimum decoded length
+  if(bin.charCodeAt(0)!==0x01)return false;         // expected leading version marker
+  return true;
+}
+function submitTrial(e){
+  e.preventDefault();
+  var f=document.getElementById('trialForm');
+  var mc=(f.machine_code.value||'').trim();
+  var co=(f.company.value||'').trim();
+  var nm=(f.name.value||'').trim();
+  var em=(f.email.value||'').trim();
+  var ph=(f.phone.value||'').trim();
+  if(!mc||!co||!nm||!em){alert('Please fill in Machine Code, Company, Name, and Email.');return false;}
+  var mcErr=document.getElementById('mcErr');
+  if(!validateMachineCode(mc)){
+    if(mcErr)mcErr.style.display='block';
+    var mcIn=document.getElementById('mc_input');if(mcIn)mcIn.focus();
+    return false;
+  }
+  if(mcErr)mcErr.style.display='none';
+  var btn=f.querySelector('button[type="submit"]');
+  if(btn){btn.disabled=true;btn.style.opacity='.6';}
+  function showSent(){
+    f.style.display='none';
+    var sv=document.getElementById('trialSent');
+    if(sv)sv.style.display='block';
+    var tg=document.getElementById('trial');
+    if(tg)window.scrollTo({top:tg.offsetTop-80,behavior:'smooth'});
+  }
+  function showFail(){
+    if(btn){btn.disabled=false;btn.style.opacity='1';}
+    alert('Submission failed. Please email michael.lin@realitymatrixai.com directly with your Machine Code.');
+  }
+  // Best-effort email notification via third-party relay (may be temporarily unavailable · never gates success).
+  try{
+    fetch('https://formsubmit.co/ajax/michael.lin@realitymatrixai.com',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        _subject:'[ZigmaClub License Request]',
+        _template:'table',
+        _captcha:'false',
+        machine_code:mc,company:co,name:nm,email:em,phone:ph,
+        source:'https://www.zxbuilder.club'
+      })
+    }).catch(function(){});
+  }catch(_){}
+  // Primary path: record the request to the license backend · this is what feeds license issuance.
+  writeTrialRequestRecord({machine_code:mc,company:co,name:nm,email:em,phone:ph})
+    .then(function(ok){ ok?showSent():showFail(); })
+    .catch(function(){ showFail(); });
+  return false;
+}
+// Optional: record the trial request to our backend (best-effort · failures never block the email submission).
+// The web API key below is a public client identifier (not a secret); access is restricted server-side to
+// create-only on the trial-request collection. If left as a placeholder, this step is skipped.
+const _ZG_FB_PROJECT='reality-dev-center';
+const _ZG_FB_APIKEY='AIzaSyClCKk3RI-cti8gGJ3TjGZOZlDpO0HlZY0';
+async function writeTrialRequestRecord(data){
+  try{
+    if(!_ZG_FB_APIKEY||_ZG_FB_APIKEY.indexOf('REPLACE')===0)return false; // no key configured -> skip
+    // 1) Obtain a short-lived anonymous token
+    const ar=await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key='+_ZG_FB_APIKEY,
+      {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({returnSecureToken:true})});
+    if(!ar.ok)return false; const aj=await ar.json(); const idToken=aj.idToken; if(!idToken)return false;
+    // 2) Create the trial-request record
+    const docId=(crypto&&crypto.randomUUID)?crypto.randomUUID():('w'+Date.now()+Math.floor(Math.random()*1e6));
+    const sv=function(s){return {stringValue:String(s||'')};};
+    // license_status is assigned server-side (license backend) · the client must NOT set it (backend rules reject the write otherwise)
+    const fields={
+      report_id:sv(docId), schema_version:sv('1.1'), type:sv('trial_request'),
+      ts_utc:sv(new Date().toISOString()), zigma_version:sv(''),
+      source:sv('website'), status:sv('new'),
+      machine_code:sv(data.machine_code), company:sv(data.company),
+      name:sv(data.name), email:sv(data.email), phone:sv(data.phone)
+    };
+    const wr=await fetch('https://firestore.googleapis.com/v1/projects/'+_ZG_FB_PROJECT+
+      '/databases/(default)/documents/trial_requests?documentId='+encodeURIComponent(docId),
+      {method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+idToken},
+       body:JSON.stringify({fields:fields})});
+    return wr.ok;
+  }catch(_){return false;}
+}
+const _ZG={
+en:{
+  nav_about:'About Us',nav_howto:'How To',nav_trial:'Free Trial',nav_pricing:'Pricing',nav_dl:'Download Trial',
+  h_badge:'OpenUSD Native &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h1:'Bidirectional <em>USD&#8596;Revit</em><br>for Industrial Digital Twins',
+  h_sub:'OpenUSD holds the industrial digital twin. Your MEP team works in Autodesk Revit. ZXBuilder bridges them &mdash; bringing USD precision into Revit, and syncing Revit MEP back to USD.',
+  s1h:'Download & Install',s1p:'Run MSI installer. Zigma tab appears in Revit.',
+  s2h:'Get Machine Code',s2p:'Click About in Zigma tab. Copy your Machine Code.',
+  s3h:'Get Free Trial',s3p:'Paste Machine Code below. Get 7-day trial key instantly.',
+  s4h:'Activate & Go',s4p:'Enter key in Zigma About dialog. Start converting.',
+  ht_title:'How to Find Your Machine Code',
+  ht_desc:'Two simple steps inside the Revit Zigma tab:',
+  ht_s1:'Open About in Zigma Ribbon',
+  ht_s1p:'In Revit, click the Zigma tab on the ribbon, then click the About button.',
+  ht_s2:'Copy Machine Code from About dialog',
+  ht_s2p:'In the About dialog, choose your language, copy the Machine Code, then fill in the form below and submit.',
+  tr_title:'&#127873; Free Trial License &mdash; 7 Days',
+  tr_instant:'Fill in the form below to request your free trial &mdash; no credit card:',
+  tr_days:'Days',tr_eops:'Export+Import Ops',tr_emodels:'Elements per Operation',
+  tr_note:'Submit your Machine Code with contact info. Your trial license key will be emailed within 1 business day.',
+  mc_label:'YOUR MACHINE CODE',
+  mc_field:'Machine Code (from Zigma &rarr; About dialog) *',
+  ci_label:'CONTACT INFORMATION',
+  co_label:'Company Name *',nm_label:'Contact Name *',em_label:'Email *',ph_label:'Phone',
+  gen_btn:'Submit Trial Request',
+  pdpa_note:'By clicking <strong>Submit Trial Request</strong>, you agree that Reality Matrix AI Inc. may collect and process the personal information provided above (company, name, email, phone, machine code) for the purpose of issuing and supporting your trial license.',
+  sub_note:'Click Submit to send your request directly to our team &mdash; no email client needed. We will review and email your trial license key within 1 business day.',
+  ok_title:'Trial Request Submitted!',
+  ok_sub:'Thank you! Your trial request has been sent to our team. We will email your trial license key within 1 business day.<br>Questions? Contact <a href="mailto:michael.lin@realitymatrixai.com">michael.lin@realitymatrixai.com</a>',
+  pr_title:'Pricing',pr_sub:'All licenses are issued by our team. Contact us to get started.',
+  pr_contact_big:'Contact Sales',
+  ent_name:'Enterprise',ind_name:'Individual',
+  ent_feat:'1,000 import/export operations<br>Up to 20,000 elements per operation<br>Priority support & training<br>Works offline &mdash; no network required',
+  ind_feat:'300 import/export operations<br>Up to 10,000 elements per operation<br>Standard support<br>Works offline &mdash; no network required',
+  contact_btn:'Contact Sales',
+  tk_label:'ZXBuilder Diagnostic Toolkit',rm_label:'README.txt',
+  diag_label:"Can't install or start? Diagnostic tool:",diag_link:'Diagnostic Toolkit (.zip)',
+  zip_label:'.msi download blocked by Microsoft? ZIP version:',zip_link:'MSI in ZIP (.zip)',
+  wn_label:"What's New v5.7.8.3:",
+  wn_text:"Turn your Revit designs into NVIDIA-platform-ready USD and physics-simulation assets in one click. This release brings a brand-new USD Viewer, faster import/export, and safety protection for large models.<br><br><strong>Brand-new USD Viewer (NVIDIA SimReady + real-time physics)</strong><br>• View and validate OpenUSD models and NVIDIA simulation scenes standalone, without opening Revit<br>• Automatically assesses system load before loading and safely stops oversized models to avoid crashes<br>• Loads NVIDIA SimReady scenes and shows each object's collision bounds as wireframe<br>• Built-in real-time physics: tick to test interactively and watch collisions and dynamics happen<br><br><strong>Faster import and export</strong><br>• Optimized for large models — export and import are faster<br>• Results after acceleration are identical to before; model fidelity is completely unaffected<br><br><strong>Large USD import protection</strong><br>• Automatically identifies file type before import (Zigma USD, NVIDIA AIF, NVIDIA SIM, generic USD)<br>• Assesses file size against system capacity, clearly warns and safely stops when too large, protecting your workspace<br><br><strong>NVIDIA SimReady export</strong><br>• One-click convert any OpenUSD file into an NVIDIA SimReady asset, auto-adding units, physics and semantic attributes<br>• Ready to use directly in NVIDIA Omniverse / Isaac Sim, bridging simulation and AI workflows<br><br><strong>More complete model restoration</strong><br>• Roof equipment, stair railings and other details are restored closer to the original model<br>• MEP equipment completeness — data, communication, lighting and other components no longer lost in round-trip<br><br><strong>More stable, more thoughtful experience</strong><br>• Ribbon buttons are more robust; problems show friendly messages without interrupting your Revit work<br>• Full four-language UI: 繁體中文, English, 日本語, 한국어<br>• Stronger customer support: large-file bug reports support resumable upload; remote assistance extended to 120 minutes<br><br><strong>Powered by the new ZXBuilder Geometry Engine 2.8</strong><br>• Stably handles very large, complex scenes, auto-adjusting memory to your machine for smooth large Omniverse model conversion<br>• More precise shape recognition for more faithful Revit rebuild results<br>• Stronger, more independent diagnostics make troubleshooting easier",
+  un_label:'Upgrade note:',
+  un_text:'Just double-click v5.7.8.3 MSI to upgrade. If About Dialog shows License inactive after upgrade, please re-paste your original license.txt.',
+  pb_notice:'&#9888; Pre-Beta &middot; MSI is not yet code-signed. Windows may show a SmartScreen "Unknown Publisher" warning &mdash; click "More info" &rarr; "Run anyway" to proceed. Trial access is NDA-bound &middot; do not redistribute.',
+  mc_ph:"Paste your Machine Code here — it's a long hex string from Revit → Zigma Tab → About → Copy Machine Code",
+  mc_err:'This doesn\'t look like a valid Machine Code. Please re-copy it from Revit → Zigma Tab → About → Copy Machine Code.',
+  co_ph:'e.g. CTCI Corporation',nm_ph:'Full name',em_ph:'you@company.com',ph_ph:'+886-xxx-xxx-xxx',
+  pr_questions:'Questions?',
+  ftr_by:'by',
+  ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.',
+  ftr_contact:'Contact:',ftr_location:'Taipei, Taiwan'
+},
+zh:{
+  nav_about:'關於我們',nav_howto:'操作指引',nav_trial:'免費試用',nav_pricing:'授權方案',nav_dl:'下載試用版',
+  h_badge:'OpenUSD 原生 &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h1:'雙向 <em>USD&#8596;Revit</em><br>為工業數位孿生而生',
+  h_sub:'OpenUSD 承載工業數位孿生。MEP 團隊在 Autodesk Revit 工作。ZXBuilder 橋接兩者 &mdash; 將 USD 精準數據帶入 Revit，並將 Revit MEP 同步回 USD。',
+  s1h:'下載安裝',s1p:'執行 MSI 安裝程式。Revit 中出現 Zigma 分頁。',
+  s2h:'取得機器碼',s2p:'點擊 Zigma 分頁的「About」，複製機器碼。',
+  s3h:'申請免費試用',s3p:'將機器碼填入下方表單，立即取得 7 日試用金鑰。',
+  s4h:'啟動使用',s4p:'在 Zigma About 對話框中輸入金鑰，開始轉換。',
+  ht_title:'如何取得您的機器碼',
+  ht_desc:'在 Revit Zigma 分頁中只需兩個簡單步驟：',
+  ht_s1:'打開 Zigma Ribbon 的 About',
+  ht_s1p:'在 Revit 中，點擊功能區的 Zigma 分頁，然後點擊「About」按鈕。',
+  ht_s2:'從 About 對話框複製機器碼',
+  ht_s2p:'在 About 對話框中，選擇您的語言，複製機器碼，然後填寫下方表單並提交。',
+  tr_title:'&#127873; 免費試用授權 &mdash; 7 天',
+  tr_instant:'填寫下方表單以申請免費試用 &mdash; 無需信用卡：',
+  tr_days:'天',tr_eops:'次 Export+Import',tr_emodels:'元件數／每次操作',
+  tr_note:'提交您的機器碼與聯絡資訊。我們將於 1 個工作天內將試用金鑰寄送至您的信箱。',
+  mc_label:'您的機器碼',
+  mc_field:'機器碼（來自 Zigma About 對話框）*',
+  ci_label:'聯絡資訊',
+  co_label:'公司名稱 *',nm_label:'聯絡人姓名 *',em_label:'電子信箱 *',ph_label:'電話',
+  gen_btn:'提交試用申請',
+  pdpa_note:'按下「提交試用申請」，即表示您同意實矩科技股份有限公司收集並處理您於上方填寫之個人資訊（公司、姓名、電子郵件、電話、機器碼），以核發及支援您的試用授權。',
+  sub_note:'點擊提交將直接把您的申請送至我們團隊，無需電子郵件用戶端。我們將於 1 個工作天內審核並將試用金鑰寄送至您的信箱。',
+  ok_title:'試用申請已提交！',
+  ok_sub:'謝謝！您的試用申請已送出至我們團隊。我們將於 1 個工作天內將試用金鑰寄送至您的信箱。<br>有任何問題？請聯絡 <a href="mailto:michael.lin@realitymatrixai.com">michael.lin@realitymatrixai.com</a>',
+  pr_title:'授權方案',pr_sub:'所有授權均由我們的團隊發放，請聯絡我們開始使用。',
+  pr_contact_big:'洽詢業務',
+  ent_name:'企業版',ind_name:'個人版',
+  ent_feat:'1,000 次匯入/匯出<br>最多 20,000 元件／每次操作<br>優先支援和培訓<br>支援離線模式 &mdash; 無需網路連線',
+  ind_feat:'300 次匯入/匯出<br>最多 10,000 元件／每次操作<br>標準支援<br>支援離線模式 &mdash; 無需網路連線',
+  contact_btn:'聯絡銷售',
+  tk_label:'ZXBuilder 診斷工具包',rm_label:'README.txt',
+  diag_label:'無法安裝或開啟?安裝診斷工具:',diag_link:'診斷工具包 (.zip)',
+  zip_label:'.msi 下載被 Microsoft 封鎖?改用 ZIP 版:',zip_link:'ZIP 內含 MSI (.zip)',
+  wn_label:'v5.7.8.3 更新內容：',
+  wn_text:'讓您的 Revit 設計,一鍵成為 NVIDIA 平台就緒的 USD 與物理模擬資產。本版帶來全新 USD 檢視器、更快的匯入匯出,以及大型模型的安全保護。<br><br><strong>全新 USD 檢視器（NVIDIA SimReady + 即時物理）</strong><br>• 不需開啟 Revit,即可獨立檢視與驗證 OpenUSD 模型與 NVIDIA 模擬場景<br>• 載入前自動評估電腦負荷,模型過大時安全停止,避免當機<br>• 可載入 NVIDIA SimReady 場景,並以線框顯示每個物件的碰撞範圍<br>• 內建即時物理:勾選即可互動測試,親眼看到物件的碰撞與動態反應<br><br><strong>更快的匯入與匯出</strong><br>• 針對大型模型最佳化,匯出與匯入更迅速<br>• 加速後結果與先前完全一致,模型保真度不受任何影響<br><br><strong>大型 USD 匯入保護</strong><br>• 匯入前自動辨識檔案類型（Zigma USD、NVIDIA AIF、NVIDIA SIM、一般 USD）<br>• 評估檔案規模與電腦容量,過大時清楚提示並安全停止,保護您的工作環境<br><br><strong>NVIDIA SimReady 匯出</strong><br>• 將任意 OpenUSD 檔案一鍵轉為 NVIDIA SimReady 資產,自動補上單位、物理與語意屬性<br>• 直接供 NVIDIA Omniverse / Isaac Sim 使用,銜接模擬與 AI 工作流<br><br><strong>更完整的模型還原</strong><br>• 屋頂設備、樓梯扶手等細節還原更貼近原始模型<br>• 機電（MEP）設備補全,資料、通訊、照明等元件來回轉換不再遺漏<br><br><strong>更穩定、更貼心的使用體驗</strong><br>• 功能區按鈕更穩健,遇到問題以友善訊息提示,不中斷您的 Revit 作業<br>• 完整四語介面:繁體中文、English、日本語、한국어<br>• 客戶支援強化:大型檔案回報支援續傳,遠端協助時限延長至 120 分鐘<br><br><strong>搭載全新 ZXBuilder 幾何引擎 2.8</strong><br>• 穩定處理超大、複雜場景,自動依電腦調整記憶體用量,大型 Omniverse 模型順暢轉換<br>• 形狀辨識更精準,Revit 重建結果更忠實<br>• 診斷能力更強更獨立,排查問題更容易',
+  un_label:'升級提醒：',
+  un_text:'雙擊 v5.7.8.3 MSI 即可升級。若升級後 About 對話框顯示授權失效,請重新貼上原 license.txt。',
+  pb_notice:'&#9888; Pre-Beta &middot; MSI 尚未進行程式碼簽署。Windows 可能顯示 SmartScreen「未知發行者」警告 &mdash; 請點「其他資訊」&rarr;「仍要執行」繼續安裝。試用授權受 NDA 約束 &middot; 不得轉發。',
+  mc_ph:'請貼上您的機器碼 — 是一段長 hex 字串，可從 Revit → Zigma 分頁 → About → 複製機器碼',
+  mc_err:'這看起來不是有效的機器碼。請從 Revit → Zigma 分頁 → About → 複製機器碼 重新複製。',
+  co_ph:'例如：中鼎工程',nm_ph:'姓名全名',em_ph:'you@company.com',ph_ph:'+886-xxx-xxx-xxx',
+  pr_questions:'有任何問題？',
+  ftr_by:'由',
+  ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;) 版權所有',
+  ftr_contact:'聯絡我們：',ftr_location:'臺北 · 臺灣'
+},
+ja:{
+  nav_about:'会社について',nav_howto:'使い方',nav_trial:'無料トライアル',nav_pricing:'ライセンスプラン',nav_dl:'トライアル版ダウンロード',
+  h_badge:'OpenUSD ネイティブ &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h1:'双方向 <em>USD&#8596;Revit</em><br>産業デジタルツイン向け',
+  h_sub:'OpenUSD が産業デジタルツインを保持します。MEP チームは Autodesk Revit で作業します。ZXBuilder が両者を橋渡しし、USD の精度を Revit に取り込み、Revit MEP を USD に同期します。',
+  s1h:'ダウンロード & インストール',s1p:'MSI インストーラーを実行。Revit に Zigma タブが表示されます。',
+  s2h:'マシンコード取得',s2p:'Zigma タブの「About」をクリックし、マシンコードをコピーします。',
+  s3h:'無料トライアル申請',s3p:'下のフォームにマシンコードを貼り付けて 7 日トライアルキーを取得。',
+  s4h:'アクティベート & 開始',s4p:'Zigma About ダイアログにキーを入力して変換を開始します。',
+  ht_title:'マシンコードの取得方法',
+  ht_desc:'Revit Zigma タブで 2 つの簡単なステップ：',
+  ht_s1:'Zigma リボンの About を開く',
+  ht_s1p:'Revit で、リボンの Zigma タブをクリックし、「About」ボタンをクリックします。',
+  ht_s2:'About ダイアログからマシンコードをコピー',
+  ht_s2p:'About ダイアログで、言語を選択し、マシンコードをコピーして、下のフォームに記入し送信してください。',
+  tr_title:'&#127873; 無料トライアルライセンス &mdash; 7 日',
+  tr_instant:'下記フォームに記入して無料トライアルを申請してください &mdash; クレジットカード不要：',
+  tr_days:'日',tr_eops:'Export+Import 回数',tr_emodels:'オペレーション毎エレメント数',
+  tr_note:'マシンコードと連絡先を送信してください。1 営業日以内にトライアルキーをメールでお送りします。',
+  mc_label:'マシンコード',
+  mc_field:'マシンコード（Zigma About ダイアログから）*',
+  ci_label:'連絡先情報',
+  co_label:'会社名 *',nm_label:'担当者名 *',em_label:'メールアドレス *',ph_label:'電話番号',
+  gen_btn:'トライアル申請を送信',
+  pdpa_note:'「トライアル申請を送信」をクリックすると、上記にご記入いただいた個人情報（会社名・氏名・メールアドレス・電話番号・マシンコード）を、トライアルライセンスの発行およびサポートの目的で実矩科技股份有限公司が収集・処理することに同意したものとみなされます。',
+  sub_note:'送信ボタンをクリックすると、申請内容が直接当社チームに送信されます（メールクライアント不要）。1 営業日以内に審査し、トライアルキーをメールでお送りします。',
+  ok_title:'トライアル申請を受け付けました！',
+  ok_sub:'ありがとうございます！トライアル申請が当社チームに送信されました。1 営業日以内にトライアルキーをメールでお送りします。<br>ご質問は <a href="mailto:michael.lin@realitymatrixai.com">michael.lin@realitymatrixai.com</a> までご連絡ください。',
+  pr_title:'ライセンスプラン',pr_sub:'すべてのライセンスはチームが発行します。お問い合わせください。',
+  pr_contact_big:'営業へお問い合わせ',
+  ent_name:'エンタープライズ',ind_name:'個人',
+  ent_feat:'1,000 回インポート/エクスポート<br>最大 20,000 エレメント／オペレーション<br>優先サポート & トレーニング<br>オフライン対応 &mdash; ネットワーク接続不要',
+  ind_feat:'300 回インポート/エクスポート<br>最大 10,000 エレメント／オペレーション<br>標準サポート<br>オフライン対応 &mdash; ネットワーク接続不要',
+  contact_btn:'営業へお問い合わせ',
+  tk_label:'ZXBuilder 診断ツールキット',rm_label:'README.txt',
+  diag_label:'インストール/起動できない場合の診断ツール:',diag_link:'診断ツールキット (.zip)',
+  zip_label:'.msi のダウンロードがブロックされた場合のZIP版:',zip_link:'ZIP内のMSI (.zip)',
+  wn_label:'v5.7.8.3 の新機能：',
+  wn_text:'Revit の設計をワンクリックで NVIDIA プラットフォーム対応の USD および物理シミュレーション資産に変換します。本バージョンは全く新しい USD ビューアー、より高速なインポート/エクスポート、大規模モデルの安全保護を搭載。<br><br><strong>全く新しい USD ビューアー（NVIDIA SimReady + リアルタイム物理）</strong><br>• Revit を開かずに OpenUSD モデルと NVIDIA シミュレーションシーンを単独で表示・検証<br>• 読み込み前に PC の負荷を自動評価し、大きすぎる場合は安全に停止してクラッシュを防止<br>• NVIDIA SimReady シーンを読み込み、各オブジェクトの衝突範囲をワイヤーフレームで表示<br>• リアルタイム物理を内蔵:チェックするだけで対話的にテストし、衝突と動きを実際に確認<br><br><strong>より高速なインポートとエクスポート</strong><br>• 大規模モデル向けに最適化され、エクスポートとインポートがより高速<br>• 高速化後も結果は従来と完全に同一で、モデルの忠実度は一切影響を受けません<br><br><strong>大規模 USD インポート保護</strong><br>• インポート前にファイル種別を自動識別（Zigma USD、NVIDIA AIF、NVIDIA SIM、一般 USD）<br>• ファイル規模と PC の容量を評価し、大きすぎる場合は明確に警告して安全に停止、作業環境を保護<br><br><strong>NVIDIA SimReady エクスポート</strong><br>• 任意の OpenUSD ファイルをワンクリックで NVIDIA SimReady 資産に変換し、単位・物理・セマンティック属性を自動付与<br>• NVIDIA Omniverse / Isaac Sim でそのまま使用でき、シミュレーションと AI ワークフローを接続<br><br><strong>より完全なモデル復元</strong><br>• 屋根設備、階段手すりなどの細部が元のモデルにより忠実に復元<br>• MEP（設備）の補完 — データ、通信、照明などの要素が往復変換で失われません<br><br><strong>より安定し、より思いやりのある操作性</strong><br>• リボンボタンがより堅牢になり、問題が発生してもフレンドリーなメッセージで Revit 作業を中断しません<br>• 完全な 4 言語 UI:繁體中文、English、日本語、한국어<br>• カスタマーサポート強化:大容量ファイルのバグ報告はレジューム対応、リモート支援は 120 分に延長<br><br><strong>全く新しい ZXBuilder ジオメトリエンジン 2.8 を搭載</strong><br>• 超大規模で複雑なシーンを安定処理し、PC に応じてメモリ使用量を自動調整、大規模 Omniverse モデルもスムーズに変換<br>• 形状認識がより正確になり、Revit 再構築結果がより忠実に<br>• 診断能力がより強力で独立し、問題の切り分けがより容易に',
+  un_label:'アップグレードの注意：',
+  un_text:'v5.7.8.3 MSI をダブルクリックするだけでアップグレードできます。アップグレード後に About ダイアログで License 無効と表示された場合は、元の license.txt を貼り直してください。',
+  pb_notice:'&#9888; Pre-Beta &middot; MSI はまだコード署名されていません。Windows に SmartScreen の「不明な発行元」警告が表示される場合は「詳細情報」&rarr;「実行」をクリックして続行してください。トライアルアクセスは NDA 対象 &middot; 再配布禁止。',
+  mc_ph:'マシンコードをここに貼り付けてください — Revit → Zigma タブ → About → マシンコードをコピー で取得した長い hex 文字列です',
+  mc_err:'有効なマシンコードではないようです。Revit → Zigma タブ → About → マシンコードをコピー から再度コピーしてください。',
+  co_ph:'例：CTCI コーポレーション',nm_ph:'氏名',em_ph:'you@company.com',ph_ph:'+886-xxx-xxx-xxx',
+  pr_questions:'ご質問は？',
+  ftr_by:'by',
+  ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.',
+  ftr_contact:'お問い合わせ：',ftr_location:'台北 · 台湾'
+},
+ko:{
+  nav_about:'회사 소개',nav_howto:'사용 방법',nav_trial:'무료 체험판',nav_pricing:'라이선스 플랜',nav_dl:'체험판 다운로드',
+  h_badge:'OpenUSD 네이티브 &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h1:'양방향 <em>USD&#8596;Revit</em><br>산업용 디지털 트윈을 위한',
+  h_sub:'OpenUSD가 산업용 디지털 트윈을 담당합니다. MEP 팀은 Autodesk Revit에서 작업합니다. ZXBuilder가 양쪽을 연결하여 &mdash; USD의 정밀 데이터를 Revit으로 가져오고, Revit MEP를 다시 USD로 동기화합니다.',
+  s1h:'다운로드 및 설치',s1p:'MSI 설치 프로그램을 실행하면 Revit에 Zigma 탭이 나타납니다.',
+  s2h:'머신 코드 확인',s2p:'Zigma 탭에서 About을 클릭하고 머신 코드를 복사합니다.',
+  s3h:'무료 체험판 신청',s3p:'아래에 머신 코드를 붙여넣고 7일 체험판 키를 받으세요.',
+  s4h:'활성화 및 시작',s4p:'Zigma About 대화 상자에 키를 입력하고 변환을 시작합니다.',
+  ht_title:'머신 코드 확인 방법',
+  ht_desc:'Revit Zigma 탭에서 간단한 두 단계:',
+  ht_s1:'Zigma 리본에서 About 열기',
+  ht_s1p:'Revit에서 리본의 Zigma 탭을 클릭한 다음 About 버튼을 클릭합니다.',
+  ht_s2:'About 대화 상자에서 머신 코드 복사',
+  ht_s2p:'About 대화 상자에서 언어를 선택하고, 머신 코드를 복사한 후 아래 양식에 작성하여 제출합니다.',
+  tr_title:'&#127873; 무료 체험판 라이선스 &mdash; 7일',
+  tr_instant:'아래 양식을 작성하여 무료 체험판을 신청하세요 &mdash; 신용카드 불필요:',
+  tr_days:'일',tr_eops:'내보내기+가져오기 횟수',tr_emodels:'작업당 요소 수',
+  tr_note:'머신 코드와 연락처 정보를 제출해 주세요. 1 영업일 이내에 체험판 라이선스 키를 이메일로 보내드립니다.',
+  mc_label:'머신 코드',
+  mc_field:'머신 코드 (Zigma &rarr; About 대화 상자에서 확인) *',
+  ci_label:'연락처 정보',
+  co_label:'회사명 *',nm_label:'담당자명 *',em_label:'이메일 *',ph_label:'전화번호',
+  gen_btn:'체험판 신청 제출',
+  pdpa_note:'&#39;체험판 신청 제출&#39;을 클릭하면 위에 입력한 개인정보(회사명, 이름, 이메일, 전화번호, 머신 코드)를 체험판 라이선스 발급 및 지원 목적으로 Reality Matrix AI Inc.가 수집·처리하는 데 동의하는 것으로 간주됩니다.',
+  sub_note:'제출 버튼을 클릭하면 신청 내용이 저희 팀에 직접 전송됩니다 &mdash; 이메일 클라이언트가 필요 없습니다. 1 영업일 이내에 검토 후 체험판 라이선스 키를 이메일로 보내드립니다.',
+  ok_title:'체험판 신청이 완료되었습니다!',
+  ok_sub:'감사합니다! 체험판 신청이 저희 팀에 전송되었습니다. 1 영업일 이내에 체험판 라이선스 키를 이메일로 보내드립니다.<br>문의 사항이 있으시면 <a href="mailto:michael.lin@realitymatrixai.com">michael.lin@realitymatrixai.com</a>으로 연락해 주세요.',
+  pr_title:'라이선스 플랜',pr_sub:'모든 라이선스는 저희 팀에서 발급합니다. 시작하려면 문의해 주세요.',
+  pr_contact_big:'영업팀 문의',
+  ent_name:'기업용',ind_name:'개인용',
+  ent_feat:'1,000회 가져오기/내보내기<br>작업당 최대 20,000개 요소<br>우선 지원 및 교육<br>오프라인 작동 &mdash; 네트워크 불필요',
+  ind_feat:'300회 가져오기/내보내기<br>작업당 최대 10,000개 요소<br>일반 지원<br>오프라인 작동 &mdash; 네트워크 불필요',
+  contact_btn:'영업팀 문의',
+  tk_label:'ZXBuilder 진단 툴킷',rm_label:'README.txt',
+  diag_label:'설치 또는 실행이 안 되나요? 진단 도구:',diag_link:'진단 툴킷 (.zip)',
+  zip_label:'.msi 다운로드가 Microsoft에 의해 차단되었나요? ZIP 버전:',zip_link:'ZIP 내 MSI (.zip)',
+  wn_label:'v5.7.8.3 새로운 기능:',
+  wn_text:'Revit 설계를 클릭 한 번으로 NVIDIA 플랫폼 지원 USD 및 물리 시뮬레이션 자산으로 전환합니다. 이번 버전은 완전히 새로운 USD 뷰어, 더 빠른 가져오기/내보내기, 대형 모델 안전 보호를 제공합니다.<br><br><strong>완전히 새로운 USD 뷰어（NVIDIA SimReady + 실시간 물리）</strong><br>• Revit을 열지 않고도 OpenUSD 모델과 NVIDIA 시뮬레이션 장면을 독립적으로 보고 검증<br>• 로드 전 컴퓨터 부하를 자동 평가하고, 모델이 너무 크면 안전하게 중지하여 충돌 방지<br>• NVIDIA SimReady 장면을 로드하고 각 객체의 충돌 범위를 와이어프레임으로 표시<br>• 실시간 물리 내장: 체크만 하면 대화식으로 테스트하여 충돌과 움직임을 직접 확인<br><br><strong>더 빠른 가져오기와 내보내기</strong><br>• 대형 모델에 최적화되어 내보내기와 가져오기가 더 빠름<br>• 가속 후에도 결과는 이전과 완전히 동일하며 모델 충실도는 전혀 영향받지 않음<br><br><strong>대형 USD 가져오기 보호</strong><br>• 가져오기 전에 파일 형식을 자동 식별（Zigma USD、NVIDIA AIF、NVIDIA SIM、일반 USD）<br>• 파일 규모와 컴퓨터 용량을 평가하여 너무 크면 명확히 경고하고 안전하게 중지, 작업 환경 보호<br><br><strong>NVIDIA SimReady 내보내기</strong><br>• 임의의 OpenUSD 파일을 클릭 한 번으로 NVIDIA SimReady 자산으로 변환하고 단위・물리・시맨틱 속성을 자동 추가<br>• NVIDIA Omniverse / Isaac Sim에서 바로 사용 가능하여 시뮬레이션과 AI 워크플로를 연결<br><br><strong>더 완전한 모델 복원</strong><br>• 지붕 장비, 계단 난간 등 세부 사항이 원본 모델에 더 가깝게 복원<br>• MEP（설비）보완 — 데이터、통신、조명 등 구성 요소가 왕복 변환에서 누락되지 않음<br><br><strong>더 안정적이고 세심한 사용 경험</strong><br>• 리본 버튼이 더 견고해지고, 문제 발생 시 친절한 메시지로 Revit 작업을 중단하지 않음<br>• 완전한 4개 언어 UI: 繁體中文、English、日本語、한국어<br>• 고객 지원 강화: 대용량 파일 버그 신고 이어받기 지원, 원격 지원 시간 120분으로 연장<br><br><strong>완전히 새로운 ZXBuilder 지오메트리 엔진 2.8 탑재</strong><br>• 초대형 복잡한 장면을 안정적으로 처리하고 컴퓨터에 따라 메모리 사용량을 자동 조정하여 대형 Omniverse 모델도 원활하게 변환<br>• 형상 인식이 더 정확해져 Revit 재구성 결과가 더 충실<br>• 진단 능력이 더 강력하고 독립적이어서 문제 해결이 더 쉬움',
+  un_label:'업그레이드 안내:',
+  un_text:'v5.7.8.3 MSI를 더블 클릭하면 업그레이드됩니다. 업그레이드 후 About 대화 상자에서 라이선스 비활성으로 표시되면 원본 license.txt를 다시 붙여넣어 주세요.',
+  pb_notice:'&#9888; Pre-Beta &middot; MSI는 아직 코드 서명되지 않았습니다. Windows에서 SmartScreen "알 수 없는 게시자" 경고가 표시될 수 있습니다 &mdash; "추가 정보" &rarr; "실행"을 클릭하여 계속 진행하세요. 체험판 액세스는 NDA 적용 대상 &middot; 재배포 금지.',
+  mc_ph:'여기에 머신 코드를 붙여넣으세요 — Revit → Zigma 탭 → About → 머신 코드 복사에서 얻은 긴 hex 문자열입니다',
+  mc_err:'유효한 머신 코드가 아닌 것 같습니다. Revit → Zigma 탭 → About → 머신 코드 복사에서 다시 복사해 주세요.',
+  co_ph:'예: 삼성엔지니어링',nm_ph:'성명',em_ph:'you@company.com',ph_ph:'+82-xxx-xxxx-xxxx',
+  pr_questions:'문의 사항이 있으신가요?',
+  ftr_by:'by',
+  ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.',
+  ftr_contact:'문의:',ftr_location:'타이베이 · 대만'
+}
+};
+function setLang(lang){
+  const t=_ZG[lang]; if(!t) return;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{ const k=el.dataset.i18n; if(t[k]!==undefined) el.innerHTML=t[k]; });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{ const k=el.dataset.i18nPlaceholder; if(t[k]!==undefined) el.setAttribute('placeholder',t[k]); });
+  const hb=document.querySelector('.badge'); if(hb) hb.innerHTML=t.h_badge;
+  const hh=document.querySelector('.hero h1'); if(hh) hh.innerHTML=t.h1;
+  const hp=document.querySelector('.hero p'); if(hp) hp.innerHTML=t.h_sub;
+  document.querySelectorAll('.lbtn').forEach(b=>b.classList.remove('active'));
+  const ab=document.getElementById('lbtn-'+lang); if(ab) ab.classList.add('active');
+  localStorage.setItem('zg_lang',lang);
+  document.documentElement.lang=lang==='zh'?'zh-TW':lang==='ko'?'ko':'ja'===lang?'ja':lang;
+}
+(function(){
+  const s=localStorage.getItem('zg_lang'); const n=navigator.language||'';
+  setLang(s||(n.startsWith('zh')?'zh':n.startsWith('ja')?'ja':n.startsWith('ko')?'ko':'en'));
+})();
+</script>
+</body></html>

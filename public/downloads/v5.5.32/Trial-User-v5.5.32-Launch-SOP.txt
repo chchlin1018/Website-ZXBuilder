@@ -1,0 +1,291 @@
+================================================================
+  Zigma USD Connector · Pre-Beta v5.5.32 · Trial User Launch SOP
+  Reality Matrix AI Inc. · 2026-05-28
+================================================================
+
+⚠️ NDA CONFIDENTIAL · 此文件僅供受邀 trial user 使用
+
+----------------------------------------------------------------
+  Goal: 100% one-time-OK launch · Plugin + Export + Import + Viewer
+  Total time: ~30-45 min (Install + Activate + Smoke test)
+----------------------------------------------------------------
+
+📋 PRE-INSTALL CHECKLIST (5 min)
+
+   [ ] 1. Windows 11 (recommended) · or Windows 10 22H2+
+   [ ] 2. Autodesk Revit 2027 installed at C:\Program Files\Autodesk\Revit 2027\
+   [ ] 3. Revit 2027 FULLY CLOSED (Task Manager 確認無 Revit.exe)
+   [ ] 4. .NET 10 Desktop Runtime installed
+        PowerShell: dotnet --list-runtimes
+        Expected: Microsoft.WindowsDesktop.App 10.0.0 [...]
+        If missing: https://dotnet.microsoft.com/download/dotnet/10.0
+   [ ] 5. Visual C++ 2022 Redistributable (x64) installed ⚠ CRITICAL · v5.5.32 FAIL-STOP
+        Per L298 KL · without this, ZigmaRenderUtil.dll FAILS to load
+        (HRESULT 0x8007007E ERROR_MOD_NOT_FOUND · 99% trial user blocker)
+        Download MANDATORY: https://aka.ms/vs/17/release/vc_redist.x64.exe
+        Verify after install · PowerShell:
+           Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64' | Select Version,Installed
+           Expected: Version >= 14.32 · Installed = 1
+        v5.5.32+ Plugin OnStartup PAPV will auto-detect this AND show
+        red banner in About Dialog if missing (no more cryptic "dll_quarantined")
+   [ ] 6. ~600 MB disk space free
+   [ ] 7. Administrator access (UAC prompt will appear during install)
+
+----------------------------------------------------------------
+  STEP 1 · MSI Install (3-5 min)
+----------------------------------------------------------------
+
+   1. Download ZigmaSetup_v5.5.32_Pre-Beta.msi (132 MB)
+      SHA8 verify: C74ADA62
+      PowerShell:
+         Get-FileHash ZigmaSetup_v5.5.32_Pre-Beta.msi -Algorithm SHA256
+         (First 8 chars should match C74ADA62)
+
+   2. Double-click the MSI
+      Click "Yes" at UAC prompt
+
+   3. Accept Pre-Beta NDA EULA
+
+   4. Click "Install"
+      (Installation includes auto-Defender exclusion · runs as SYSTEM)
+
+   5. Wait ~1-3 minutes for install to complete
+
+   6. Verify install layout:
+      C:\Program Files\Autodesk\Revit\Addins\2027\
+      ├── Zigma.UsdConnector.addin              ← root manifest
+      └── Zigma\                                ← vendor subfolder
+          ├── Zigma.UsdConnector.dll
+          ├── ZigmaRenderUtil.dll
+          ├── tools\
+          │   ├── README.txt + README.zh-TW.txt + README.en.txt + README.ja.txt
+          │   ├── customer-diagnostic.cmd
+          │   ├── customer-diagnostic.ps1
+          │   └── restore-from-defender-quarantine.ps1
+          ├── dist\workers\zigma-worker.exe
+          └── ZigmaWpfViewer\ZigmaWpfViewer.exe
+
+   ✅ PASS CRITERIA: All files above present
+
+----------------------------------------------------------------
+  STEP 2 · Open Revit + Verify Ribbon (2 min)
+----------------------------------------------------------------
+
+   1. Launch Revit 2027
+
+   2. Create new project (or open any existing project)
+
+   3. Switch to "Add-Ins" (附加模組) tab in ribbon
+
+   4. Look for "Zigma USD" panel · should contain:
+      - Export to USD
+      - Import from USD
+      - 3D Viewer
+      - About Zigma
+
+   ✅ PASS CRITERIA: Zigma USD panel visible with 4 buttons
+
+   ❌ IF FAIL · Ribbon missing:
+      - Open Revit Add-Ins Manager (View → User Interface → Add-Ins Manager)
+      - Check if Zigma USD Connector is listed
+      - If listed but disabled: enable + restart Revit
+      - If not listed: re-install MSI · check anti-virus didn't quarantine .dll
+      - Run customer-diagnostic.cmd (see STEP 5 troubleshooting)
+
+----------------------------------------------------------------
+  STEP 3 · License Activation (5 min)
+----------------------------------------------------------------
+
+   1. Click "About Zigma" in ribbon
+
+   2. About Dialog opens · should show:
+      - Version: 5.5.32-release+3A17861E (or similar SHA8)
+      - Build mode: Release (Production · v5.5.32)
+      - Machine Code: <hex string · unique to your machine>
+
+   3. Copy Machine Code (click the copy button OR select + Ctrl+C)
+
+   4. Email Machine Code to: michael.lin@realitymatrixai.com
+      Subject: [Zigma Pre-Beta v5.5.32] Machine Code for activation
+
+   5. Michael sends back License (780-character base64 string)
+      ⚠️ CRITICAL: License will arrive as a .txt FILE ATTACHMENT
+      DO NOT copy from email body (may be word-wrapped/truncated)
+      DO NOT copy from Evernote / Word / Notion (rich text may strip chars)
+
+   6. Open the received .txt file in Notepad
+      Select ALL (Ctrl+A) → Copy (Ctrl+C)
+
+   7. Back in About Dialog · paste License into the text box (Ctrl+V)
+
+   8. Click "Paste & Activate" button
+
+   ✅ PASS CRITERIA:
+      - Status changes from "未授權" (Unauthorized · red) to "已啟動" (Activated · green)
+      - F01-F07 features all show "Enabled"
+      - No popup error
+      - No red banner about Defender quarantine
+
+   ❌ IF FAIL · Red banner "License length error":
+      - Re-paste from the .txt file (not from email body)
+
+   ❌ IF FAIL · Red banner "Defender quarantine detected":
+      - Click "Open tools/" button in popup
+      - Run restore-from-defender-quarantine.ps1 as Administrator
+      - Then retry activation
+
+   ----------------------------------------------------------------
+     STEP 3.5 · NEW v5.5.32 · About Dialog 一鍵修復按鈕
+   ----------------------------------------------------------------
+
+   若 License paste-activate 失敗 OR Defender 隔離了 DLL ·
+   不需要找 script · 直接點 About Dialog 內的按鈕即可:
+
+      [Diagnostic]         : 一鍵跑診斷 · 自動產出桌面 .txt +
+                             Email 草稿 + .zip · Explorer drag-drop
+      [Restore Quarantine] : 一鍵還原 Defender 隔離 (UAC 提示) ·
+                             三層 fallback chain
+      [Open README]        : 開啟對應語言 README (zh-TW / en / ja)
+
+   預設行為 (v5.5.32):
+      - License 已啟動: Diagnostic + Restore 為 Disabled (不需要)
+      - License 啟動失敗: 兩按鈕 Enabled + 紅字 Step 1/Step 2 引導
+      - Open README 任何時候皆可用
+
+   按鈕語言隨上方 RadioButton (English / 中文 / 日本語) 切換。
+   ⚠️ Round-3 empirical verification pending · 若按鈕失靈
+      請改用 §5 手動 path (customer-diagnostic.cmd /
+      restore-from-defender-quarantine.ps1).
+
+----------------------------------------------------------------
+  STEP 4 · Smoke Test · Export + Import + Viewer (15-20 min)
+----------------------------------------------------------------
+
+   Recommended test model:
+      Snowdon Towers Sample HVAC.rvt
+      Location: C:\Program Files\Autodesk\Revit 2027\Samples\
+
+   ### 4.1 · Export to USD (~5 min for HVAC ~2627 elements)
+
+   1. Open Snowdon Towers Sample HVAC.rvt in Revit 2027
+
+   2. Click "Export to USD" in Zigma ribbon
+
+   3. (Default output: %LOCALAPPDATA%\Zigma\usdc\)
+      Or browse to your preferred location
+
+   4. Click "Start Export"
+      Progress bar shows phases · ~3-5 min for HVAC
+
+   ✅ PASS CRITERIA:
+      - Export completes without error popup
+      - Output USDC file ~169 MB (for HVAC)
+      - Final dialog shows "Export Complete"
+
+   ### 4.2 · 3D Viewer · Load Exported USDC (~2 min)
+
+   1. Click "3D Viewer" in Zigma ribbon
+      (Or: launch ZigmaWpfViewer.exe directly from
+       C:\Program Files\Autodesk\Revit\Addins\2027\Zigma\ZigmaWpfViewer\)
+
+   2. Viewer window opens
+
+   3. Click "Open USDC" · select the exported HVAC USDC file
+
+   4. Wait for USD load (~30 sec to 2 min depending on element count)
+
+   ✅ PASS CRITERIA:
+      - Viewer window opens (no crash · no __fastfail error)
+      - HVAC model renders in 3D
+      - You can rotate / pan / zoom with mouse
+      - ~5268 elements visible (per verified baseline)
+
+   ❌ IF FAIL · Viewer crash before load:
+      - Wait few seconds · sometimes graphics init takes time
+      - Check Windows Event Viewer · Application log for crash details
+      - Email michael.lin@realitymatrixai.com
+
+   ### 4.3 · Import USDC back to new Revit project (~5 min)
+
+   1. In Revit 2027 · create NEW empty project (File → New → Architectural)
+
+   2. Click "Import from USD" in Zigma ribbon
+
+   3. Browse to the exported HVAC USDC file · select · Open
+
+   4. Click "Start Import"
+      Multiple progress phases · ~3-5 min for HVAC
+
+   ✅ PASS CRITERIA:
+      - Import completes without error
+      - Element count in new project: ~2627 (matches source HVAC)
+      - Visual inspection: HVAC elements visible · placed at correct location
+      - Final dialog shows "Import Complete · K-gate scoreboard"
+
+----------------------------------------------------------------
+  STEP 5 · IF ANY STEP FAILED · Troubleshooting
+----------------------------------------------------------------
+
+   PRIMARY PATH (NEW v5.5.32 · One-Click via About Dialog):
+
+      1. Open Revit 2027 -> Zigma USD ribbon -> About Zigma
+      2. Click [Diagnostic] button in the About Dialog
+      3. Outlook (or default mail client) will auto-open a draft
+         with the .txt diagnostic file already attached + a
+         pre-filled subject [Zigma Pre-Beta v5.5.32] + body
+      4. Click Send · done.
+
+   MANUAL FALLBACK (use if About Dialog button fails OR you have
+   no default mail client configured):
+
+      1. Open File Explorer:
+         C:\Program Files\Autodesk\Revit\Addins\2027\Zigma\tools\
+
+      2. Double-click: customer-diagnostic.cmd
+
+      3. Wait ~30 sec · Notepad will auto-open with diagnostic report
+
+      4. The report (Zigma-Diagnostic-<computer>-<time>.txt) will be on your Desktop
+
+      5. Email the .txt as attachment to:
+         michael.lin@realitymatrixai.com
+         Subject: [Zigma Pre-Beta v5.5.32] <brief problem description>
+
+----------------------------------------------------------------
+  STEP 6 · Sign-off Email (after all PASS)
+----------------------------------------------------------------
+
+   Send email to: michael.lin@realitymatrixai.com
+   Subject: [Zigma Pre-Beta v5.5.32] Launch verification PASS
+
+   Body template:
+   ────────────────────────────────────────
+   Hi Michael,
+
+   v5.5.32 verification complete:
+   - Install: PASS (vendor Zigma\ subfolder confirmed)
+   - Ribbon: PASS (4 buttons visible)
+   - License activation: PASS (status green · F01-F07 enabled)
+   - Export HVAC USDC: PASS (~169 MB output)
+   - Viewer load: PASS (HVAC rendered · 5268 elements)
+   - Import back to new project: PASS (~2627 elements)
+   - Defender quarantine: <none / fired once / persists>
+
+   No errors encountered.
+
+   Best,
+   <your name>
+   ────────────────────────────────────────
+
+----------------------------------------------------------------
+  Contact
+----------------------------------------------------------------
+
+   Email: michael.lin@realitymatrixai.com
+   Subject prefix: [Zigma Pre-Beta v5.5.32]
+
+   ⚠️ NDA: Do NOT forward to anyone who has not signed NDA
+   ⚠️ Pre-Beta: Internal testing only · NOT for production use
+
+(C) 2026 Reality Matrix AI Inc. · 實矩科技 · All rights reserved.
+================================================================
