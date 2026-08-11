@@ -1,7 +1,7 @@
 {
-  "zigma_version": "5.7.8.3",
-  "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.3-pre-beta/ZigmaSetup_v5.7.8.3_Pre-Beta.msi",
-  "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.3-pre-beta/ZigmaSetup_v5.7.8.3_Pre-Beta.zip",
-  "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.8.3-pre-beta",
-  "notes": "v5.7.8.3 — 全新 ZXBuilder 品牌識別;匯入保真與穩定性改進(樓梯、房間高度、設備放置修正);相容既有專案。已知事項詳見 What's New。"
+  "zigma_version": "5.7.8.4",
+  "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.4-pre-beta/ZigmaSetup_v5.7.8.4_Pre-Beta.msi",
+  "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.4-pre-beta/ZigmaSetup_v5.7.8.4_Pre-Beta.zip",
+  "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.8.4-pre-beta",
+  "notes": "v5.7.8.4 — 大型倉庫模型匯入大幅加速;知識庫更新;穩定性與保真改進。相容既有專案。"
 }
