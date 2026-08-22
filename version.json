@@ -3,5 +3,5 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.7-pre-beta/ZigmaSetup_v5.7.8.7_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.7-pre-beta/ZigmaSetup_v5.7.8.7_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.8.7-pre-beta",
-  "notes": "v5.7.8.7 Pre-Beta 已發布。本版為預覽版本,供評估與測試使用;正式版將另行公告。已安裝舊版的用戶可直接安裝本版,原有安裝不受影響。安裝說明與診斷工具請見官網。"
+  "notes": "v5.7.8.7 Pre-Beta 已發布。本版為預覽版本,供評估與測試使用;正式版將另行公告。已安裝舊版的用戶可直接安裝本版,原有安裝不受影響。安裝說明與診斷工具請見官網。　本版另含 v5.7.8.7-r2 修正:(1) 同款零件在同一場景中出現多次時,現可正常匯回 —— 每個實例依自身位置生成,不再因彼此同款而整批中止;(2) 以參照方式組成的場景,現可由「USD → Zigma ZX」正常轉換;(3) ZX 產出相關按鈕現已在正式版顯示(先前僅於內部版本可見),功能與內部版本相同;(4) 轉換完成訊息與失敗原因說明,現在如實反映實際處理結果。版本編號不變,重新下載安裝即可取得本修正。"
 }
