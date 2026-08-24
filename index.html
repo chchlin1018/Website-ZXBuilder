@@ -120,6 +120,10 @@ footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--bd);font-s
   <br>
   <span style="color:rgba(255,255,255,.5);font-size:.76rem">Corporate IT policy blocking the .msi? ZIP version:</span>&nbsp;
   <a href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.7-pre-beta/ZigmaSetup_v5.7.8.7_Pre-Beta.zip" style="color:#FFD700;text-decoration:underline;font-weight:600" title="If your network or corporate IT policy blocks the .msi download, get this .zip instead, extract it, then run the MSI inside."  data-i18n="zip_link">MSI in ZIP (.zip)</a>
+  <div style="margin-top:.65rem">
+    <a class="dl-btn" style="margin:0 .45rem .4rem 0;display:inline-block" href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.7-pre-beta/ZigmaSetup_v5.7.8.7_Pre-Beta.msi" data-i18n="dl_std" title="Standard trial build with online license activation &mdash; EV code-signed MSI">Download Trial (Standard)</a>
+    <a class="dl-btn" style="margin:0 0 .4rem 0;display:inline-block" href="#trial" data-i18n="dl_airgap" title="Fully offline build for air-gapped / secure environments &mdash; zero network calls. Request access via the trial form; a download link is provided on approval.">Download AirGap Edition</a>
+  </div>
 </div>
 <!-- What's New v5.7.8.7 (centered column · segmented · readable) -->
 <div style="text-align:center;max-width:900px;margin:0.3rem auto 1.1rem;padding:0.6rem 1.5rem 0.9rem;background:rgba(0,0,0,.15);line-height:1.85">
@@ -327,7 +331,7 @@ async function writeTrialRequestRecord(data){
 }
 const _ZG={
 en:{
-  nav_about:'About Us',nav_howto:'How To',nav_trial:'Free Trial',nav_pricing:'Pricing',nav_dl:'Download Trial',
+  nav_about:'About Us',nav_howto:'How To',nav_trial:'Free Trial',nav_pricing:'Pricing',nav_dl:'Download Trial',dl_std:'Download Trial (Standard)',dl_airgap:'Download AirGap Edition',
   h_badge:'OpenUSD Native &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
   h1:'Bidirectional <em>USD&#8596;Revit</em><br>for Industrial Digital Twins',
   h_sub:'OpenUSD holds the industrial digital twin. Your MEP team works in Autodesk Revit. ZXBuilder bridges them &mdash; bringing USD precision into Revit, and syncing Revit MEP back to USD.',
@@ -376,7 +380,7 @@ en:{
   ftr_contact:'Contact:',ftr_location:'Taipei, Taiwan'
 },
 zh:{
-  nav_about:'關於我們',nav_howto:'操作指引',nav_trial:'免費試用',nav_pricing:'授權方案',nav_dl:'下載試用版',
+  nav_about:'關於我們',nav_howto:'操作指引',nav_trial:'免費試用',nav_pricing:'授權方案',nav_dl:'下載試用版',dl_std:'下載試用版(標準版)',dl_airgap:'下載 AirGap 離線版',
   h_badge:'OpenUSD 原生 &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
   h1:'雙向 <em>USD&#8596;Revit</em><br>為工業數位孿生而生',
   h_sub:'OpenUSD 承載工業數位孿生。MEP 團隊在 Autodesk Revit 工作。ZXBuilder 橋接兩者 &mdash; 將 USD 精準數據帶入 Revit，並將 Revit MEP 同步回 USD。',
@@ -425,7 +429,7 @@ zh:{
   ftr_contact:'聯絡我們：',ftr_location:'臺北 · 臺灣'
 },
 ja:{
-  nav_about:'会社について',nav_howto:'使い方',nav_trial:'無料トライアル',nav_pricing:'ライセンスプラン',nav_dl:'トライアル版ダウンロード',
+  nav_about:'会社について',nav_howto:'使い方',nav_trial:'無料トライアル',nav_pricing:'ライセンスプラン',nav_dl:'トライアル版ダウンロード',dl_std:'トライアル版ダウンロード(標準)',dl_airgap:'AirGap オフライン版ダウンロード',
   h_badge:'OpenUSD ネイティブ &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
   h1:'双方向 <em>USD&#8596;Revit</em><br>産業デジタルツイン向け',
   h_sub:'OpenUSD が産業デジタルツインを保持します。MEP チームは Autodesk Revit で作業します。ZXBuilder が両者を橋渡しし、USD の精度を Revit に取り込み、Revit MEP を USD に同期します。',
@@ -474,7 +478,7 @@ ja:{
   ftr_contact:'お問い合わせ：',ftr_location:'台北 · 台湾'
 },
 ko:{
-  nav_about:'회사 소개',nav_howto:'사용 방법',nav_trial:'무료 체험판',nav_pricing:'라이선스 플랜',nav_dl:'체험판 다운로드',
+  nav_about:'회사 소개',nav_howto:'사용 방법',nav_trial:'무료 체험판',nav_pricing:'라이선스 플랜',nav_dl:'체험판 다운로드',dl_std:'체험판 다운로드(표준)',dl_airgap:'AirGap 오프라인 에디션 다운로드',
   h_badge:'OpenUSD 네이티브 &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
   h1:'양방향 <em>USD&#8596;Revit</em><br>산업용 디지털 트윈을 위한',
   h_sub:'OpenUSD가 산업용 디지털 트윈을 담당합니다. MEP 팀은 Autodesk Revit에서 작업합니다. ZXBuilder가 양쪽을 연결하여 &mdash; USD의 정밀 데이터를 Revit으로 가져오고, Revit MEP를 다시 USD로 동기화합니다.',
