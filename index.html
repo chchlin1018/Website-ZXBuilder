@@ -89,6 +89,15 @@ footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--bd);font-s
 
 .ftr-logo{height:30px;width:auto;vertical-align:-6px;display:inline-block}
 .ftr-logo-c{height:28px;width:auto;vertical-align:-5px;display:inline-block;opacity:.9}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.svc{background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:1.3rem 1.4rem}
+.svc h3{color:#fff;font-size:1rem;margin-bottom:.5rem}
+.svc p{color:var(--dm);font-size:.86rem;line-height:1.7}
+.svc-brand{display:flex;align-items:center;justify-content:center;gap:.6rem;margin-bottom:1rem}
+.svc-brand img{height:44px;width:auto}
+.svc-brand .svc-word{color:#fff;font-weight:800;font-size:1.35rem;letter-spacing:-.02em}
+.ftr-tm{display:block;margin-top:.6rem;font-size:.74rem;color:rgba(255,255,255,.55);line-height:1.6}
+@media(max-width:700px){.svc-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -107,6 +116,7 @@ footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--bd);font-s
     <a href="#howto" data-i18n="nav_howto">How To</a>
     <a href="#trial" data-i18n="nav_trial">Free Trial</a>
     <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+    <a href="#services" data-i18n="nav_services">Services</a>
     <a class="dl-btn" href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.7-pre-beta/ZigmaSetup_v5.7.8.7_Pre-Beta.msi" data-i18n="nav_dl" title="Pre-Beta v5.7.8.7 (97.4 MB) &mdash; single multilingual MSI &middot; EV code-signed">Download Trial</a>
   </div>
 </nav>
@@ -230,10 +240,27 @@ footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--bd);font-s
 <div style="text-align:center;margin-top:1.5rem;font-size:.85rem;color:var(--dm)"><span data-i18n="pr_questions">Questions?</span> <a href="mailto:dev@realitymatrixai.com">dev@realitymatrixai.com</a></div>
 </section>
 
+<!-- Services (software services offered under the ZXBuilder mark) -->
+<section class="section" id="services">
+<div style="text-align:center;margin-bottom:1.6rem">
+  <div class="svc-brand"><img src="img/zxbuilder-lockup.png" alt="ZXBuilder"><span class="svc-word">ZXBuilder<sup style="font-size:.6em;font-weight:500">&trade;</sup></span></div>
+  <h2 style="font-size:1.5rem;color:#fff" data-i18n="sv_title">ZXBuilder Software Services</h2>
+  <p style="color:var(--dm);font-size:.9rem;margin-top:.5rem" data-i18n="sv_sub">Beyond the downloadable Revit plug-in, Reality Matrix AI Inc. provides the following software services under the ZXBuilder name.</p>
+</div>
+<div class="svc-grid">
+  <div class="svc"><h3 data-i18n="sv1h">Online Licensing &amp; Trial-Key Service</h3><p data-i18n="sv1p">A hosted service operated by Reality Matrix AI: submit your Machine Code on this site and the ZXBuilder license service issues a 7-day trial key. Enterprise and Individual licenses are issued and activated through the same service.</p></div>
+  <div class="svc"><h3 data-i18n="sv2h">Software Design &amp; Development</h3><p data-i18n="sv2p">We design, develop and maintain ZXBuilder &mdash; computer software for converting, translating and exchanging 3D model and BIM data between OpenUSD and Autodesk Revit &mdash; and develop customer-specific USD part libraries (ZF USDC) and USD &harr; Revit data-exchange workflows on request.</p></div>
+  <div class="svc"><h3 data-i18n="sv3h">Software Updates &amp; Maintenance</h3><p data-i18n="sv3p">Regular ZXBuilder releases with What&apos;s New notes, corrective updates, and maintenance for licensed customers. Upgrade by installing the latest version.</p></div>
+  <div class="svc"><h3 data-i18n="sv4h">Technical Consulting, Integration &amp; Training</h3><p data-i18n="sv4p">Consulting on USD &harr; Autodesk Revit deployment for industrial digital twins, integration support for your BIM and OpenUSD pipelines, and training for engineering teams. Priority support &amp; training are included with Enterprise licenses.</p></div>
+</div>
+<div style="text-align:center;margin-top:1.5rem"><a href="mailto:dev@realitymatrixai.com" class="btn btn-ac" style="text-decoration:none" data-i18n="sv_cta">Ask about ZXBuilder services</a></div>
+</section>
+
 <footer>
   <img class="ftr-logo" src="img/zxbuilder-lockup.png" alt="ZXBuilder"> <span data-i18n="ftr_by">by</span> <a href="https://www.realitymatrixai.com"><img class="ftr-logo-c" src="img/rmai-lockup.png" alt="Reality Matrix AI Inc."></a><br>
   <span data-i18n="ftr_copyright">&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.</span><br>
   <span style="margin-top:.5rem;display:inline-block"><span data-i18n="ftr_contact">Contact:</span> <a href="mailto:dev@realitymatrixai.com">dev@realitymatrixai.com</a> &middot; <span data-i18n="ftr_location">Taipei, Taiwan</span></span>
+  <span class="ftr-tm" data-i18n="ftr_tm">ZXBuilder&trade;, the Z logo, Reality Matrix AI&trade; and the cube logo are trademarks of Reality Matrix AI Inc.</span>
 </footer>
 
 <script>
@@ -377,7 +404,8 @@ en:{
   pr_questions:'Questions?',
   ftr_by:'by',
   ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.',
-  ftr_contact:'Contact:',ftr_location:'Taipei, Taiwan'
+  ftr_contact:'Contact:',ftr_location:'Taipei, Taiwan',
+  nav_services:'Services',sv_title:'ZXBuilder Software Services',sv_sub:'Beyond the downloadable Revit plug-in, Reality Matrix AI Inc. provides the following software services under the ZXBuilder name.',sv1h:'Online Licensing &amp; Trial-Key Service',sv1p:'A hosted service operated by Reality Matrix AI: submit your Machine Code on this site and the ZXBuilder license service issues a 7-day trial key. Enterprise and Individual licenses are issued and activated through the same service.',sv2h:'Software Design &amp; Development',sv2p:'We design, develop and maintain ZXBuilder &mdash; computer software for converting, translating and exchanging 3D model and BIM data between OpenUSD and Autodesk Revit &mdash; and develop customer-specific USD part libraries (ZF USDC) and USD &harr; Revit data-exchange workflows on request.',sv3h:'Software Updates &amp; Maintenance',sv3p:'Regular ZXBuilder releases with What&apos;s New notes, corrective updates, and maintenance for licensed customers. Upgrade by installing the latest version.',sv4h:'Technical Consulting, Integration &amp; Training',sv4p:'Consulting on USD &harr; Autodesk Revit deployment for industrial digital twins, integration support for your BIM and OpenUSD pipelines, and training for engineering teams. Priority support &amp; training are included with Enterprise licenses.',sv_cta:'Ask about ZXBuilder services',ftr_tm:'ZXBuilder&trade;, the Z logo, Reality Matrix AI&trade; and the cube logo are trademarks of Reality Matrix AI Inc.'
 },
 zh:{
   nav_about:'關於我們',nav_howto:'操作指引',nav_trial:'免費試用',nav_pricing:'授權方案',nav_dl:'下載試用版',dl_std:'下載試用版(標準版)',dl_airgap:'下載 AirGap 離線版',
@@ -426,7 +454,8 @@ zh:{
   pr_questions:'有任何問題？',
   ftr_by:'由',
   ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;) 版權所有',
-  ftr_contact:'聯絡我們：',ftr_location:'臺北 · 臺灣'
+  ftr_contact:'聯絡我們：',ftr_location:'臺北 · 臺灣',
+  nav_services:'服務',sv_title:'ZXBuilder 軟體服務',sv_sub:'除可下載的 Revit 外掛程式之外，實矩科技 Reality Matrix AI Inc. 以 ZXBuilder 名義提供下列軟體服務。',sv1h:'線上授權與試用金鑰服務',sv1p:'由實矩科技營運的線上服務：在本站提交 Machine Code，ZXBuilder 授權服務即核發 7 天試用金鑰；企業版與個人版授權亦經由同一服務核發與啟用。',sv2h:'軟體設計與開發',sv2p:'我們設計、開發並維護 ZXBuilder —— 在 OpenUSD 與 Autodesk Revit 之間轉換、翻譯與交換 3D 模型與 BIM 資料的電腦軟體；並可依需求為客戶開發專屬 USD 零件庫（ZF USDC）與 USD &harr; Revit 資料交換流程。',sv3h:'軟體更新與維護',sv3p:'定期發布 ZXBuilder 新版並附版本說明，提供修正更新與授權客戶之維護服務；安裝最新版本即可升級。',sv4h:'技術諮詢、導入整合與教育訓練',sv4p:'提供工業數位孿生之 USD &harr; Autodesk Revit 導入諮詢、BIM 與 OpenUSD 流程整合支援，以及工程團隊教育訓練；企業版授權內含優先支援與教育訓練。',sv_cta:'洽詢 ZXBuilder 服務',ftr_tm:'ZXBuilder&trade;、Z 圖形標誌、Reality Matrix AI&trade; 與立方體圖形標誌均為 Reality Matrix AI Inc.（實矩科技）之商標。'
 },
 ja:{
   nav_about:'会社について',nav_howto:'使い方',nav_trial:'無料トライアル',nav_pricing:'ライセンスプラン',nav_dl:'トライアル版ダウンロード',dl_std:'トライアル版ダウンロード(標準)',dl_airgap:'AirGap オフライン版ダウンロード',
@@ -475,7 +504,8 @@ ja:{
   pr_questions:'ご質問は？',
   ftr_by:'by',
   ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.',
-  ftr_contact:'お問い合わせ：',ftr_location:'台北 · 台湾'
+  ftr_contact:'お問い合わせ：',ftr_location:'台北 · 台湾',
+  nav_services:'サービス',sv_title:'ZXBuilder ソフトウェアサービス',sv_sub:'ダウンロード型 Revit プラグインに加え、Reality Matrix AI Inc. は ZXBuilder の名称で以下のソフトウェアサービスを提供します。',sv1h:'オンラインライセンス・トライアルキー発行サービス',sv1p:'Reality Matrix AI が運用するホスト型サービス：本サイトで Machine Code を送信すると、ZXBuilder ライセンスサービスが 7 日間のトライアルキーを発行します。Enterprise / Individual ライセンスも同じサービスで発行・有効化されます。',sv2h:'ソフトウェアの設計・開発',sv2p:'OpenUSD と Autodesk Revit の間で 3D モデルおよび BIM データを変換・翻訳・交換するソフトウェア ZXBuilder を設計・開発・保守し、ご要望に応じて顧客専用の USD パーツライブラリ（ZF USDC）や USD &harr; Revit データ交換ワークフローを開発します。',sv3h:'ソフトウェアの更新・保守',sv3p:'リリースノート付きの定期リリース、修正アップデート、ライセンス顧客向けの保守を提供します。最新版をインストールするだけでアップグレードできます。',sv4h:'技術コンサルティング・導入・トレーニング',sv4p:'産業用デジタルツイン向け USD &harr; Autodesk Revit 導入のコンサルティング、BIM / OpenUSD パイプラインとの統合支援、エンジニアリングチーム向けトレーニングを提供します。Enterprise ライセンスには優先サポートとトレーニングが含まれます。',sv_cta:'ZXBuilder サービスについて問い合わせる',ftr_tm:'ZXBuilder&trade;、Z ロゴ、Reality Matrix AI&trade; およびキューブロゴは Reality Matrix AI Inc. の商標です。'
 },
 ko:{
   nav_about:'회사 소개',nav_howto:'사용 방법',nav_trial:'무료 체험판',nav_pricing:'라이선스 플랜',nav_dl:'체험판 다운로드',dl_std:'체험판 다운로드(표준)',dl_airgap:'AirGap 오프라인 에디션 다운로드',
@@ -524,7 +554,8 @@ ko:{
   pr_questions:'문의 사항이 있으신가요?',
   ftr_by:'by',
   ftr_copyright:'&copy; 2026 Reality Matrix AI Inc. (&#23526;&#30697;&#31185;&#25216;). All rights reserved.',
-  ftr_contact:'문의:',ftr_location:'타이베이 · 대만'
+  ftr_contact:'문의:',ftr_location:'타이베이 · 대만',
+  nav_services:'서비스',sv_title:'ZXBuilder 소프트웨어 서비스',sv_sub:'다운로드형 Revit 플러그인 외에도 Reality Matrix AI Inc.는 ZXBuilder 이름으로 다음 소프트웨어 서비스를 제공합니다.',sv1h:'온라인 라이선스 및 체험 키 발급 서비스',sv1p:'Reality Matrix AI가 운영하는 호스팅 서비스: 이 사이트에서 Machine Code를 제출하면 ZXBuilder 라이선스 서비스가 7일 체험 키를 발급합니다. Enterprise / Individual 라이선스도 동일한 서비스를 통해 발급 및 활성화됩니다.',sv2h:'소프트웨어 설계 및 개발',sv2p:'OpenUSD와 Autodesk Revit 간에 3D 모델 및 BIM 데이터를 변환·번역·교환하는 소프트웨어 ZXBuilder를 설계·개발·유지보수하며, 요청 시 고객 전용 USD 부품 라이브러리(ZF USDC)와 USD &harr; Revit 데이터 교환 워크플로를 개발합니다.',sv3h:'소프트웨어 업데이트 및 유지보수',sv3p:'릴리스 노트가 포함된 정기 릴리스, 수정 업데이트, 라이선스 고객을 위한 유지보수를 제공합니다. 최신 버전을 설치하면 업그레이드됩니다.',sv4h:'기술 컨설팅, 통합 및 교육',sv4p:'산업용 디지털 트윈을 위한 USD &harr; Autodesk Revit 도입 컨설팅, BIM 및 OpenUSD 파이프라인 통합 지원, 엔지니어링 팀 교육을 제공합니다. Enterprise 라이선스에는 우선 지원과 교육이 포함됩니다.',sv_cta:'ZXBuilder 서비스 문의',ftr_tm:'ZXBuilder&trade;, Z 로고, Reality Matrix AI&trade; 및 큐브 로고는 Reality Matrix AI Inc.의 상표입니다.'
 }
 };
 function setLang(lang){
