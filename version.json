@@ -1,8 +1,8 @@
 {
-  "zigma_version": "5.7.8.8",
+  "zigma_version": "5.7.8.9",
   "display_version": "5.7.8.9-r2",
-  "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.8-pre-beta/ZigmaSetup_v5.7.8.8_Pre-Beta.msi",
-  "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.8-pre-beta/ZigmaSetup_v5.7.8.8_Pre-Beta.zip",
+  "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.9-pre-beta/ZigmaSetup_v5.7.8.9_Pre-Beta.msi",
+  "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.8.9-pre-beta/ZigmaSetup_v5.7.8.9_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.8.8-pre-beta",
   "notes": "ZXBuilder v5.7.8.8:匯回更穩 —— 缺件不錯接、警告不再中斷、設備正確落樓層;授權提示更清楚。"
 }
