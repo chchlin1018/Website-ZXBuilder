@@ -4,5 +4,5 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.0-pre-beta/ZigmaSetup_v5.7.9.0_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.0-pre-beta/ZigmaSetup_v5.7.9.0_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.0-pre-beta",
-  "notes": "ZXBuilder v5.7.9.0:新增批次多檔轉檔、標準版 Revit 免外掛開啟。"
+  "notes": "ZXBuilder v5.7.9.0:新增批次多檔轉檔、匯出之 Zigma USDC 可由 ZXBuilder 匯入 Revit;其他檢視器相容性依能力對照表。"
 }
