@@ -9,8 +9,11 @@
     "version": "0.1.0.0",
     "display_version": "0.1.0.0-r1",
     "stage": "pre-beta",
-    "download_url": "__ZXFSM_DOWNLOAD_URL__",
-    "sha256": "__ZXFSM_SHA256__",
-    "notes": "ZXFabStandardManager pre-beta — companion desktop tool for ZF USDC part-library standards. Draft entry (RM164); URL/SHA filled when the asset is on a public release."
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.1.0.0-r1/ZXFabStandardManager-0.1.0.0-r1-release-reactor-96109CED.zip",
+    "sha256": "1CB43FE9795482163A9E0050CFDB9583DD20506428BC6A2203BB101572D31DC4",
+    "bytes": 82804856,
+    "released_at": "2026-09-15T22:44:37+08:00",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.1.0.0-r1",
+    "notes": "ZXFabStandardManager pre-beta — companion desktop tool for ZF USDC part-library standards. Trial preview; unzip and run, no installer. Feature gaps listed in the user guide."
   }
 }
