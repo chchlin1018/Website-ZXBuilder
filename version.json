@@ -1,13 +1,13 @@
 {
   "zigma_version": "5.7.9.1",
-  "display_version": "5.7.9.1-r4",
+  "display_version": "5.7.9.1-r5",
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.1-pre-beta/ZigmaSetup_v5.7.9.1_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.1-pre-beta/ZigmaSetup_v5.7.9.1_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.1-pre-beta",
   "notes": "ZXBuilder v5.7.9.1:新增電管與電管配件建庫並匯回為原生 Revit 元件;管徑表外拒收、逐品類原生比例統計等十六項功能與修正;沿用現有授權碼。",
   "zxfsm": {
     "version": "0.1.0.0",
-    "display_version": "0.1.0.0-r1",
+    "display_version": "5.7.9.1-r5",
     "stage": "pre-beta",
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.1.0.0-r1/ZXFabStandardManager-0.1.0.0-r1-release-reactor-96109CED.zip",
     "sha256": "1CB43FE9795482163A9E0050CFDB9583DD20506428BC6A2203BB101572D31DC4",
