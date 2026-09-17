@@ -6,14 +6,15 @@
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.2-pre-beta",
   "notes": "ZXBuilder v5.7.9.2:牆、樓板、天花板與高架地板匯回為 Revit 原生元件;新增 IFC 匯入與匯出及離線版安裝檔等十二項功能;沿用現有授權碼。",
   "zxfsm": {
-    "version": "0.1.0.0",
-    "display_version": "0.1.0.0-r1",
+    "version": "0.2.0.0",
+    "display_version": "0.2.0.0",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.1.0.0-r1/ZXFabStandardManager-0.1.0.0-r1-release-reactor-96109CED.zip",
-    "sha256": "1CB43FE9795482163A9E0050CFDB9583DD20506428BC6A2203BB101572D31DC4",
-    "bytes": 82804856,
-    "released_at": "2026-09-15T22:44:37+08:00",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.1.0.0-r1",
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.2.0.0/ZXFabStandardManager-0.2.0.0.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.2.0.0/ZXFabStandardManager-0.2.0.0.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.2.0.0",
+    "sha256": "47217F350D1A9900F003262FE9399E71DBE80B660AFBF78C41658A5C46EB6E83",
+    "bytes": 82668123,
+    "published_at": "2026-09-17T22:06:44+08:00",
     "notes": "ZXFabStandardManager pre-beta — companion desktop tool for ZF USDC part-library standards. Trial preview; unzip and run, no installer. Feature gaps listed in the user guide."
   }
 }
