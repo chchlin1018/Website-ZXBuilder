@@ -116,23 +116,24 @@ footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--bd);font-s
     <a href="#howto" data-i18n="nav_howto">How To</a>
     <a href="#trial" data-i18n="nav_trial">Free Trial</a>
     <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+    <a href="#downloads">Downloads</a>
     <a href="#services" data-i18n="nav_services">Services</a>
     <a class="dl-btn" href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta.msi" data-i18n="nav_dl" title="Pre-Beta v5.7.9.2 (157 MB) &mdash; single multilingual MSI &middot; EV code-signed">Download Trial</a>
   </div>
 </nav>
 
 <!-- Version + Troubleshooting downloads (centered · red text · matches About Dialog version) -->
-<div style="text-align:center;padding:0.5rem 1.5rem 0.3rem;font-size:.82rem;background:rgba(0,0,0,.15)">
+<div id="downloads" style="text-align:center;padding:0.5rem 1.5rem 0.3rem;font-size:.82rem;background:rgba(0,0,0,.15)">
   <span style="color:#ff4d4d;font-weight:700;font-size:.85rem">Latest Version: 5.7.9.2 (Pre-Beta)</span>
   <br>
   <span style="color:rgba(255,255,255,.5);font-size:.76rem">Install guide:</span>&nbsp;
-  <a href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/README.txt" style="color:#FFD700;text-decoration:underline;font-weight:600" title="Pre-Beta installation guide + troubleshooting (4-language)"  data-i18n="rm_label">README.txt</a>
+  <a href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/README.txt" style="color:#FFD700;text-decoration:underline;font-weight:600" title="Pre-Beta installation guide + troubleshooting (4-language)"  data-i18n="rm_label">README.txt (TXT)</a>
   <br>
   <span style="color:rgba(255,255,255,.5);font-size:.76rem">Corporate IT policy blocking the .msi? ZIP version:</span>&nbsp;
   <a href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta.zip" style="color:#FFD700;text-decoration:underline;font-weight:600" title="If your network or corporate IT policy blocks the .msi download, get this .zip instead, extract it, then run the MSI inside."  data-i18n="zip_link">MSI in ZIP (.zip)</a>
   <div style="margin-top:.65rem">
     <a class="dl-btn" style="margin:0 .45rem .4rem 0;display:inline-block" href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta.msi" data-i18n="dl_std" title="Standard trial build with online license activation &mdash; EV code-signed MSI">Download Trial (Standard)</a>
-    <a class="dl-btn" style="margin:0 0 .4rem 0;display:inline-block" href="#trial" data-i18n="dl_airgap" title="Fully offline build for air-gapped / secure environments &mdash; zero network calls. Request access via the trial form; a download link is provided on approval.">Download AirGap Edition</a>
+    <a class="dl-btn" style="margin:0 0 .4rem 0;display:inline-block" href="https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta_airgap.msi" data-i18n="dl_airgap" title="Fully offline build for air-gapped / secure environments &mdash; zero network calls.">Download AirGap Edition</a>
   </div>
   <div style="color:rgba(255,255,255,.5);font-size:.74rem;margin-top:.2rem">
     <span style="font-family:var(--m)">SHA-256 (msi): D9026DEE3BABB38A99E625A5950C460C2CA4B4C8C83B8251E41A6B500E2F8855 &middot; 164,610,048 bytes &middot; 2026-09-17T19:39:21+08:00</span>
@@ -422,7 +423,7 @@ en:{
   ent_feat:'1,000 import/export operations<br>Up to 20,000 elements per operation<br>Priority support & training<br>Works offline &mdash; no network required',
   ind_feat:'300 import/export operations<br>Up to 10,000 elements per operation<br>Standard support<br>Works offline &mdash; no network required',
   contact_btn:'Contact Sales',
-  rm_label:'README.txt',
+  rm_label:'README.txt (TXT)',
   zip_label:'Corporate IT policy blocking the .msi? ZIP version:',zip_link:'MSI in ZIP (.zip)',
   wn_label:"What's New v5.7.9.2:",
   wn_text:"<strong>What&#39;s new in 5.7.9.2</strong> ZXBuilder 5.7.9.2 focuses on building elements: walls, floors, ceilings and raised floors now come back into Revit as native elements you can edit directly, and beams and columns carry their original level and grid relationships into the part library.<br>1. Walls, floors, ceilings and raised floors are imported back as native Revit system family elements<br>2. When walls and floors are imported back, their types are resolved by matching type names in your project<br>3. Ceilings and raised floors are imported back as native Revit categories, keeping height offset and finish face height<br>4. Multi-layer compound walls keep each layer&#39;s thickness and order in the part library<br>5. Beams and columns carry their original level and grid relationships into the part library (recorded by element ID, not just by name)<br>6. Structural columns are placed at the intersection of two grid lines<br>7. If no usable type, geometry or level can be found during import, the element is not forced into the model<br>8. When a part library is rebuilt with the new version, existing parts keep exactly the same IDs and content, and the version number increments<br>9. During import, each connector is read back for its actual size after it is connected, and compared with the straight pipe it joins<br>10. Floors and raised floors likewise keep their compound construction layers, layer by layer, in the part library<br>11. IFC import and export (two new buttons on the ribbon panel: &quot;IFC to USD&quot; and &quot;USD to IFC&quot;)<br>12. Offline (Air-gap) edition installer<br>For full details and known limitations, please see the <a href=docs/ZXBuilder-5.7.9.2-WhatsNew-zh.pdf>Chinese What&#39;s New document</a>.",
@@ -472,7 +473,7 @@ zh:{
   ent_feat:'1,000 次匯入/匯出<br>最多 20,000 元件／每次操作<br>優先支援和培訓<br>支援離線模式 &mdash; 無需網路連線',
   ind_feat:'300 次匯入/匯出<br>最多 10,000 元件／每次操作<br>標準支援<br>支援離線模式 &mdash; 無需網路連線',
   contact_btn:'聯絡銷售',
-  rm_label:'README.txt',
+  rm_label:'README.txt (TXT)',
   zip_label:'公司 IT 政策封鎖 .msi?改用 ZIP 版:',zip_link:'ZIP 內含 MSI (.zip)',
   wn_label:'v5.7.9.2 更新內容：',
   wn_text:'<strong>5.7.9.2 更新內容</strong> ZXBuilder 5.7.9.2 集中處理建築構件:牆、樓板、天花板、高架地板匯回 Revit 之後是可以直接編輯的原生元件,梁與柱則能帶著原本所屬的樓層與軸網關係進入零件庫。<br>一、牆、樓板、天花板、高架地板匯回為 Revit 原生系統族元件<br>二、牆與樓板匯回時,型別依專案內同名的型別解析<br>三、天花板與高架地板匯回為 Revit 原生類別,並保留高程偏移與完成面高度<br>四、多層複合牆進入零件庫後,每一層的厚度與排列順序都會保留<br>五、梁與柱進入零件庫時,會帶著它原本所屬的樓層與軸網關係(記的是元素編號,不只是名稱)<br>六、結構柱會對到兩條軸線的交點上<br>七、匯回時若找不到可用的型別、算不出幾何或對不到樓層,該構件不會被勉強建出來<br>八、用新版重建零件庫時,舊零件的編號與內容完全不變,版號遞增<br>九、匯回時,每個接口接上後會重新讀回實際口徑,並與所接直管比對<br>十、樓板與高架地板進入零件庫後,複合構造層同樣逐層保留<br>十一、IFC 匯入與匯出(功能區面板新增「IFC 轉 USD」與「USD 轉 IFC」兩顆按鈕)<br>十二、離線(Air-gap)版安裝檔<br>完整說明與已知限制請見<a href=docs/ZXBuilder-5.7.9.2-WhatsNew-zh.pdf>中文版 What&#39;s New 文件</a>。',
@@ -522,7 +523,7 @@ ja:{
   ent_feat:'1,000 回インポート/エクスポート<br>最大 20,000 エレメント／オペレーション<br>優先サポート & トレーニング<br>オフライン対応 &mdash; ネットワーク接続不要',
   ind_feat:'300 回インポート/エクスポート<br>最大 10,000 エレメント／オペレーション<br>標準サポート<br>オフライン対応 &mdash; ネットワーク接続不要',
   contact_btn:'営業へお問い合わせ',
-  rm_label:'README.txt',
+  rm_label:'README.txt (TXT)',
   zip_label:'社内 IT ポリシーで .msi がブロックされる場合の ZIP 版:',zip_link:'ZIP内のMSI (.zip)',
   wn_label:'v5.7.9.2 の新機能：',
   wn_text:'<strong>5.7.9.2 の更新内容</strong> ZXBuilder 5.7.9.2 は建築部材に重点を置いたバージョンです。<br>1. 壁、床、天井、二重床を Revit ネイティブのシステムファミリ要素として読み込み<br>2. 壁と床の読み込み時、タイプはプロジェクト内の同名タイプで解決<br>3. 天井と二重床を Revit ネイティブのカテゴリとして読み込み、高さオフセットと仕上げ面高さを保持<br>4. 多層の複合壁を部品ライブラリに登録すると、各層の厚さと並び順を保持<br>5. 梁と柱を部品ライブラリに登録する際、元のレベルおよび通芯との関係を保持(名前だけでなく要素番号で記録)<br>6. 構造柱を 2 本の通芯の交点に配置<br>7. 読み込み時に使用可能なタイプが見つからない、形状を計算できない、またはレベルと対応付けられない部材は、無理に作成しません<br>8. 新しいバージョンで部品ライブラリを再構築しても、既存部品の番号と内容はそのまま、バージョン番号のみ繰り上げ<br>9. 読み込み時、各接続口の接続後に実際の口径を読み直し、接続先の直管と照合<br>10. 床・二重床も部品ライブラリに登録すると、複合構造の各層をそのまま保持<br>11. IFC のインポートとエクスポート(リボンパネルに新しいボタン「IFC を USD へ」と「USD を IFC へ」を追加)<br>12. オフライン(Air-gap)版インストーラー<br>詳しい説明と既知の制限は、<a href=docs/ZXBuilder-5.7.9.2-WhatsNew-zh.pdf>中国語版 What&#39;s New</a> をご覧ください。',
@@ -572,7 +573,7 @@ ko:{
   ent_feat:'1,000회 가져오기/내보내기<br>작업당 최대 20,000개 요소<br>우선 지원 및 교육<br>오프라인 작동 &mdash; 네트워크 불필요',
   ind_feat:'300회 가져오기/내보내기<br>작업당 최대 10,000개 요소<br>일반 지원<br>오프라인 작동 &mdash; 네트워크 불필요',
   contact_btn:'영업팀 문의',
-  rm_label:'README.txt',
+  rm_label:'README.txt (TXT)',
   zip_label:'사내 IT 정책으로 .msi가 차단되나요? ZIP 버전:',zip_link:'ZIP 내 MSI (.zip)',
   wn_label:'v5.7.9.2 새로운 기능:',
   wn_text:'<strong>5.7.9.2 업데이트 내용</strong> ZXBuilder 5.7.9.2는 건축 부재에 집중합니다: 벽·바닥·천장·이중 바닥은 Revit으로 가져온 뒤 바로 편집 가능한 네이티브 요소가 되고, 보와 기둥은 원래의 레벨·그리드 관계를 가진 채 부품 라이브러리에 들어갑니다.<br>1. 벽·바닥·천장·이중 바닥을 Revit 네이티브 시스템 패밀리 요소로 가져오기<br>2. 벽과 바닥을 가져올 때 유형은 프로젝트 내 같은 이름의 유형으로 해석<br>3. 천장과 이중 바닥을 Revit 네이티브 카테고리로 가져오고 높이 오프셋·마감면 높이 유지<br>4. 다층 복합 벽을 부품 라이브러리에 넣으면 층별 두께와 순서를 모두 유지<br>5. 보와 기둥을 부품 라이브러리에 넣을 때 원래의 레벨·그리드 관계를 함께 기록(이름뿐 아니라 요소 번호로)<br>6. 구조 기둥을 두 그리드선의 교차점에 맞춤<br>7. 가져올 때 쓸 유형이 없거나 형상 계산·레벨 대응이 안 되는 부재는 억지로 만들지 않음<br>8. 새 버전으로 부품 라이브러리를 다시 만들 때 기존 부품의 번호·내용은 그대로, 버전 번호만 증가<br>9. 가져올 때 연결점마다 연결 후 실제 구경을 다시 읽어 연결된 직관과 비교<br>10. 바닥과 이중 바닥도 부품 라이브러리에 넣으면 복합 구조 층을 층별로 그대로 유지<br>11. IFC 가져오기 및 내보내기(리본 패널에 새 버튼 &quot;IFC→USD&quot;와 &quot;USD→IFC&quot; 추가)<br>12. 오프라인(Air-gap) 에디션 설치 프로그램<br>전체 설명과 알려진 제한 사항은 <a href=docs/ZXBuilder-5.7.9.2-WhatsNew-zh.pdf>중국어판 What&#39;s New 문서</a>를 참고해 주십시오.',
