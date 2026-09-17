@@ -5,6 +5,23 @@
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.2-pre-beta",
   "notes": "ZXBuilder v5.7.9.2:牆、樓板、天花板與高架地板匯回為 Revit 原生元件;新增 IFC 匯入與匯出及離線版安裝檔等十二項功能;沿用現有授權碼。",
+  "sha256": "D9026DEE3BABB38A99E625A5950C460C2CA4B4C8C83B8251E41A6B500E2F8855",
+  "bytes": 164610048,
+  "published_at": "2026-09-17T19:39:21+08:00",
+  "zxsample": {
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxsample-5792/ZXSample5792-0456FCED.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxsample-5792",
+    "sha256": "0456FCED119BE18ADAAB1AE73F5B21C44C8FFA8FF61631BBF92ED762CC07CBE3",
+    "bytes": 1783052,
+    "published_at": "2026-09-17T19:51:17+08:00"
+  },
+  "documents": {
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5792-zh/ZXBuilder-5792-Documents-zh-20260917.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxbuilder-docs-5792-zh",
+    "sha256": "B30EDD514496838E4E7A50B2517018A0E7D0CA0A4EE33B557BD00B70D5982E2F",
+    "bytes": 7640139,
+    "published_at": "2026-09-17T20:14:04+08:00"
+  },
   "zxfsm": {
     "version": "0.2.0.0",
     "display_version": "0.2.0.0",
