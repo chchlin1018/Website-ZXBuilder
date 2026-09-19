@@ -4,9 +4,9 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.2-pre-beta",
-  "notes": "v5.7.9.2-r2: duct fitting connections (Exhaust/Pumping); ZF lib rebuild keeps part keys by default",
-  "sha256": "494B62DFC89C78B3479341AC5CE90915C792BCE28B893052B121C2F997F69B1A",
-  "bytes": 164999168,
+  "notes": "v5.7.9.2-r4: native cable trays at scene size; pipe elbow angles; one-point elbow/reducer placement",
+  "sha256": "8FCBF3AC0458F7E3ACD03C77A158B9D5B65D86CE5D82ED58243A7735E109F5D5",
+  "bytes": 164966400,
   "published_at": "2026-09-17T19:39:21+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.2-pre-beta/ZigmaSetup_v5.7.9.2_Pre-Beta_airgap.msi",
