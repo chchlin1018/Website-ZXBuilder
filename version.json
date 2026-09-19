@@ -7,7 +7,7 @@
   "notes": "v5.7.9.3-r2: fixes ducts not created across Revit languages; sets duct system type if project has it",
   "sha256": "75AB127FD8820A6698ECA0D6FA1EDB1297376617D1C88C8E7E18BC921740D5C6",
   "bytes": 163553280,
-  "published_at": "2026-09-19T15:09:12+08:00",
+  "published_at": "2026-09-19T21:46:02+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta_airgap.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.3-pre-beta",
