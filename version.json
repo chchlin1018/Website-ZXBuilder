@@ -30,15 +30,15 @@
     "published_at": "2026-09-17T20:14:04+08:00"
   },
   "zxfsm": {
-    "version": "0.2.0.0",
-    "display_version": "0.2.0.0",
+    "version": "0.3.0.0",
+    "display_version": "0.3.0.0",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.2.0.0/ZXFabStandardManager-0.2.0.0.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.2.0.0/ZXFabStandardManager-0.2.0.0.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.2.0.0",
-    "sha256": "47217F350D1A9900F003262FE9399E71DBE80B660AFBF78C41658A5C46EB6E83",
-    "bytes": 82668123,
-    "published_at": "2026-09-17T22:06:44+08:00",
-    "notes": "ZXFabStandardManager pre-beta — companion desktop tool for ZF USDC part-library standards. Trial preview; unzip and run, no installer. Feature gaps listed in the user guide."
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.3.0.0/ZXFabStandardManager-0.3.0.0.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.3.0.0/ZXFabStandardManager-0.3.0.0.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.3.0.0",
+    "sha256": "17D5D2BA3C4DAAD95D5B9393C1E13D99D8FDF5493762B403C9B152F0F5C7EAC5",
+    "bytes": 83165701,
+    "published_at": "2026-09-19T21:34:27+08:00",
+    "notes": "ZXFabStandardManager 0.3 pre-beta — adds a parts classification graph view, a new standard package format for ZXBuilder, and a smoother hand-off with ZXBuilder (recent files, source tagging). Trial preview; unzip and run, no installer."
   }
 }
