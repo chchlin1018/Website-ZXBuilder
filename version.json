@@ -4,9 +4,9 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.3-pre-beta",
-  "notes": "v5.7.9.3: reads ZX Fab Standard Manager standards on re-import; includes 5.7.9.2-r4 fixes",
-  "sha256": "4973D9D9B46E5A5BBC303D80CE4DB1B340DFFDF48D000CEEEB9AB08FB3F56973",
-  "bytes": 163708928,
+  "notes": "v5.7.9.3-r2: fixes ducts not created across Revit languages; sets duct system type if project has it",
+  "sha256": "75AB127FD8820A6698ECA0D6FA1EDB1297376617D1C88C8E7E18BC921740D5C6",
+  "bytes": 163553280,
   "published_at": "2026-09-19T15:09:12+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta_airgap.msi",
