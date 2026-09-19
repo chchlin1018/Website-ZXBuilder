@@ -4,7 +4,7 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.3-pre-beta",
-  "notes": "v5.7.9.3: works with ZX Fab Standard Manager standards; ribbon launcher; includes 5.7.9.2-r4 fixes",
+  "notes": "v5.7.9.3: reads ZX Fab Standard Manager standards on re-import; includes 5.7.9.2-r4 fixes",
   "sha256": "4973D9D9B46E5A5BBC303D80CE4DB1B340DFFDF48D000CEEEB9AB08FB3F56973",
   "bytes": 163708928,
   "published_at": "2026-09-19T15:09:12+08:00",
