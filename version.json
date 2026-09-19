@@ -39,6 +39,6 @@
     "sha256": "17D5D2BA3C4DAAD95D5B9393C1E13D99D8FDF5493762B403C9B152F0F5C7EAC5",
     "bytes": 83165701,
     "published_at": "2026-09-19T21:34:27+08:00",
-    "notes": "ZXFabStandardManager 0.3 pre-beta — adds a parts classification graph view, a new standard package format for ZXBuilder, and a smoother hand-off with ZXBuilder (recent files, source tagging). Trial preview; unzip and run, no installer."
+    "notes": "ZXFabStandardManager 0.3 pre-beta — adds a parts classification graph view, a new standard package format for ZXBuilder, and a smoother hand-off with ZXBuilder (source tagging). Trial preview; unzip and run, no installer."
   }
 }
