@@ -16,11 +16,11 @@
     "published_at": "2026-09-19T15:09:12+08:00"
   },
   "zxsample": {
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxsample-5793-r2/ZXSample5793-r2-A86ED139.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxsample-5793-r2",
-    "sha256": "A86ED139E298E449A5FE056B0EDC167D8113AA361DF588FD05C3DF8DD0AFDE61",
-    "bytes": 2183619,
-    "published_at": "2026-09-20T01:23:53+08:00"
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxsample-5793-r4/ZXSample5793-r4-E9083C2A.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxsample-5793-r4",
+    "sha256": "E9083C2A46CF78F0FA584BDD88C4974CFDF3809FFC1C104BC3E381AE3E883B18",
+    "bytes": 2185881,
+    "published_at": "2026-09-20T14:44:02+08:00"
   },
   "documents": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5792-zh/ZXBuilder-5792-Documents-zh-20260917.zip",
