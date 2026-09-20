@@ -4,9 +4,9 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.3-pre-beta",
-  "notes": "v5.7.9.3-r2: fixes ducts not created across Revit languages; sets duct system type if project has it",
-  "sha256": "75AB127FD8820A6698ECA0D6FA1EDB1297376617D1C88C8E7E18BC921740D5C6",
-  "bytes": 163553280,
+  "notes": "v5.7.9.3-r4: duct system types can follow your own standard file; clearer oval-duct and dialog text",
+  "sha256": "4B3E2167E68ABC025FF62541D847EE0E838C70049C9BBC29230793E2CBA133D2",
+  "bytes": 163573760,
   "published_at": "2026-09-19T21:46:02+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta_airgap.msi",
