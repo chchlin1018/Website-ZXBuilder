@@ -4,9 +4,9 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.3-pre-beta",
-  "notes": "v5.7.9.3-r4: duct system types can follow your own standard file; clearer oval-duct and dialog text",
-  "sha256": "4B3E2167E68ABC025FF62541D847EE0E838C70049C9BBC29230793E2CBA133D2",
-  "bytes": 163573760,
+  "notes": "v5.7.9.3-r5: fittings placed from one point now connect through turns and tees on ducts and pipes",
+  "sha256": "2AE0464CFA235D0F6019AE44ECE8DAA93BBDE1FDB36FAB17C15013227B6B0722",
+  "bytes": 163807232,
   "published_at": "2026-09-20T12:24:39+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta_airgap.msi",
