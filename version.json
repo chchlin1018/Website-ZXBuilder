@@ -7,7 +7,7 @@
   "notes": "v5.7.9.3-r5: fittings placed from one point now connect through turns and tees on ducts and pipes",
   "sha256": "2AE0464CFA235D0F6019AE44ECE8DAA93BBDE1FDB36FAB17C15013227B6B0722",
   "bytes": 163807232,
-  "published_at": "2026-09-20T12:24:39+08:00",
+  "published_at": "2026-09-22T07:25:22+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta_airgap.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.3-pre-beta",
