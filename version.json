@@ -23,11 +23,11 @@
     "published_at": "2026-09-20T14:44:02+08:00"
   },
   "documents": {
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5793-r4-zh/ZXBuilder-5793-r4-Documents-zh-20260920.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxbuilder-docs-5793-r4-zh",
-    "sha256": "EDD940A39145B83DBFCC208EA0EB0157F6E2B883F1C12B245F6432AFE53A5722",
-    "bytes": 7332904,
-    "published_at": "2026-09-20T15:48:20+08:00"
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5793-r6-zh/ZXBuilder-5793-r6-Documents-zh-20260922.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxbuilder-docs-5793-r6-zh",
+    "sha256": "768A970F4B178A84D686276C0600A25352257699ED380011C62B182E6444DF07",
+    "bytes": 7336031,
+    "published_at": "2026-09-22T18:08:18+08:00"
   },
   "zxfsm": {
     "version": "0.3.0.0-r1",
