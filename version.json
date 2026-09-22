@@ -4,9 +4,9 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.7.9.3-pre-beta",
-  "notes": "v5.7.9.3-r5: fittings placed from one point now connect through turns and tees on ducts and pipes",
-  "sha256": "2AE0464CFA235D0F6019AE44ECE8DAA93BBDE1FDB36FAB17C15013227B6B0722",
-  "bytes": 163807232,
+  "notes": "v5.7.9.3-r6: cable tray width/height from the scene file verified on customer files; same code as r5",
+  "sha256": "91A02377928958C2C0D5A0DEF363F9BD7FCBE12545421E6BE60F2248576402E2",
+  "bytes": 162816000,
   "published_at": "2026-09-22T07:25:22+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.7.9.3-pre-beta/ZigmaSetup_v5.7.9.3_Pre-Beta_airgap.msi",
