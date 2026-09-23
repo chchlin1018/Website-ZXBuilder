@@ -30,15 +30,15 @@
     "published_at": "2026-09-24T01:27:54+08:00"
   },
   "zxfsm": {
-    "version": "0.3.0.0-r1",
-    "display_version": "0.3.0.0-r1",
+    "version": "0.5.0.0",
+    "display_version": "0.5.0.0",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.3.0.0-r1/ZXFabStandardManager-0.3.0.0-r1.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.3.0.0-r1/ZXFabStandardManager-0.3.0.0-r1.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.3.0.0-r1",
-    "sha256": "E7F9784B4E3C7D0CD462492C9782C2A927391E068354AC435C189F789EDC388E",
-    "bytes": 83232098,
-    "published_at": "2026-09-20T03:38:29+08:00",
-    "notes": "ZXFabStandardManager 0.3 pre-beta — adds a parts classification graph view, a new standard package format for ZXBuilder, and a smoother hand-off with ZXBuilder (source tagging). 0.3.0.0-r1 adds the third-party license notices (THIRD-PARTY-NOTICES.md and the licenses folder) to the package; the program files are unchanged and the About box still shows 0.3.0.0. Trial preview; unzip and run, no installer."
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0/ZXFabStandardManager-0.5.0.0-win-x64.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0/ZXFabStandardManager-0.5.0.0-win-x64.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.5.0.0",
+    "sha256": "E3A1D913B1D3F7C5E2204DA8B8CD91E2D2A4B65688CB9454643862B8005C03AE",
+    "bytes": 69533333,
+    "published_at": "2026-09-24T01:41:30+08:00",
+    "notes": "Adds PI AF mapping. Build the mapping table between Revit-language standards (Category / Family / Type / Parameter) and PI Asset Framework elements and attributes, configure it graphically, version each revision, export it, and publish to a PI AF Server. Ships the standard package that ZXBuilder uses to validate ZF USDC parts and ZX USDC scenes."
   }
 }
