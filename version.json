@@ -4,30 +4,30 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta",
-  "notes": "v5.8.0.0-r6: cable tray width/height from the scene file verified on customer files; same code as r5",
-  "sha256": "91A02377928958C2C0D5A0DEF363F9BD7FCBE12545421E6BE60F2248576402E2",
-  "bytes": 162816000,
-  "published_at": "2026-09-22T17:38:37+08:00",
+  "notes": "v5.8.0.0: ZXBuilder exports zx:iot:* PI/AF attributes (schema semantics) in USDC output.",
+  "sha256": "04DA542319185F9D92298836EED758D35825F685B993829EDB1B89186B4016D3",
+  "bytes": 163983360,
+  "published_at": "2026-09-24T01:25:32+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta_airgap.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta",
-    "sha256": "F661AB51E60477E02565532D29B60FD9B8035027DE65945DA0AEF434C4288F42",
-    "bytes": 163233792,
-    "published_at": "2026-09-19T15:09:12+08:00"
+    "sha256": "53A9CF21DFA2BD8B08E0954F0E48B7F7829FB9F8116BFDBD3D4C8B6E7953F349",
+    "bytes": 163524608,
+    "published_at": "2026-09-24T01:25:32+08:00"
   },
   "zxsample": {
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxsample-5793-r4/ZXSample5793-r4-E9083C2A.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxsample-5793-r4",
-    "sha256": "E9083C2A46CF78F0FA584BDD88C4974CFDF3809FFC1C104BC3E381AE3E883B18",
-    "bytes": 2185881,
-    "published_at": "2026-09-20T14:44:02+08:00"
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxsample-5800/ZXSample5800-0980120B.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxsample-5800",
+    "sha256": "0980120B50E30F3BD1B287CCE5AAE647FFAE1429876606A6EA22FA941959A094",
+    "bytes": 2244302,
+    "published_at": "2026-09-24T01:27:49+08:00"
   },
   "documents": {
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5793-r6-zh/ZXBuilder-5793-r6-Documents-zh-20260922.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxbuilder-docs-5793-r6-zh",
-    "sha256": "768A970F4B178A84D686276C0600A25352257699ED380011C62B182E6444DF07",
-    "bytes": 7336031,
-    "published_at": "2026-09-22T18:08:18+08:00"
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5800-zh/ZXBuilder-5800-Documents-zh-v3.3-20260923.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxbuilder-docs-5800-zh",
+    "sha256": "D7EDBC6886925C3FFB94BE838FFBE13CB123CAB38237BF03209BFB1B5DD207B3",
+    "bytes": 8591816,
+    "published_at": "2026-09-24T01:27:54+08:00"
   },
   "zxfsm": {
     "version": "0.3.0.0-r1",
