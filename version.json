@@ -30,15 +30,15 @@
     "published_at": "2026-09-24T01:59:28+08:00"
   },
   "zxfsm": {
-    "version": "0.5.0.0",
-    "display_version": "0.5.0.0",
+    "version": "0.5.0.0-r1",
+    "display_version": "0.5.0.0-r1",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0/ZXFabStandardManager-0.5.0.0-win-x64.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0/ZXFabStandardManager-0.5.0.0-win-x64.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.5.0.0",
-    "sha256": "E3A1D913B1D3F7C5E2204DA8B8CD91E2D2A4B65688CB9454643862B8005C03AE",
-    "bytes": 69533333,
-    "published_at": "2026-09-24T01:41:30+08:00",
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0-r1/ZXFabStandardManager-0.5.0.0-r1-win-x64.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0-r1/ZXFabStandardManager-0.5.0.0-r1-win-x64.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.5.0.0-r1",
+    "sha256": "AD879DE452A85C66A1933754B1C04967BF7AF09D21FAC9B45FEE9F7A31EBB14C",
+    "bytes": 82233509,
+    "published_at": "2026-09-24T06:56:23+08:00",
     "notes": "Adds PI AF mapping. Build the mapping table between Revit-language standards (Category / Family / Type / Parameter) and PI Asset Framework elements and attributes, configure it graphically, version each revision, export it, and publish to a PI AF Server. Ships the standard package that ZXBuilder uses to validate ZF USDC parts and ZX USDC scenes."
   }
 }
