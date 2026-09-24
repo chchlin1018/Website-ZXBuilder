@@ -4,9 +4,9 @@
   "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta.msi",
   "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta",
-  "notes": "v5.8.0.0-r1: TDengine SQL export, ZXEquipmentId parameter name, PI/AF data_ref and category fixes.",
-  "sha256": "4E45F612E57F14553C6C21FB0D78AC63FA19CEB4E751C35B3A5CA07F5DF4DD54",
-  "bytes": 164057088,
+  "notes": "v5.8.0.0-r2: reducer and tee fitting connection fixes; failed connections now listed by element id.",
+  "sha256": "2619D195957EEF1D7650239279870051EA8AFE3475A1DED73A80503508C8992B",
+  "bytes": 164163584,
   "published_at": "2026-09-24T16:33:58+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta_airgap.msi",
