@@ -7,7 +7,7 @@
   "notes": "v5.8.0.0-r1: TDengine SQL export, ZXEquipmentId parameter name, PI/AF data_ref and category fixes.",
   "sha256": "4E45F612E57F14553C6C21FB0D78AC63FA19CEB4E751C35B3A5CA07F5DF4DD54",
   "bytes": 164057088,
-  "published_at": "2026-09-24T01:25:32+08:00",
+  "published_at": "2026-09-24T16:33:58+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta_airgap.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta",
