@@ -7,7 +7,7 @@
   "notes": "v5.8.0.0-r2: reducer and tee fitting connection fixes; failed connections now listed by element id.",
   "sha256": "2619D195957EEF1D7650239279870051EA8AFE3475A1DED73A80503508C8992B",
   "bytes": 164163584,
-  "published_at": "2026-09-24T16:33:58+08:00",
+  "published_at": "2026-09-24T23:00:52+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta_airgap.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta",
