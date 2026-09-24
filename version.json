@@ -30,15 +30,15 @@
     "published_at": "2026-09-24T01:59:28+08:00"
   },
   "zxfsm": {
-    "version": "0.5.0.0-r1",
-    "display_version": "0.5.0.0-r1",
+    "version": "0.6.0.0",
+    "display_version": "0.6.0.0",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0-r1/ZXFabStandardManager-0.5.0.0-r1-win-x64.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.5.0.0-r1/ZXFabStandardManager-0.5.0.0-r1-win-x64.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.5.0.0-r1",
-    "sha256": "AD879DE452A85C66A1933754B1C04967BF7AF09D21FAC9B45FEE9F7A31EBB14C",
-    "bytes": 82233509,
-    "published_at": "2026-09-24T06:56:23+08:00",
-    "notes": "Adds PI AF mapping. Build the mapping table between Revit-language standards (Category / Family / Type / Parameter) and PI Asset Framework elements and attributes, configure it graphically, version each revision, export it, and publish to a PI AF Server. Ships the standard package that ZXBuilder uses to validate ZF USDC parts and ZX USDC scenes."
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0/ZXFabStandardManager-0.6.0.0-win-x64.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0/ZXFabStandardManager-0.6.0.0-win-x64.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.6.0.0",
+    "sha256": "7E0AAEC2000A61B740D7529F083B08A48F27F6D576666BF442EF1ADE4EA08050",
+    "bytes": 82246520,
+    "published_at": "2026-09-24T08:53:02+08:00",
+    "notes": "Adds an interactive Relationships view: highlight an item's neighbors, focus on 1 to 3 levels around it, show mapped PI AF templates and attributes, mark mapped and unmapped items, show mapping-table versions, search by name, and use a force-directed layout by default. Keeps all PI AF mapping features of 0.5 and the standard package that ZXBuilder uses to validate ZF USDC parts and ZX USDC scenes."
   }
 }
