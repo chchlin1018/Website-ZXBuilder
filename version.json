@@ -30,15 +30,15 @@
     "published_at": "2026-09-24T09:13:18+08:00"
   },
   "zxfsm": {
-    "version": "0.6.0.0",
-    "display_version": "0.6.0.0",
+    "version": "0.6.0.0-r1",
+    "display_version": "0.6.0.0-r1",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0/ZXFabStandardManager-0.6.0.0-win-x64.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0/ZXFabStandardManager-0.6.0.0-win-x64.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.6.0.0",
-    "sha256": "7E0AAEC2000A61B740D7529F083B08A48F27F6D576666BF442EF1ADE4EA08050",
-    "bytes": 82246520,
-    "published_at": "2026-09-24T08:53:02+08:00",
-    "notes": "Adds an interactive Relationships view: highlight an item's neighbors, focus on 1 to 3 levels around it, show mapped PI AF templates and attributes, mark mapped and unmapped items, show mapping-table versions, search by name, and use a force-directed layout by default. Keeps all PI AF mapping features of 0.5 and the standard package that ZXBuilder uses to validate ZF USDC parts and ZX USDC scenes."
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0-r1/ZXFabStandardManager-0.6.0.0-r1-win-x64.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0-r1/ZXFabStandardManager-0.6.0.0-r1-win-x64.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.6.0.0-r1",
+    "sha256": "B52C99C7426919AAB101EBBB02330CC0B46C0CE3B6A26AF0664225FE4B3DA35B",
+    "bytes": 82268082,
+    "published_at": "2026-09-24T17:51:16+08:00",
+    "notes": "Adds IoT points that need no Revit parameter (PI AF mapping window or 3D view side panel), with kind and per-backend names for AVEVA PI AF, TDengine and AVEVA Historian in the exported package; exports each template's Revit built-in category name so ZXBuilder matches templates in any Revit language. Packages remain readable by ZXBuilder 5.8.0.0."
   }
 }
