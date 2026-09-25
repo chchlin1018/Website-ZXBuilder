@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="msvalidate.01" content="6325F170C8E28644F93D4A10820E6ED9" />
 <title>ZXBuilder — Bidirectional USD↔Revit Builder for Industrial Digital Twins</title>
-<meta name="description" content="ZXBuilder — bidirectional USD ↔ Revit plugin for semiconductor fabs and industrial digital twins. OpenUSD-native, single-USDC SSOT. Pre-Beta on Revit 2027.">
+<meta name="description" content="ZXBuilder — bidirectional USD ↔ Revit plugin for semiconductor fabs and industrial digital twins. OpenUSD-native, single-USDC SSOT. Pre-Beta on Revit 2026 &amp; 2027.">
 <link rel="canonical" href="https://www.zxbuilder.club/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233b7dff'/%3E%3Cstop offset='100%25' stop-color='%237aa8ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='18' fill='%230a0b0f'/%3E%3Ctext x='50' y='72' font-family='Arial,sans-serif' font-weight='900' font-size='72' fill='url(%23g)' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
@@ -20,9 +20,9 @@
 <meta property="og:locale:alternate" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ZXBuilder — USD ↔ Revit Builder">
-<meta name="twitter:description" content="OpenUSD-native USD ↔ Revit plugin for industrial digital twins. Pre-Beta on Revit 2027.">
+<meta name="twitter:description" content="OpenUSD-native USD ↔ Revit plugin for industrial digital twins. Pre-Beta on Revit 2026 &amp; 2027.">
 <meta name="twitter:image" content="https://www.zxbuilder.club/img/step2-about.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ZXBuilder","operatingSystem":"Windows 10/11","applicationCategory":"DesignApplication","description":"Bidirectional USD \u2194 Revit plugin for OpenUSD-native industrial digital twin workflows.","softwareVersion":"5.8.0.0","releaseNotes":"https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta","downloadUrl":"https://www.zxbuilder.club/","requirements":"Autodesk Revit 2027 (64-bit Windows 10/11). .NET 10 and Visual C++ runtime are included or provided by Revit - no separate install needed.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/PreOrder","description":"Pre-Beta trial \u2014 request via website form"},"publisher":{"@type":"Organization","name":"Reality Matrix AI Inc.","url":"https://www.realitymatrixai.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ZXBuilder","operatingSystem":"Windows 10/11","applicationCategory":"DesignApplication","description":"Bidirectional USD \u2194 Revit plugin for OpenUSD-native industrial digital twin workflows.","softwareVersion":"5.8.0.0","releaseNotes":"https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta","downloadUrl":"https://www.zxbuilder.club/","requirements":"Autodesk Revit 2026 or 2027 (64-bit Windows 10/11). The .NET runtime (.NET 8 for Revit 2026, .NET 10 for Revit 2027) and Visual C++ runtime are included or provided by Revit - no separate install needed.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/PreOrder","description":"Pre-Beta trial \u2014 request via website form"},"publisher":{"@type":"Organization","name":"Reality Matrix AI Inc.","url":"https://www.realitymatrixai.com"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -228,7 +228,7 @@ footer{text-align:center;padding:3rem 2rem;border-top:1px solid var(--bd);font-s
 <div class="banner-pb" data-i18n="pb_notice">&#9888; Pre-Beta &middot; Signed with an EV code-signing certificate &mdash; the publisher now shows as <strong>Reality Matrix AI Inc.</strong> Windows SmartScreen may still show an &quot;unrecognized app&quot; prompt on a newly released build (download reputation, not the signature): click More info &rarr; Run anyway. Trial access is NDA-bound &middot; do not redistribute.</div>
 
 <section class="hero">
-  <div class="badge">OpenUSD Native &middot; USD&#8596;Revit &middot; Autodesk Revit 2027</div>
+  <div class="badge">OpenUSD Native &middot; USD&#8596;Revit &middot; Autodesk Revit 2026 / 2027</div>
   <h1>Bidirectional <em>USD&#8596;Revit</em><br>for Industrial Digital Twins</h1>
   <p>OpenUSD holds the industrial digital twin. Your MEP team works in Autodesk Revit. ZXBuilder bridges them — bringing USD precision into Revit, and syncing Revit MEP back to USD.</p>
 </section>
@@ -442,7 +442,7 @@ async function writeTrialRequestRecord(data){
 const _ZG={
 en:{
   nav_about:'About Us',nav_howto:'How To',nav_trial:'Free Trial',nav_pricing:'Pricing',nav_dl:'Download Trial',dl_std:'Download Trial (Standard)',dl_airgap:'Download AirGap Edition',dl_r27:'Revit 2027 edition',dl_r26:'Revit 2026 edition',dl_kind_normal:'Standard installer (MSI)',dl_kind_airgap:'Offline (AirGap) installer (MSI)',dl_soon:'Coming soon',dl_m_ver:'Version',dl_m_size:'Size',dl_m_time:'Published',dl_m_more:'(show full)',dl_m_copy:'Copy',zxfsm_label:'Companion tool — <span style="color:#4ade80">ZX Fab Standard Manager, ZXFSM</span> Latest Version: 0.6.0.0-r1 (Fab Standard Manager)',zxfsm_dl:'Download ZX Fab Standard Manager, ZXFSM',zxfsm_ver:'Version 0.6.0.0-r1 · pre-beta · Trial Preview',
-  h_badge:'OpenUSD Native &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h_badge:'OpenUSD Native &middot; USD&#8596;Revit &middot; Autodesk Revit 2026 / 2027',
   h1:'Bidirectional <em>USD&#8596;Revit</em><br>for Industrial Digital Twins',
   h_sub:'OpenUSD holds the industrial digital twin. Your MEP team works in Autodesk Revit. ZXBuilder bridges them &mdash; bringing USD precision into Revit, and syncing Revit MEP back to USD.',
   s1h:'Download & Install',s1p:'Run MSI installer. Zigma tab appears in Revit.',
@@ -492,7 +492,7 @@ en:{
 },
 zh:{
   nav_about:'關於我們',nav_howto:'操作指引',nav_trial:'免費試用',nav_pricing:'授權方案',nav_dl:'下載試用版',dl_std:'下載試用版(標準版)',dl_airgap:'下載 AirGap 離線版',dl_r27:'Revit 2027 版',dl_r26:'Revit 2026 版',dl_kind_normal:'一般安裝檔(MSI)',dl_kind_airgap:'離線(AirGap)安裝檔(MSI)',dl_soon:'即將提供',dl_m_ver:'版本',dl_m_size:'檔案大小',dl_m_time:'發布時間',dl_m_more:'(展開完整碼)',dl_m_copy:'複製',zxfsm_label:'配套工具 — <span style="color:#4ade80">ZX Fab Standard Manager, ZXFSM</span> Latest Version: 0.6.0.0-r1（廠務零件庫標準管理器）',zxfsm_dl:'下載 ZX Fab Standard Manager, ZXFSM',zxfsm_ver:'版本 0.6.0.0-r1 · 試用預覽版 pre-beta',
-  h_badge:'OpenUSD 原生 &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h_badge:'OpenUSD 原生 &middot; USD&#8596;Revit &middot; Autodesk Revit 2026 / 2027',
   h1:'雙向 <em>USD&#8596;Revit</em><br>為工業數位孿生而生',
   h_sub:'OpenUSD 承載工業數位孿生。MEP 團隊在 Autodesk Revit 工作。ZXBuilder 橋接兩者 &mdash; 將 USD 精準數據帶入 Revit，並將 Revit MEP 同步回 USD。',
   s1h:'下載安裝',s1p:'執行 MSI 安裝程式。Revit 中出現 Zigma 分頁。',
@@ -542,7 +542,7 @@ zh:{
 },
 ja:{
   nav_about:'会社について',nav_howto:'使い方',nav_trial:'無料トライアル',nav_pricing:'ライセンスプラン',nav_dl:'トライアル版ダウンロード',dl_std:'トライアル版ダウンロード(標準)',dl_airgap:'AirGap オフライン版ダウンロード',dl_r27:'Revit 2027 版',dl_r26:'Revit 2026 版',dl_kind_normal:'標準インストーラー(MSI)',dl_kind_airgap:'オフライン(AirGap)インストーラー(MSI)',dl_soon:'近日提供',dl_m_ver:'バージョン',dl_m_size:'ファイルサイズ',dl_m_time:'公開日時',dl_m_more:'(全文を表示)',dl_m_copy:'コピー',zxfsm_label:'コンパニオンツール — <span style="color:#4ade80">ZX Fab Standard Manager, ZXFSM</span> Latest Version: 0.6.0.0-r1',zxfsm_dl:'ZX Fab Standard Manager, ZXFSM をダウンロード',zxfsm_ver:'バージョン 0.6.0.0-r1 · 試用プレビュー版 pre-beta',
-  h_badge:'OpenUSD ネイティブ &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h_badge:'OpenUSD ネイティブ &middot; USD&#8596;Revit &middot; Autodesk Revit 2026 / 2027',
   h1:'双方向 <em>USD&#8596;Revit</em><br>産業デジタルツイン向け',
   h_sub:'OpenUSD が産業デジタルツインを保持します。MEP チームは Autodesk Revit で作業します。ZXBuilder が両者を橋渡しし、USD の精度を Revit に取り込み、Revit MEP を USD に同期します。',
   s1h:'ダウンロード & インストール',s1p:'MSI インストーラーを実行。Revit に Zigma タブが表示されます。',
@@ -592,7 +592,7 @@ ja:{
 },
 ko:{
   nav_about:'회사 소개',nav_howto:'사용 방법',nav_trial:'무료 체험판',nav_pricing:'라이선스 플랜',nav_dl:'체험판 다운로드',dl_std:'체험판 다운로드(표준)',dl_airgap:'AirGap 오프라인 에디션 다운로드',dl_r27:'Revit 2027 버전',dl_r26:'Revit 2026 버전',dl_kind_normal:'일반 설치 파일(MSI)',dl_kind_airgap:'오프라인(AirGap) 설치 파일(MSI)',dl_soon:'곧 제공',dl_m_ver:'버전',dl_m_size:'파일 크기',dl_m_time:'게시 시간',dl_m_more:'(전체 보기)',dl_m_copy:'복사',zxfsm_label:'보조 도구 — <span style="color:#4ade80">ZX Fab Standard Manager, ZXFSM</span> Latest Version: 0.6.0.0-r1',zxfsm_dl:'ZX Fab Standard Manager, ZXFSM 다운로드',zxfsm_ver:'버전 0.6.0.0-r1 · 체험 미리보기판 pre-beta',
-  h_badge:'OpenUSD 네이티브 &middot; USD&#8596;Revit &middot; Autodesk Revit 2027',
+  h_badge:'OpenUSD 네이티브 &middot; USD&#8596;Revit &middot; Autodesk Revit 2026 / 2027',
   h1:'양방향 <em>USD&#8596;Revit</em><br>산업용 디지털 트윈을 위한',
   h_sub:'OpenUSD가 산업용 디지털 트윈을 담당합니다. MEP 팀은 Autodesk Revit에서 작업합니다. ZXBuilder가 양쪽을 연결하여 &mdash; USD의 정밀 데이터를 Revit으로 가져오고, Revit MEP를 다시 USD로 동기화합니다.',
   s1h:'다운로드 및 설치',s1p:'MSI 설치 프로그램을 실행하면 Revit에 Zigma 탭이 나타납니다.',
