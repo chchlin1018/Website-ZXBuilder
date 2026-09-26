@@ -1,16 +1,16 @@
 {
-  "zigma_version": "5.8.0.0",
-  "display_version": "5.8.0.0-r2",
-  "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta.msi",
-  "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta.zip",
-  "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta",
-  "notes": "v5.8.0.0-r2: reducer and tee fitting connection fixes; failed connections now listed by element id.",
+  "zigma_version": "5.8.1.0",
+  "display_version": "5.8.1.0",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2027.msi",
+  "download_zip_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2027.zip",
+  "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
+  "notes": "ZXBuilder 5.8.1.0: new Revit 2026 edition. Revit 2027/2026, Online or Air-gap installer (4 files).",
   "sha256": "2619D195957EEF1D7650239279870051EA8AFE3475A1DED73A80503508C8992B",
   "bytes": 164163584,
   "published_at": "2026-09-24T23:00:52+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/v5.8.0.0-pre-beta/ZigmaSetup_v5.8.0.0_Pre-Beta_airgap.msi",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/v5.8.0.0-pre-beta",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2027_airgap.msi",
+    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
     "sha256": "53A9CF21DFA2BD8B08E0954F0E48B7F7829FB9F8116BFDBD3D4C8B6E7953F349",
     "bytes": 163524608,
     "published_at": "2026-09-24T01:25:32+08:00"
@@ -39,6 +39,24 @@
     "sha256": "B52C99C7426919AAB101EBBB02330CC0B46C0CE3B6A26AF0664225FE4B3DA35B",
     "bytes": 82268082,
     "published_at": "2026-09-24T17:51:16+08:00",
-    "notes": "Adds IoT points that need no Revit parameter (PI AF mapping window or 3D view side panel), with kind and per-backend names for AVEVA PI AF, TDengine and AVEVA Historian in the exported package; exports each template's Revit built-in category name so ZXBuilder matches templates in any Revit language. Packages remain readable by ZXBuilder 5.8.0.0."
+    "notes": "ZXBuilder 5.8.1.0: new Revit 2026 edition. Revit 2027/2026, Online or Air-gap installer (4 files)."
+  },
+  "ZXBuilder2026": {
+    "zigma_version": "5.8.1.0",
+    "display_version": "5.8.1.0",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2026.msi",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2026.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
+    "notes": "ZXBuilder 5.8.1.0: new Revit 2026 edition. Revit 2027/2026, Online or Air-gap installer (4 files).",
+    "sha256": "721AC2CD4F8B2474799F40B20BFC26E988D8DD0CB740AD7A97AA9B15217B1E8B",
+    "bytes": 158502912,
+    "published_at": "2026-09-26T18:49:54+08:00",
+    "airgap": {
+      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2026_airgap.msi",
+      "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
+      "sha256": "1D077255C80B4819B49277E405588436DD98757BC3F44C73F647FEB6EC11FC3B",
+      "bytes": 158281728,
+      "published_at": "2026-09-26T18:49:54+08:00"
+    }
   }
 }
