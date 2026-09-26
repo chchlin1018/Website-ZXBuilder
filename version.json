@@ -23,11 +23,11 @@
     "published_at": "2026-09-26T18:55:09+08:00"
   },
   "documents": {
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5800-zh/ZXBuilder-5800-Documents-zh-v4.1-20260924.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxbuilder-docs-5800-zh",
-    "sha256": "266657F5942CA479AA5484566E22FFE31914C1FAA2B1F0EF0C85011EF54C0E5C",
-    "bytes": 8717399,
-    "published_at": "2026-09-24T09:13:18+08:00"
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5810-zh/ZXBuilder-5810-Documents-zh-v1-20260926.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxbuilder-docs-5810-zh",
+    "sha256": "556EEAE7C9E4F6AE04BBE1DB81485EA6F9D5E5DCA3C1D46735A16159058CCF71",
+    "bytes": 9009434,
+    "published_at": "2026-09-26T19:04:09+08:00"
   },
   "zxfsm": {
     "version": "0.6.0.0-r1",
