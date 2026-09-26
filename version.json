@@ -5,22 +5,22 @@
   "download_zip_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2027.zip",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "ZXBuilder 5.8.1.0: new Revit 2026 edition. Revit 2027/2026, Online or Air-gap installer (4 files).",
-  "sha256": "2619D195957EEF1D7650239279870051EA8AFE3475A1DED73A80503508C8992B",
-  "bytes": 164163584,
-  "published_at": "2026-09-24T23:00:52+08:00",
+  "sha256": "D42C4F531752A7A3BB15781E544E5B315D8A88CCAB3E986F3BF04853FDA82894",
+  "bytes": 164233216,
+  "published_at": "2026-09-26T18:49:54+08:00",
   "airgap": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZigmaSetup_v5.8.1.0_Pre-Beta_ZXBuilder2027_airgap.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "53A9CF21DFA2BD8B08E0954F0E48B7F7829FB9F8116BFDBD3D4C8B6E7953F349",
-    "bytes": 163524608,
-    "published_at": "2026-09-24T01:25:32+08:00"
+    "sha256": "25FE066B57BEBC65D2394CC8508D7345D6E35ED28135323F0820B9B92CCD25D2",
+    "bytes": 163631104,
+    "published_at": "2026-09-26T18:49:54+08:00"
   },
   "zxsample": {
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxsample-5800/ZXSample5800-0980120B.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxsample-5800",
-    "sha256": "0980120B50E30F3BD1B287CCE5AAE647FFAE1429876606A6EA22FA941959A094",
-    "bytes": 2244302,
-    "published_at": "2026-09-24T01:27:49+08:00"
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxsample-5810",
+    "sha256": "862F24526E22D44DFE5EB2900C4FD185A80744510703639A2A1F01A62843C382",
+    "bytes": 2594306,
+    "published_at": "2026-09-26T18:55:09+08:00"
   },
   "documents": {
     "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxbuilder-docs-5800-zh/ZXBuilder-5800-Documents-zh-v4.1-20260924.zip",
