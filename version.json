@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r2",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r2_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r1: fixes incl. import report title. Revit 2027/2026, Online or Air-gap (4 files).",
+  "notes": "ZXBuilder 5.8.1.0-r2: Revit 2026 .NET 8 check fix. Revit 2027/2026, Online or Air-gap (4 files).",
   "sha256": "D37CFD49DCAB21D4431A44E59C1309FA1AFFEDDD0B393CA6D6B789B8630993F6",
   "bytes": 164098048,
   "published_at": "2026-09-27T19:17:16+08:00",
