@@ -29,16 +29,24 @@
     "published_at": "2026-09-27T17:59:33+08:00"
   },
   "zxfsm": {
-    "version": "0.6.0.0-r1",
-    "display_version": "0.6.0.0-r1",
+    "version": "0.7.0.0",
+    "display_version": "0.7.0.0",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0-r1/ZXFabStandardManager-0.6.0.0-r1-win-x64.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.6.0.0-r1/ZXFabStandardManager-0.6.0.0-r1-win-x64.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.6.0.0-r1",
-    "sha256": "B52C99C7426919AAB101EBBB02330CC0B46C0CE3B6A26AF0664225FE4B3DA35B",
-    "bytes": 82268082,
-    "published_at": "2026-09-24T17:51:16+08:00",
-    "notes": "ZXBuilder 5.8.1.0: new Revit 2026 edition. Revit 2027/2026, Online or Air-gap installer (4 files)."
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0/ZXFSM_Normal_v0.7.0.0_Pre-Beta.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0/ZXFSM_Normal_v0.7.0.0_Pre-Beta.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0",
+    "sha256": "81186880822CD363480799D762EAF992E49F05A6ADB5EECBF5E86DE824E1E22B",
+    "bytes": 82226743,
+    "published_at": "2026-09-27T20:06:58+08:00",
+    "notes": "ZX Fab Standard Manager 0.7.0.0: asset library, RFA analysis, asset info center. Normal or Air-gap.",
+    "airgap": {
+      "version": "0.7.0.0",
+      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0/ZXFSM_AirGap_v0.7.0.0_Pre-Beta.zip",
+      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0",
+      "sha256": "FAFFDA3B6C6E8E667CCB06009C60CF12B568CF5AF9154DE5F5684E1D90267498",
+      "bytes": 82226777,
+      "published_at": "2026-09-27T20:06:58+08:00"
+    }
   },
   "ZXBuilder2026": {
     "zigma_version": "5.8.1.0",
