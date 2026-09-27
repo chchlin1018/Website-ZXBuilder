@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r1",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r1_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r2",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r2_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "ZXBuilder 5.8.1.0-r1: fixes incl. import report title. Revit 2027/2026, Online or Air-gap (4 files).",
-  "sha256": "F61355C4E7A38C0D4E40F74EF062CAB250241E07161C1249B64B4DC892D376B2",
-  "bytes": 164270080,
-  "published_at": "2026-09-27T10:58:42+08:00",
+  "sha256": "D37CFD49DCAB21D4431A44E59C1309FA1AFFEDDD0B393CA6D6B789B8630993F6",
+  "bytes": 164098048,
+  "published_at": "2026-09-27T19:17:16+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r1_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r2_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "23368A410DCC6C5E8F18EA511CBFD654CBBA771153916E8295592786DDF01535",
-    "bytes": 163655680,
-    "published_at": "2026-09-27T10:58:42+08:00"
+    "sha256": "C3089850C41174194377A24492DE5920611C6AD37906E7B70EE3FD14629DF9AC",
+    "bytes": 163663872,
+    "published_at": "2026-09-27T19:17:16+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
@@ -42,19 +42,19 @@
   },
   "ZXBuilder2026": {
     "zigma_version": "5.8.1.0",
-    "display_version": "5.8.1.0-r1",
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r1_Setup_Pre-Beta.msi",
+    "display_version": "5.8.1.0-r2",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r2_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "notes": "ZXBuilder 5.8.1.0-r1: fixes incl. import report title. Revit 2027/2026, Online or Air-gap (4 files).",
-    "sha256": "04FA960287322A6FDD2377B355410B04BEB8232B63508DB3B3227BE0ADE0EABA",
-    "bytes": 158527488,
-    "published_at": "2026-09-27T10:58:43+08:00",
+    "notes": "ZXBuilder 5.8.1.0-r2: Revit 2026 .NET 8 check fix. Revit 2027/2026, Online or Air-gap (4 files).",
+    "sha256": "DEAB833B39842555FA5C7A1CF98413931473EB90578B68DF1ADC26449F6A9D28",
+    "bytes": 158552064,
+    "published_at": "2026-09-27T19:17:16+08:00",
     "airgap": {
-      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r1_Setup_Pre-Beta.msi",
+      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r2_Setup_Pre-Beta.msi",
       "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-      "sha256": "725599CDDF6A3969157D8B019237F21C218AD9DCC71854A93B7AA14220810A27",
-      "bytes": 158265344,
-      "published_at": "2026-09-27T10:58:43+08:00"
+      "sha256": "4070AA91BD1DC26D8ADE90ABFC8CA596BB4F868F2F4D5358DE843B57C21E3934",
+      "bytes": 158318592,
+      "published_at": "2026-09-27T19:17:16+08:00"
     }
   }
 }
