@@ -29,23 +29,23 @@
     "published_at": "2026-09-27T17:59:33+08:00"
   },
   "zxfsm": {
-    "version": "0.7.0.0",
-    "display_version": "0.7.0.0",
+    "version": "0.7.0.0-r1",
+    "display_version": "0.7.0.0-r1",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0/ZXFSM_Normal_v0.7.0.0_Pre-Beta.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0/ZXFSM_Normal_v0.7.0.0_Pre-Beta.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0",
-    "sha256": "81186880822CD363480799D762EAF992E49F05A6ADB5EECBF5E86DE824E1E22B",
-    "bytes": 82226743,
-    "published_at": "2026-09-27T20:06:58+08:00",
-    "notes": "ZX Fab Standard Manager 0.7.0.0: asset library, RFA analysis, asset info center. Normal or Air-gap.",
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r1/ZXFSM_Normal_v0.7.0.0-r1_Pre-Beta.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r1/ZXFSM_Normal_v0.7.0.0-r1_Pre-Beta.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0-r1",
+    "sha256": "25539DBE712554BF9270AB8FAAD250A555940CCEEBFCC48513E39B0F72E52C74",
+    "bytes": 82226222,
+    "published_at": "PENDING-GO",
+    "notes": "PENDING-RM-NOTES",
     "airgap": {
-      "version": "0.7.0.0",
-      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0/ZXFSM_AirGap_v0.7.0.0_Pre-Beta.zip",
-      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0",
-      "sha256": "FAFFDA3B6C6E8E667CCB06009C60CF12B568CF5AF9154DE5F5684E1D90267498",
-      "bytes": 82226777,
-      "published_at": "2026-09-27T20:06:58+08:00"
+      "version": "0.7.0.0-r1",
+      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r1/ZXFSM_AirGap_v0.7.0.0-r1_Pre-Beta.zip",
+      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0-r1",
+      "sha256": "B5450A1EB70C8742561F2A32371B17A15E529CF19EC9A09C3B0CE676982AA6D2",
+      "bytes": 82226279,
+      "published_at": "PENDING-GO"
     }
   },
   "ZXBuilder2026": {
