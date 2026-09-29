@@ -37,7 +37,7 @@
     "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0-r1",
     "sha256": "25539DBE712554BF9270AB8FAAD250A555940CCEEBFCC48513E39B0F72E52C74",
     "bytes": 82226222,
-    "published_at": "PENDING-GO",
+    "published_at": "2026-09-29T09:30:06+08:00",
     "notes": "ZX Fab Standard Manager 0.7.0.0-r1: asset info center fixes. The 3D pane now asks before clearing the scene and responds to W/S/A/D/Q/E/F/R keys; the Relationships pane asset-library checkbox and Esc key work. Example pack parts renamed ZX-. Normal or Air-gap.",
     "airgap": {
       "version": "0.7.0.0-r1",
@@ -45,7 +45,7 @@
       "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0-r1",
       "sha256": "B5450A1EB70C8742561F2A32371B17A15E529CF19EC9A09C3B0CE676982AA6D2",
       "bytes": 82226279,
-      "published_at": "PENDING-GO"
+      "published_at": "2026-09-29T09:30:06+08:00"
     }
   },
   "ZXBuilder2026": {
