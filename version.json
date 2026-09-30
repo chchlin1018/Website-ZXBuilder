@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r6",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r6_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r4: beam end settings on import, per-face material colors on export, bug fixes.",
+  "notes": "ZXBuilder 5.8.1.0-r6: open-project part library adds Structural Columns, lists skipped families.",
   "sha256": "0AA3ACEB91B7080AFC89A00FF992E38ACF5AD85EC8EA2FC55F040A311F46FA4E",
   "bytes": 164102144,
   "published_at": "2026-09-30T20:35:11+08:00",
