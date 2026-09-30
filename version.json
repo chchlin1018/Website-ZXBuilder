@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r4",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r4_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r2: Revit 2026 .NET 8 check fix. Revit 2027/2026, Online or Air-gap (4 files).",
+  "notes": "ZXBuilder 5.8.1.0-r4: beam end settings on import, per-face material colors on export, bug fixes.",
   "sha256": "CB6D52C122C200DBCAE194AAEBF429361326547256FAAA51DC1F1159520ECA23",
   "bytes": 163475456,
   "published_at": "2026-09-30T14:39:49+08:00",
