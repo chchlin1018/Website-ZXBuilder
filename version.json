@@ -38,7 +38,7 @@
     "sha256": "A3681888EFE6E2D9D75087612E10DCFEC943708EAA82FEC8F73E7098731E274D",
     "bytes": 82226652,
     "published_at": "2026-09-30T08:00:38+08:00",
-    "notes": "ZX Fab Standard Manager 0.7.0.0-r2: the 3D view shows per-face material colors for parts with several materials (such scene files must be exported from a supported ZXBuilder version, to be announced in writing); in the asset info center the Relationships pane controls stay on one row with horizontal scrolling, and both rows of panes are equal height. Example pack unchanged: ZXFSM_Examples_v0.7.0.0-r1_Pre-Beta.zip. Normal or Air-gap.",
+    "notes": "ZX Fab Standard Manager 0.7.0.0-r2: the 3D view shows per-face material colors for parts with several materials (such scene files must be exported from ZXBuilder 5.8.1.0-r4 or later); in the asset info center the Relationships pane controls stay on one row with horizontal scrolling, and both rows of panes are equal height. Example pack unchanged: ZXFSM_Examples_v0.7.0.0-r1_Pre-Beta.zip. Normal or Air-gap.",
     "airgap": {
       "version": "0.7.0.0-r2",
       "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r2/ZXFSM_AirGap_v0.7.0.0-r2_Pre-Beta.zip",
