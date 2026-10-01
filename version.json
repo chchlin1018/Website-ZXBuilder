@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r7",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r7_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r9",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r9_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "ZXBuilder 5.8.1.0-r7: fixes an occasional crash, linked-model import, stairs and logo height.",
-  "sha256": "BE64ACED2E5AAE9B3CA6E2D45608B0DE9FE4FDAFDB6F2EA481FBAEE64710A600",
-  "bytes": 164261888,
-  "published_at": "2026-10-01T15:15:00+08:00",
+  "sha256": "BE753E30326D96477863AEB3EB7A90762BC3627126DA19D7D77FB8722C7E0588",
+  "bytes": 164282368,
+  "published_at": "2026-10-01T22:27:12+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r7_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r9_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "6CA4A953817C738784C5902C354388E4FCBBE4848BF91F66C1932459CE124194",
-    "bytes": 163811328,
-    "published_at": "2026-10-01T15:15:00+08:00"
+    "sha256": "B455D026D6F11DBB86689D43F5F3F6674C26A71AFAFDBE3A5A1A5AB7C23D4FAB",
+    "bytes": 163717120,
+    "published_at": "2026-10-01T22:27:12+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
@@ -50,19 +50,19 @@
   },
   "ZXBuilder2026": {
     "zigma_version": "5.8.1.0",
-    "display_version": "5.8.1.0-r7",
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r7_Setup_Pre-Beta.msi",
+    "display_version": "5.8.1.0-r9",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r9_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "notes": "ZXBuilder 5.8.1.0-r7: fixes an occasional crash, linked-model import, stairs and logo height.",
-    "sha256": "2317C6820F00E2898DCC8AA737D468F73FEDE67435625E08A066C3ABA529AD25",
-    "bytes": 158408704,
-    "published_at": "2026-10-01T15:15:02+08:00",
+    "notes": "ZXBuilder 5.8.1.0-r9: fixes part-origin alignment for imported families, incl. rotated placements.",
+    "sha256": "EFD3FD8506893CD9FEF6E7897858CB7422FE538FAC855846060B0471F6632449",
+    "bytes": 158420992,
+    "published_at": "2026-10-01T22:27:13+08:00",
     "airgap": {
-      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r7_Setup_Pre-Beta.msi",
+      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r9_Setup_Pre-Beta.msi",
       "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-      "sha256": "BF05240C6C8EE329245B5F6AF0155C7A6F302EA5BBB41CADE425D13EC1D84BAE",
-      "bytes": 158208000,
-      "published_at": "2026-10-01T15:15:02+08:00"
+      "sha256": "2B506235D3BA877929A557F5D28EE8F5B847F86FF41FAC74A7471B08EBFAA724",
+      "bytes": 158167040,
+      "published_at": "2026-10-01T22:27:13+08:00"
     }
   }
 }
