@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r9",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r9_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r7: fixes an occasional crash, linked-model import, stairs and logo height.",
+  "notes": "ZXBuilder 5.8.1.0-r9: fixes part-origin alignment for imported families, incl. rotated placements.",
   "sha256": "BE753E30326D96477863AEB3EB7A90762BC3627126DA19D7D77FB8722C7E0588",
   "bytes": 164282368,
   "published_at": "2026-10-01T22:27:12+08:00",
