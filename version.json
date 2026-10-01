@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r6",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r6_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r7",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r7_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "ZXBuilder 5.8.1.0-r6: open-project part library adds Structural Columns, lists skipped families.",
-  "sha256": "0AA3ACEB91B7080AFC89A00FF992E38ACF5AD85EC8EA2FC55F040A311F46FA4E",
-  "bytes": 164102144,
-  "published_at": "2026-09-30T20:35:11+08:00",
+  "sha256": "BE64ACED2E5AAE9B3CA6E2D45608B0DE9FE4FDAFDB6F2EA481FBAEE64710A600",
+  "bytes": 164261888,
+  "published_at": "2026-10-01T15:15:00+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r6_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r7_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "D30D3E54806A0CE5F0F8753988A5C135D3FB205E5C432782C6238CFB5899C1AE",
-    "bytes": 163676160,
-    "published_at": "2026-09-30T20:35:11+08:00"
+    "sha256": "6CA4A953817C738784C5902C354388E4FCBBE4848BF91F66C1932459CE124194",
+    "bytes": 163811328,
+    "published_at": "2026-10-01T15:15:00+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
@@ -50,19 +50,19 @@
   },
   "ZXBuilder2026": {
     "zigma_version": "5.8.1.0",
-    "display_version": "5.8.1.0-r6",
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r6_Setup_Pre-Beta.msi",
+    "display_version": "5.8.1.0-r7",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r7_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "notes": "ZXBuilder 5.8.1.0-r6: open-project part library adds Structural Columns, lists skipped families.",
-    "sha256": "DC7302DC6786BEF374692F56A61B43AD4E5F885991F53D67F863E3ED38200FC3",
-    "bytes": 158380032,
-    "published_at": "2026-09-30T20:35:11+08:00",
+    "notes": "ZXBuilder 5.8.1.0-r7: fixes an occasional crash, linked-model import, stairs and logo height.",
+    "sha256": "2317C6820F00E2898DCC8AA737D468F73FEDE67435625E08A066C3ABA529AD25",
+    "bytes": 158408704,
+    "published_at": "2026-10-01T15:15:02+08:00",
     "airgap": {
-      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r6_Setup_Pre-Beta.msi",
+      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r7_Setup_Pre-Beta.msi",
       "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-      "sha256": "89242CA41510D5141089703D3AB6CD59FB5713FB0B376D917D7A7A4A30FA6C50",
-      "bytes": 158162944,
-      "published_at": "2026-09-30T20:35:11+08:00"
+      "sha256": "BF05240C6C8EE329245B5F6AF0155C7A6F302EA5BBB41CADE425D13EC1D84BAE",
+      "bytes": 158208000,
+      "published_at": "2026-10-01T15:15:02+08:00"
     }
   }
 }
