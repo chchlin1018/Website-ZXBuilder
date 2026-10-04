@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r10",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r10_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r9: fixes part-origin alignment for imported families, incl. rotated placements.",
+  "notes": "ZXBuilder 5.8.1.0-r10: fixes plumbing runs, stair railings and IFC import; bundles IFC evaluation.",
   "sha256": "7BE05390DD0A06E71C65803EE0E8F16ED3C4520DE74DA4F1357E2989BFE583DC",
   "bytes": 227143680,
   "published_at": "2026-10-04T19:28:22+08:00",
