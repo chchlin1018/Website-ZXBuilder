@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r12",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r12_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r11: fixes MEP system names, IFC rebuild, beam/column placement; less memory.",
+  "notes": "ZXBuilder 5.8.1.0-r12: per-element comparison report; consistent mechanical equipment system types.",
   "sha256": "D9530D947A00C24C753332F9383ACF20B01B813D3A2F7D2F876D670D5FFD07A6",
   "bytes": 227819520,
   "published_at": "2026-10-09T07:32:21+08:00",
