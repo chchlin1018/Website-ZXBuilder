@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r11",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r11_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r10: fixes plumbing runs, stair railings and IFC import; bundles IFC evaluation.",
+  "notes": "ZXBuilder 5.8.1.0-r11: fixes stair railings, MEP system names, IFC rebuild, placement; less memory.",
   "sha256": "0CA9830B96153E029FB406B3BA14B071DA7772CC4DC537BC62CB818C890F419C",
   "bytes": 227581952,
   "published_at": "2026-10-08T08:36:06+08:00",
