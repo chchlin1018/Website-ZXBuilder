@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r11",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r11_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r12",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r12_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "ZXBuilder 5.8.1.0-r11: fixes MEP system names, IFC rebuild, beam/column placement; less memory.",
-  "sha256": "0CA9830B96153E029FB406B3BA14B071DA7772CC4DC537BC62CB818C890F419C",
-  "bytes": 227581952,
-  "published_at": "2026-10-08T08:36:06+08:00",
+  "sha256": "D9530D947A00C24C753332F9383ACF20B01B813D3A2F7D2F876D670D5FFD07A6",
+  "bytes": 227819520,
+  "published_at": "2026-10-09T07:32:21+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r11_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r12_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "6AE254F8C80E35747D7F9BDD719ABF3861A606BB505838B6D362B89947F92356",
-    "bytes": 227459072,
-    "published_at": "2026-10-08T08:36:06+08:00"
+    "sha256": "4D621C5156711C6A71B47EC7F07CBD0E4B7468767EF7850AC7B004D376540B4F",
+    "bytes": 227491840,
+    "published_at": "2026-10-09T07:32:21+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
@@ -50,19 +50,19 @@
   },
   "ZXBuilder2026": {
     "zigma_version": "5.8.1.0",
-    "display_version": "5.8.1.0-r11",
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r11_Setup_Pre-Beta.msi",
+    "display_version": "5.8.1.0-r12",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r12_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "notes": "ZXBuilder 5.8.1.0-r11: fixes MEP system names, IFC rebuild, beam/column placement; less memory.",
-    "sha256": "CFEDB829BF5460963BD3E767A18ABF2EF3BD4DAE97A6723AB891916275793B85",
-    "bytes": 221831168,
-    "published_at": "2026-10-08T08:36:08+08:00",
+    "notes": "ZXBuilder 5.8.1.0-r12: per-element comparison report; consistent mechanical equipment system types.",
+    "sha256": "F875BA0493F1B166DCBE50B76A270F1D19F3750D54C5601897ED11A007134BC3",
+    "bytes": 221855744,
+    "published_at": "2026-10-09T07:32:22+08:00",
     "airgap": {
-      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r11_Setup_Pre-Beta.msi",
+      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r12_Setup_Pre-Beta.msi",
       "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-      "sha256": "7CF9908A09D11DFB760EDDACA07F02160D46821194C04A32B4B276F91751D06B",
-      "bytes": 221609984,
-      "published_at": "2026-10-08T08:36:08+08:00"
+      "sha256": "3792D6C8D81899304CE3E39274D091FE734B8EC39B632527F8CE0F4E5B97F972",
+      "bytes": 221581312,
+      "published_at": "2026-10-09T07:32:22+08:00"
     }
   }
 }
