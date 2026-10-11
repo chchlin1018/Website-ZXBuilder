@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r13",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r13_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "ZXBuilder 5.8.1.0-r12: per-element comparison report; consistent mechanical equipment system types.",
+  "notes": "自 5.8.1.0-r13 起停止支援 Revit 2026,只提供 Revit 2027 版。匯回時若找不到原始模型檔,部分天花板的高度偏移可能與原始模型不同,將於 5.8.1.0-r14 修正。",
   "sha256": "64151C2B81DEB4675FEB4905F5248A80E0EB236C3CD739C1ED87995D174F662C",
   "bytes": 228274176,
   "published_at": "2026-10-12T03:29:05+08:00",
