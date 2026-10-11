@@ -47,22 +47,5 @@
       "bytes": 82226671,
       "published_at": "2026-09-30T08:00:38+08:00"
     }
-  },
-  "ZXBuilder2026": {
-    "zigma_version": "5.8.1.0",
-    "display_version": "5.8.1.0-r12",
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_Normal_v5.8.1.0-r12_Setup_Pre-Beta.msi",
-    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "notes": "ZXBuilder 5.8.1.0-r12: per-element comparison report; consistent mechanical equipment system types.",
-    "sha256": "F875BA0493F1B166DCBE50B76A270F1D19F3750D54C5601897ED11A007134BC3",
-    "bytes": 221855744,
-    "published_at": "2026-10-09T07:32:22+08:00",
-    "airgap": {
-      "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2026_AirGap_v5.8.1.0-r12_Setup_Pre-Beta.msi",
-      "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-      "sha256": "3792D6C8D81899304CE3E39274D091FE734B8EC39B632527F8CE0F4E5B97F972",
-      "bytes": 221581312,
-      "published_at": "2026-10-09T07:32:22+08:00"
-    }
   }
 }
