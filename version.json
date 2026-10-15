@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r13",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r13_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r14",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r14_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "自 5.8.1.0-r13 起停止支援 Revit 2026,只提供 Revit 2027 版。匯回時若找不到原始模型檔,部分天花板的高度偏移可能與原始模型不同,將於 5.8.1.0-r14 修正。",
-  "sha256": "64151C2B81DEB4675FEB4905F5248A80E0EB236C3CD739C1ED87995D174F662C",
-  "bytes": 228274176,
-  "published_at": "2026-10-12T03:29:05+08:00",
+  "sha256": "DAD42D41FC245C4FAB79ED0CA74BA2D1D72262CCA40CE82D351A548A0066FF83",
+  "bytes": 228655104,
+  "published_at": "2026-10-15T10:26:34+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r13_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r14_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "13BDC0BA2F078DCF043E7D2AAC3459F5612CDDDFADACA9C83D8DFFD7D20838BB",
-    "bytes": 227811328,
-    "published_at": "2026-10-12T03:29:05+08:00"
+    "sha256": "9F2DB81E22EC45A60CEBE2750A8574E1B93AE49E16CACA92571F2310C6F1F808",
+    "bytes": 228270080,
+    "published_at": "2026-10-15T10:26:34+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
