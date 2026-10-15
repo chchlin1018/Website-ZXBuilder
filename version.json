@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r14",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r14_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "自 5.8.1.0-r13 起停止支援 Revit 2026,只提供 Revit 2027 版。匯回時若找不到原始模型檔,部分天花板的高度偏移可能與原始模型不同,將於 5.8.1.0-r14 修正。",
+  "notes": "自 5.8.1.0-r13 起停止支援 Revit 2026,只提供 2027 版。已知限制:USD to ZX USDC 轉出場景檔匯入時,樓板以矩形重建,非矩形外形與開口不保留,修正版本另行通知。",
   "sha256": "DAD42D41FC245C4FAB79ED0CA74BA2D1D72262CCA40CE82D351A548A0066FF83",
   "bytes": 228655104,
   "published_at": "2026-10-15T10:26:34+08:00",
