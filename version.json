@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r15",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r15_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "自 5.8.1.0-r13 起停止支援 Revit 2026,只提供 2027 版。已知限制:USD to ZX USDC 轉出場景檔匯入時,樓板以矩形重建,非矩形外形與開口不保留,修正版本另行通知。",
+  "notes": "自 5.8.1.0-r13 起只提供 Revit 2027 版。本版修正:主風管不再被帶動,只調整末端;找不到來源模型檔時,牆的高度、厚度與底部、頂部約束與來源一致。",
   "sha256": "10739976D0A546C64AEB0C8CAB6E69436882F2750B44343FB1100FCF1E9E1503",
   "bytes": 228417536,
   "published_at": "2026-10-16T10:15:54+08:00",
