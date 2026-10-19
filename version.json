@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r16",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r16_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "自 5.8.1.0-r13 起只提供 Revit 2027 版。本版修正:主風管不再被帶動,只調整末端;找不到來源模型檔時,牆的高度、厚度與底部、頂部約束與來源一致。",
+  "notes": "5.8.1.0-r16 只提供 Revit 2027 版。修正:離線版匯出最後一步同線上版;風口不再失去所屬樓層;找不到來源檔時風口與風管配件接上風管;風管附件接頭與來源相同;巢狀子構件不重複放置。",
   "sha256": "CD61AB8F7E1DE36698C3F28BA8FD7AAE8F86276AF9EE24BCD7EC784B85D594AC",
   "bytes": 229232640,
   "published_at": "2026-10-19T11:30:00+08:00",
