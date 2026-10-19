@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r15",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r15_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r16",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r16_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "自 5.8.1.0-r13 起只提供 Revit 2027 版。本版修正:主風管不再被帶動,只調整末端;找不到來源模型檔時,牆的高度、厚度與底部、頂部約束與來源一致。",
-  "sha256": "10739976D0A546C64AEB0C8CAB6E69436882F2750B44343FB1100FCF1E9E1503",
-  "bytes": 228417536,
-  "published_at": "2026-10-16T10:15:54+08:00",
+  "sha256": "CD61AB8F7E1DE36698C3F28BA8FD7AAE8F86276AF9EE24BCD7EC784B85D594AC",
+  "bytes": 229232640,
+  "published_at": "2026-10-19T11:30:00+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r15_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r16_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "279DB939E1A833DC5E02B256B6DEE930B82A6C37940A7E8AB3F4533F5C394E06",
-    "bytes": 227950592,
-    "published_at": "2026-10-16T10:15:54+08:00"
+    "sha256": "93B334D9054FDC925C283851EACC6B79B5C1795BCF8B4E33AF3A0C3A21735899",
+    "bytes": 228577280,
+    "published_at": "2026-10-19T11:30:00+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
