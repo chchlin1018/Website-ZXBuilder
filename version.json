@@ -15,11 +15,11 @@
     "published_at": "2026-10-19T11:30:00+08:00"
   },
   "zxsample": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810/ZXSample5810-862F2452.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxsample-5810",
-    "sha256": "862F24526E22D44DFE5EB2900C4FD185A80744510703639A2A1F01A62843C382",
-    "bytes": 2594306,
-    "published_at": "2026-09-26T18:55:09+08:00"
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r16/ZXSample5810-r16-C47BD10C.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxsample-5810-r16",
+    "sha256": "C47BD10CA7C5D4DE4381BA00F36193CB20657EBF5009F8E24C89BAF2B1DB1DA9",
+    "bytes": 2375703,
+    "published_at": "2026-10-20T16:50:56+08:00"
   },
   "documents": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5810-r16-4lang/ZXBuilder-5810-r16-Documents-4lang-v1-20261020.zip",
