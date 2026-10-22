@@ -27,12 +27,7 @@
     "sha256": "E3AD88835472F43914E3B38C2002FBDD46FCB2FD0ABA35F2D45700E13F91F6E9",
     "bytes": 11412242,
     "published_at": "2026-10-22T21:01:21+08:00",
-    "languages": [
-      "ZH",
-      "ENG",
-      "JP",
-      "KR"
-    ]
+    "languages": ["ZH"]
   },
   "zxfsm": {
     "version": "0.7.0.0-r2",
