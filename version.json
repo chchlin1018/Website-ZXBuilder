@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r17",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r17_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "5.8.1.0-r16 只提供 Revit 2027 版。修正:離線版匯出最後一步同線上版;風口不再失去所屬樓層;找不到來源檔時風口與風管配件接上風管;風管附件接頭與來源相同;巢狀子構件不重複放置。",
+  "notes": "5.8.1.0-r17 只提供 Revit 2027 版。修正:管件口徑依所接直管寫入、找不到來源檔仍可建出、測量點與系統類型匯回、版本資訊帶補丁序號。已知:部分模型執行模型掃描會失敗(r16 起)。",
   "sha256": "C2F9734B27208CA7EA5ADD26EC00C15E129320685E73C1312FDF2D74EB9BFCE9",
   "bytes": 229265408,
   "published_at": "2026-10-22T20:56:05+08:00",
