@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r16",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r16_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r17",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r17_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "5.8.1.0-r16 只提供 Revit 2027 版。修正:離線版匯出最後一步同線上版;風口不再失去所屬樓層;找不到來源檔時風口與風管配件接上風管;風管附件接頭與來源相同;巢狀子構件不重複放置。",
-  "sha256": "CD61AB8F7E1DE36698C3F28BA8FD7AAE8F86276AF9EE24BCD7EC784B85D594AC",
-  "bytes": 229232640,
-  "published_at": "2026-10-19T11:30:00+08:00",
+  "sha256": "C2F9734B27208CA7EA5ADD26EC00C15E129320685E73C1312FDF2D74EB9BFCE9",
+  "bytes": 229265408,
+  "published_at": "2026-10-22T20:56:05+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r16_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r17_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "93B334D9054FDC925C283851EACC6B79B5C1795BCF8B4E33AF3A0C3A21735899",
-    "bytes": 228577280,
-    "published_at": "2026-10-19T11:30:00+08:00"
+    "sha256": "C91EBBC63A3B786EC8563A363C6B574C66A510E712048F5F914A85C80C1CA42D",
+    "bytes": 228818944,
+    "published_at": "2026-10-22T20:56:05+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r16/ZXSample5810-r16-C47BD10C.zip",
