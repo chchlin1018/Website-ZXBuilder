@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r18",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r18_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "5.8.1.0-r17 只提供 Revit 2027 版。修正:管件口徑依所接直管寫入、找不到來源檔仍可建出、測量點與系統類型匯回、版本資訊帶補丁序號。已知:部分模型執行模型掃描會失敗(r16 起)。",
+  "notes": "5.8.1.0-r18 只提供 Revit 2027 版。修正:部分模型執行模型掃描失敗、匯出時元件層遺失(r16 起)。新增:管徑連動按鈕,改一支管的管徑,相連同徑的管與管件跟著改。",
   "sha256": "2D645F82CCEDFDC679A577B03C43F12DDADA966592B0CEBDBC7290D51FF4AD4D",
   "bytes": 229408768,
   "published_at": "2026-10-23T21:30:47+08:00",
@@ -22,11 +22,11 @@
     "published_at": "2026-10-20T16:50:56+08:00"
   },
   "documents": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5810-zh/ZXBuilder-5810-r17-Documents-zh-v1-20261022.zip",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5810-zh/ZXBuilder-5810-r18-Documents-zh-v1-20261023.zip",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxbuilder-docs-5810-zh",
-    "sha256": "E3AD88835472F43914E3B38C2002FBDD46FCB2FD0ABA35F2D45700E13F91F6E9",
-    "bytes": 11412242,
-    "published_at": "2026-10-22T21:01:21+08:00",
+    "sha256": "F4FD09F9F536AC3C4AD17062394C02C3CAAA834CD4A28EC2B9553EFE080F3B8A",
+    "bytes": 11469076,
+    "published_at": "2026-10-23T21:33:23+08:00",
     "languages": ["ZH"]
   },
   "zxfsm": {
