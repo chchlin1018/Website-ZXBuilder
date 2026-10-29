@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r18",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r18_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r18-1",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r18-1_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "5.8.1.0-r18 只提供 Revit 2027 版。修正:部分模型執行模型掃描失敗、匯出時元件層遺失(r16 起)。新增:管徑連動按鈕,改一支管的管徑,相連同徑的管與管件跟著改。",
-  "sha256": "2D645F82CCEDFDC679A577B03C43F12DDADA966592B0CEBDBC7290D51FF4AD4D",
-  "bytes": 229408768,
-  "published_at": "2026-10-23T21:30:47+08:00",
+  "sha256": "9A2D6E41BB6B6DD3711A90729CEEB0DD3D2D3A0B57D427DBFB9F9010AB2EDA85",
+  "bytes": 229433344,
+  "published_at": "2026-10-29T23:36:24+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r18_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r18-1_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "73907DFE0705E5AE215AD760827726373651843E730EAFB3C4E05068DD87CCF0",
-    "bytes": 228712448,
-    "published_at": "2026-10-23T21:30:47+08:00"
+    "sha256": "8527B5B2E5230DB73EE4CC931F52261480A62CB5CFA5C6D6FCBEBCC1710FE4A6",
+    "bytes": 228810752,
+    "published_at": "2026-10-29T23:36:24+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r16/ZXSample5810-r16-C47BD10C.zip",
