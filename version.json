@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r18-1",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r18-1_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r19",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r19_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "5.8.1.0-r18-1:新增批次建立零件庫(含逐庫報告與總表);三通可直接接彎頭;修正批次按鈕錯誤視窗與報告資料夾名稱。",
-  "sha256": "9A2D6E41BB6B6DD3711A90729CEEB0DD3D2D3A0B57D427DBFB9F9010AB2EDA85",
-  "bytes": 229433344,
-  "published_at": "2026-10-29T23:36:24+08:00",
+  "sha256": "4A873A814F23D3D903F104CFCD7126318C0518D1155DF189AA3E06550A6FCF2F",
+  "bytes": 229642240,
+  "published_at": "2026-10-31T11:45:17+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r18-1_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r19_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "8527B5B2E5230DB73EE4CC931F52261480A62CB5CFA5C6D6FCBEBCC1710FE4A6",
-    "bytes": 228810752,
-    "published_at": "2026-10-29T23:36:24+08:00"
+    "sha256": "8D0391917C48E981F9196A9E07EFED77561E1068FD3406BF0E20D8A39A7FE2A2",
+    "bytes": 229089280,
+    "published_at": "2026-10-31T11:45:17+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r16/ZXSample5810-r16-C47BD10C.zip",
