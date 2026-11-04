@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.0",
-  "display_version": "5.8.1.0-r19",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r19_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.0-r19-1",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r19-1_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
   "notes": "5.8.1.0-r19:修正梁的切割長度與體積、轉檔後物件件數短少、風管配件接口尺寸三項匯回問題;鋼接頭不匯入,見本版已知限制。",
-  "sha256": "4A873A814F23D3D903F104CFCD7126318C0518D1155DF189AA3E06550A6FCF2F",
-  "bytes": 229642240,
-  "published_at": "2026-10-31T11:45:17+08:00",
+  "sha256": "4698655E2A181C8640C5C281163BC57632040678E6F3AA7B056D418A6CE4B8CA",
+  "bytes": 229666816,
+  "published_at": "2026-11-04T16:32:47+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r19_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_AirGap_v5.8.1.0-r19-1_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-    "sha256": "8D0391917C48E981F9196A9E07EFED77561E1068FD3406BF0E20D8A39A7FE2A2",
-    "bytes": 229089280,
-    "published_at": "2026-10-31T11:45:17+08:00"
+    "sha256": "7F4BCADD987D32CDDFDD89390E6B8AC2271D511CE0646DBDC7F557D3FB2A5783",
+    "bytes": 229138432,
+    "published_at": "2026-11-04T16:32:47+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r19/ZXSample5810-r19-B3F38A8B.zip",
