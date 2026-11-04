@@ -3,7 +3,7 @@
   "display_version": "5.8.1.0-r19-1",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.0-pre-beta/ZXBuilder2027_Normal_v5.8.1.0-r19-1_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.0-pre-beta",
-  "notes": "5.8.1.0-r19:修正梁的切割長度與體積、轉檔後物件件數短少、風管配件接口尺寸三項匯回問題;鋼接頭不匯入,見本版已知限制。",
+  "notes": "5.8.1.0-r19-1:新增支援三通分支口接一顆彎頭;縮管放在兩根管的接點時,管線垂直或任意方向也接得上。",
   "sha256": "4698655E2A181C8640C5C281163BC57632040678E6F3AA7B056D418A6CE4B8CA",
   "bytes": 229666816,
   "published_at": "2026-11-04T16:32:47+08:00",
@@ -22,11 +22,11 @@
     "published_at": "2026-10-31T12:11:54+08:00"
   },
   "documents": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5810-zh/ZXBuilder-5810-r19-Documents-zh-v1-20261031.zip",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5810-zh/ZXBuilder-5810-r19-1-Documents-zh-v1-20261104.zip",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxbuilder-docs-5810-zh",
-    "sha256": "FE79FE8A76A701FCE434B0805A96E9BCF2B4E208A46722BFFA11168AB7CA39A7",
-    "bytes": 5351028,
-    "published_at": "2026-10-31T12:11:54+08:00",
+    "sha256": "E8C88AD97422B0741C8CCB250F0B732CE2519DD055DD84892972E99A789754A0",
+    "bytes": 5409027,
+    "published_at": "2026-11-04T16:40:07+08:00",
     "languages": ["ZH"]
   },
   "zxfsm": {
