@@ -22,12 +22,12 @@
     "published_at": "2026-10-31T12:11:54+08:00"
   },
   "documents": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5810-zh/ZXBuilder-5810-r19-1-Documents-zh-v1-20261104.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxbuilder-docs-5810-zh",
-    "sha256": "E8C88AD97422B0741C8CCB250F0B732CE2519DD055DD84892972E99A789754A0",
-    "bytes": 5409027,
-    "published_at": "2026-11-04T16:40:07+08:00",
-    "languages": ["ZH"]
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5811-4lang/ZXBuilder-v5.8.1.1-Documents-4lang-v1-20261105.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxbuilder-docs-5811-4lang",
+    "sha256": "A63C9767F43B75F48C00DD0C691ABAC764C513CC27B5D5C5D15B016E5062B94C",
+    "bytes": 17501807,
+    "published_at": "2026-11-05T16:30:09+08:00",
+    "languages": ["ZH", "ENG", "JP", "KR"]
   },
   "zxfsm": {
     "version": "0.7.0.0-r2",
@@ -39,7 +39,7 @@
     "sha256": "A3681888EFE6E2D9D75087612E10DCFEC943708EAA82FEC8F73E7098731E274D",
     "bytes": 82226652,
     "published_at": "2026-09-30T08:00:38+08:00",
-    "notes": "5.8.1.1:新增管徑連動改徑;修正找不到來源模型時構件未建出、缺同名型別與天花板類型時依來源重建、牆高程與長度;已知限制見版本說明。",
+    "notes": "ZX Fab Standard Manager 0.7.0.0-r2: the 3D view shows per-face material colors for parts with several materials (such scene files must be exported from ZXBuilder 5.8.1.0-r4 or later); in the asset info center the Relationships pane controls stay on one row with horizontal scrolling, and both rows of panes are equal height. Example pack unchanged: ZXFSM_Examples_v0.7.0.0-r1_Pre-Beta.zip. Normal or Air-gap.",
     "airgap": {
       "version": "0.7.0.0-r2",
       "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r2/ZXFSM_AirGap_v0.7.0.0-r2_Pre-Beta.zip",
