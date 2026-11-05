@@ -30,23 +30,23 @@
     "languages": ["ZH", "ENG", "JP", "KR"]
   },
   "zxfsm": {
-    "version": "0.7.0.0-r2",
-    "display_version": "0.7.0.0-r2",
+    "version": "0.8.0.0",
+    "display_version": "0.8.0.0",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r2/ZXFSM_Normal_v0.7.0.0-r2_Pre-Beta.zip",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r2/ZXFSM_Normal_v0.7.0.0-r2_Pre-Beta.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0-r2",
-    "sha256": "A3681888EFE6E2D9D75087612E10DCFEC943708EAA82FEC8F73E7098731E274D",
-    "bytes": 82226652,
-    "published_at": "2026-09-30T08:00:38+08:00",
-    "notes": "ZX Fab Standard Manager 0.7.0.0-r2: the 3D view shows per-face material colors for parts with several materials (such scene files must be exported from ZXBuilder 5.8.1.0-r4 or later); in the asset info center the Relationships pane controls stay on one row with horizontal scrolling, and both rows of panes are equal height. Example pack unchanged: ZXFSM_Examples_v0.7.0.0-r1_Pre-Beta.zip. Normal or Air-gap.",
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.8.0.0/ZXFSM_Normal_v0.8.0.0_Pre-Beta.zip",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.8.0.0/ZXFSM_Normal_v0.8.0.0_Pre-Beta.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.8.0.0",
+    "sha256": "73EDD5BD2915EC6940182AEC037687D86BFCD9182F23A78AA4C2340126052CF6",
+    "bytes": 82346998,
+    "published_at": "2026-11-05T23:01:45+08:00",
+    "notes": "ZX Fab Standard Manager 0.8.0.0: class library, standard map pack, delivery packages, compare report, relation graph. Example pack unchanged. Normal or Air-gap.",
     "airgap": {
-      "version": "0.7.0.0-r2",
-      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.7.0.0-r2/ZXFSM_AirGap_v0.7.0.0-r2_Pre-Beta.zip",
-      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.7.0.0-r2",
-      "sha256": "B47A455DDF24D2A874C574B41DB68B1126F0C61279C9B693BA5D50AB082EEC1D",
-      "bytes": 82226671,
-      "published_at": "2026-09-30T08:00:38+08:00"
+      "version": "0.8.0.0",
+      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v0.8.0.0/ZXFSM_AirGap_v0.8.0.0_Pre-Beta.zip",
+      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v0.8.0.0",
+      "sha256": "2C65513F4A17CFE19176055144D1567180AC360AC3B0EFCCE7EDBE4C15BF648B",
+      "bytes": 82347008,
+      "published_at": "2026-11-05T23:01:45+08:00"
     }
   }
 }
