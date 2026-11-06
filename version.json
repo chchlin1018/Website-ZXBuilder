@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.1",
-  "display_version": "5.8.1.1",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.1-r1",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r1_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
   "notes": "5.8.1.1:新增管徑連動改徑;修正找不到來源模型時構件未建出、缺同名型別與天花板類型時依來源重建、牆高程與長度;已知限制見版本說明。",
-  "sha256": "998434A19216A1F055BA0877E8DE55C70BC32BD80572435CB214462F775FA4E1",
-  "bytes": 229642240,
-  "published_at": "2026-11-05T16:17:39+08:00",
+  "sha256": "8FC558B9FDF7C5CFA466F1335024F5235CF20082EE9D000F9E009C6B930DA648",
+  "bytes": 229793792,
+  "published_at": "2026-11-06T08:45:16+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1-r1_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-    "sha256": "48E150882162A2CA5F9E037FD629B0E38E071144356076853CEEEFE010B7D985",
-    "bytes": 229232640,
-    "published_at": "2026-11-05T16:17:39+08:00"
+    "sha256": "03D23D9F462B62FB8DCF85C77C65971A900B7B1614718320BD20F688B4EBF88E",
+    "bytes": 229330944,
+    "published_at": "2026-11-06T08:45:16+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r19/ZXSample5810-r19-B3F38A8B.zip",
