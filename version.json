@@ -3,7 +3,7 @@
   "display_version": "5.8.1.1-r5",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r5_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-  "notes": "5.8.1.1-r4:修正排風偏心縮管兩端接直管時的連接;門型架梁的長度與斷面旋轉可由場景檔指定;已知限制見版本說明。",
+  "notes": "5.8.1.1-r5:逐件列出被 Revit 刪除與網面保留的構件;風管彎頭串末端夾一顆偏心大小頭、管位與偏心相符時可自動接上;梁端與柱相接時建立接合;中文介面寫入柱偏移;部分梁切割長度對回來源。",
   "sha256": "85B1F96B8A73B4D1696371B2576F986979AE7E0EA6301FBAC573E72108B62731",
   "bytes": 230072320,
   "published_at": "2026-11-13T01:57:45+08:00",
