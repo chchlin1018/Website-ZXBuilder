@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.1",
-  "display_version": "5.8.1.1-r4",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r4_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.1-r5",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r5_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
   "notes": "5.8.1.1-r4:修正排風偏心縮管兩端接直管時的連接;門型架梁的長度與斷面旋轉可由場景檔指定;已知限制見版本說明。",
-  "sha256": "8FFA6828314184A87F99D74C478759658A36B7E56C8B5F36A6FB372DD076F5FE",
-  "bytes": 229761024,
-  "published_at": "2026-11-12T11:10:04+08:00",
+  "sha256": "85B1F96B8A73B4D1696371B2576F986979AE7E0EA6301FBAC573E72108B62731",
+  "bytes": 230072320,
+  "published_at": "2026-11-13T01:57:45+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1-r4_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1-r5_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-    "sha256": "923FBEEB24B2101B9A784E0714A82DC43A238A63B41C0F9DBE8285271A1F789E",
-    "bytes": 229322752,
-    "published_at": "2026-11-12T11:10:04+08:00"
+    "sha256": "D91D9CA75145ECBBCB0FABED50AE999993EB4C79C8905AE2993741CBCAB58A52",
+    "bytes": 229597184,
+    "published_at": "2026-11-13T01:57:45+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r19/ZXSample5810-r19-B3F38A8B.zip",
