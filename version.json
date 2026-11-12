@@ -3,7 +3,7 @@
   "display_version": "5.8.1.1-r4",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r4_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-  "notes": "5.8.1.1:新增管徑連動改徑;修正找不到來源模型時構件未建出、缺同名型別與天花板類型時依來源重建、牆高程與長度;已知限制見版本說明。",
+  "notes": "5.8.1.1-r4:修正排風偏心縮管兩端接直管時的連接;門型架梁的長度與斷面旋轉可由場景檔指定;已知限制見版本說明。",
   "sha256": "8FFA6828314184A87F99D74C478759658A36B7E56C8B5F36A6FB372DD076F5FE",
   "bytes": 229761024,
   "published_at": "2026-11-12T11:10:04+08:00",
