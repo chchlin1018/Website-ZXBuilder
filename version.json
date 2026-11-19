@@ -3,7 +3,7 @@
   "display_version": "5.8.1.1-r6",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r6_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-  "notes": "5.8.1.1-r5:逐件列出被 Revit 刪除與網面保留的構件;風管彎頭串末端夾一顆偏心大小頭、管位與偏心相符時可自動接上;梁端與柱相接時建立接合;中文介面寫入柱偏移;部分梁切割長度對回來源。",
+  "notes": "5.8.1.1-r6:帷幕牆上的門以 Revit 原生門建回;基礎牆的「結構」設定與來源相同;缺件報告每列附處理建議。",
   "sha256": "FA82D5989D3294E23836E819BD284E1E121E9AD30B937B3DF036EC493E642661",
   "bytes": 230440960,
   "published_at": "2026-11-19T19:05:51+08:00",
