@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.1",
-  "display_version": "5.8.1.1-r5",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r5_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.1-r6",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r6_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
   "notes": "5.8.1.1-r5:逐件列出被 Revit 刪除與網面保留的構件;風管彎頭串末端夾一顆偏心大小頭、管位與偏心相符時可自動接上;梁端與柱相接時建立接合;中文介面寫入柱偏移;部分梁切割長度對回來源。",
-  "sha256": "85B1F96B8A73B4D1696371B2576F986979AE7E0EA6301FBAC573E72108B62731",
-  "bytes": 230072320,
-  "published_at": "2026-11-13T01:57:45+08:00",
+  "sha256": "FA82D5989D3294E23836E819BD284E1E121E9AD30B937B3DF036EC493E642661",
+  "bytes": 230440960,
+  "published_at": "2026-11-19T19:05:51+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1-r5_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1-r6_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-    "sha256": "D91D9CA75145ECBBCB0FABED50AE999993EB4C79C8905AE2993741CBCAB58A52",
-    "bytes": 229597184,
-    "published_at": "2026-11-13T01:57:45+08:00"
+    "sha256": "0B62E6935DF6FF2EFC1529B11D9FDFBB600350E2BD8A0065DF76DF5D0F899C0E",
+    "bytes": 229773312,
+    "published_at": "2026-11-19T19:05:51+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r19/ZXSample5810-r19-B3F38A8B.zip",
