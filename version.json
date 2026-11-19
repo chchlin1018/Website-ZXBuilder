@@ -48,5 +48,24 @@
       "bytes": 82347008,
       "published_at": "2026-11-05T23:01:45+08:00"
     }
+  },
+  "zxfsp1": {
+    "version": "0.2.3.0",
+    "display_version": "0.2.3",
+    "stage": "pre-beta",
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsp1-v0.2.3.0/ZXFSP1_Normal_v0.2.3.0_Setup_Pre-Beta.msi",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsp1-v0.2.3.0",
+    "sha256": "6D0D876B4FFE7947264946CAE94080647F4D36828BDF0C9C2AF80C68CCB9CFFE",
+    "bytes": 1851392,
+    "published_at": "2026-11-20T01:36:43+08:00",
+    "notes": "ZX FSP1 0.2.3.0 Pre-Beta: Normal or Air-gap installer, offline component pack, user guide and three-product workflow guide in Chinese, English, Japanese and Korean.",
+    "airgap": {
+      "version": "0.2.3.0",
+      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsp1-v0.2.3.0/ZXFSP1_AirGap_v0.2.3.0_Setup_Pre-Beta.msi",
+      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsp1-v0.2.3.0",
+      "sha256": "19958617E0A530D35891CC4271EFED695AF0B7DAC43C7D0742C92239BE8F8F8E",
+      "bytes": 1851392,
+      "published_at": "2026-11-20T01:36:43+08:00"
+    }
   }
 }
