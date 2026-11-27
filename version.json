@@ -22,11 +22,11 @@
     "published_at": "2026-10-31T12:11:54+08:00"
   },
   "documents": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5811-r2-4lang/ZXBuilder-v5.8.1.1-r2-Documents-4lang-v1-20261107.zip",
-    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxbuilder-docs-5811-r2-4lang",
-    "sha256": "88D0EBCECFD1C64C7D472F21F010AB63FCA8299C9BBFB8C0A46D079BB0F6069F",
-    "bytes": 17841439,
-    "published_at": "2026-11-07T23:38:23+08:00",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxbuilder-docs-5811-r7-4lang/ZXBuilder-v5.8.1.1-r7-Documents-4lang-v2-20261127.zip",
+    "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/zxbuilder-docs-5811-r7-4lang",
+    "sha256": "E1C3DAA2EDCC1C23CEAA82957ACD425E90263A9552493E29CC8A00FD1F34699C",
+    "bytes": 19829768,
+    "published_at": "2026-11-27T22:05:31+08:00",
     "languages": ["ZH", "ENG", "JP", "KR"]
   },
   "zxfsm": {
