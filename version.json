@@ -3,7 +3,7 @@
   "display_version": "5.8.1.1-r7",
   "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r7_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-  "notes": "5.8.1.1-r6:帷幕牆上的門以 Revit 原生門建回;基礎牆的「結構」設定與來源相同;缺件報告每列附處理建議。",
+  "notes": "5.8.1.1-r7:新增載入標準包、ZX SM File 空間限制檢查與即時警示、修改清單與回報、匯入金鑰;逐件比對報告雙擊即可開啟。",
   "sha256": "DB6461066D1DC2229CBE69A21F5C93FB7B45372B744CBC5959100EA5A357890E",
   "bytes": 230723584,
   "published_at": "2026-11-27T21:47:15+08:00",
