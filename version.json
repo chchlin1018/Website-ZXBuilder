@@ -1,18 +1,18 @@
 {
   "zigma_version": "5.8.1.1",
-  "display_version": "5.8.1.1-r6",
-  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r6_Setup_Pre-Beta.msi",
+  "display_version": "5.8.1.1-r7",
+  "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_Normal_v5.8.1.1-r7_Setup_Pre-Beta.msi",
   "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
   "notes": "5.8.1.1-r6:帷幕牆上的門以 Revit 原生門建回;基礎牆的「結構」設定與來源相同;缺件報告每列附處理建議。",
-  "sha256": "FA82D5989D3294E23836E819BD284E1E121E9AD30B937B3DF036EC493E642661",
-  "bytes": 230440960,
-  "published_at": "2026-11-19T19:05:51+08:00",
+  "sha256": "DB6461066D1DC2229CBE69A21F5C93FB7B45372B744CBC5959100EA5A357890E",
+  "bytes": 230723584,
+  "published_at": "2026-11-27T21:47:15+08:00",
   "airgap": {
-    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1-r6_Setup_Pre-Beta.msi",
+    "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/v5.8.1.1-pre-beta/ZXBuilder2027_AirGap_v5.8.1.1-r7_Setup_Pre-Beta.msi",
     "release_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/tag/v5.8.1.1-pre-beta",
-    "sha256": "0B62E6935DF6FF2EFC1529B11D9FDFBB600350E2BD8A0065DF76DF5D0F899C0E",
-    "bytes": 229773312,
-    "published_at": "2026-11-19T19:05:51+08:00"
+    "sha256": "331BCC0BCA48ECC121D09ABFBB85F84BBC6DD88E8ABA94132533D75494D3B3A2",
+    "bytes": 230498304,
+    "published_at": "2026-11-27T21:47:15+08:00"
   },
   "zxsample": {
     "download_url": "https://github.com/chchlin1018/Website-ZXBuilder/releases/download/zxsample-5810-r19/ZXSample5810-r19-B3F38A8B.zip",
