@@ -31,22 +31,22 @@
   },
   "zxfsm": {
     "version": "1.0.0.0",
-    "display_version": "1.0.0.0-r1",
+    "display_version": "1.0.0.0-r2",
     "stage": "pre-beta",
-    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v1.0.0.0-r1/ZXFSM_Normal_v1.0.0.0-r1_Setup_Pre-Beta.msi",
-    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v1.0.0.0-r1/ZXFSM_Normal_v1.0.0.0-r1_Setup_Pre-Beta.msi",
-    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v1.0.0.0-r1",
-    "sha256": "6492BC5ACCD32876D8AE2448D05F61BC7CF904E4C1DEAD9C775CDC8A41EB6FA6",
+    "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v1.0.0.0-r2/ZXFSM_Normal_v1.0.0.0-r2_Setup_Pre-Beta.msi",
+    "download_zip_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v1.0.0.0-r2/ZXFSM_Normal_v1.0.0.0-r2_Setup_Pre-Beta.msi",
+    "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v1.0.0.0-r2",
+    "sha256": "155002985E9D7477026F0549CDC8A9B882ACB68777A20CCBF9AAA4236F2169A3",
     "bytes": 70266880,
-    "published_at": "2026-11-27T07:36:51+08:00",
-    "notes": "ZX Fab Standard Manager 1.0.0.0-r1 Pre-Beta: signed Windows installer (MSI), Normal or Air-gap.",
+    "published_at": "2026-11-27T22:03:48+08:00",
+    "notes": "ZX Fab Standard Manager 1.0.0.0-r2 Pre-Beta: blank component-library version is now marked not checked in the standard check; signed MSI, Normal or Air-gap.",
     "airgap": {
       "version": "1.0.0.0",
-      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v1.0.0.0-r1/ZXFSM_AirGap_v1.0.0.0-r1_Setup_Pre-Beta.msi",
-      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v1.0.0.0-r1",
-      "sha256": "755D80595B75CF151BF8E7B72610BE5DDF562D80A1FFED8C4BF7A5FE7A596C4F",
+      "download_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/download/zxfsm-v1.0.0.0-r2/ZXFSM_AirGap_v1.0.0.0-r2_Setup_Pre-Beta.msi",
+      "release_url": "https://github.com/chchlin1018/Website-ZigmaClub/releases/tag/zxfsm-v1.0.0.0-r2",
+      "sha256": "DBEBF860B75DC9A0BFC358FDB0CC959ADFF479330BABB0D2CBEAEEFCD4669D48",
       "bytes": 70275072,
-      "published_at": "2026-11-27T07:36:51+08:00"
+      "published_at": "2026-11-27T22:03:48+08:00"
     }
   },
   "zxfsp1": {
